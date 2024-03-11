@@ -11,30 +11,111 @@ import {Order} from 'blockly/javascript';
 // This file has no side effects!
 export const forBlock = Object.create(null);
 
-forBlock['add_text'] = function (block, generator) {
-  const text = generator.valueToCode(block, 'TEXT', Order.NONE) || "''";
-  const color =
-    generator.valueToCode(block, 'COLOR', Order.ATOMIC) || "'#ffffff'";
-
-  const addText = generator.provideFunction_(
-      'addText',
-      `function ${generator.FUNCTION_NAME_PLACEHOLDER_}(text, color) {
-
-  // Add text to the output area.
-  const outputDiv = document.getElementById('output');
-  const textEl = document.createElement('p');
-  textEl.innerText = text;
-  textEl.style.color = color;
-  outputDiv.appendChild(textEl);
-}`
-  );
+forBlock['script'] = function (block, generator) {
   // Generate the function call for this block.
-  const code = `${addText}(${text}, ${color});\n`;
+  const code = ``;
   return code;
 };
 
-forBlock['test'] = function (block, generator) {
+forBlock['triggers'] = function (block, generator) {
   // Generate the function call for this block.
-  const code = `Test`;
+  const code = `\n`;
+  return code;
+};
+
+forBlock['ifelse'] = function (block, generator) {
+  const check = generator.valueToCode(block, 'check', Order.NONE) || "";
+  const do1 = generator.valueToCode(block, 'do1', Order.NONE) || "";
+  const else1 = generator.valueToCode(block, 'else1', Order.NONE) || "";
+  
+  // Generate the function call for this block.
+  let code;
+
+  if (else1) {
+    code = `if (${check}) {\n} else {\n}`;
+  } else {
+    code = `if (${check}) {\n}`;
+  }
+
+  return code;
+};
+
+forBlock['secondtick'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `@secondTick\n`;
+  return code;
+};
+
+forBlock['sendchatmessage'] = function (block, generator) {
+  const text = generator.valueToCode(block, 'message', Order.NONE) || "''";
+
+  // Generate the function call for this block.
+  const code = `sendChatMessage(${text})\n`;
+  return code;
+};
+
+forBlock['pos'] = function (block, generator) {
+  const x = generator.valueToCode(block, 'x', Order.NONE) || "";
+  const y = generator.valueToCode(block, 'y', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `pos(${x}, ${y})`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['moveentity'] = function (block, generator) {
+  const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
+  const pos = generator.valueToCode(block, 'pos', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `moveEntity(${entity}, ${pos})\n`;
+  return code;
+};
+
+forBlock['owner'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `.owner`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['triggeringplayer'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `triggeringPlayer`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['triggeringunit'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `triggeringunit`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['selectedunit'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `selectedunit`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['frametick'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `@frameTick\n`;
+  return code;
+};
+
+forBlock['servershuttingdown'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `@serverShuttingDown\n`;
+  return code;
+};
+
+forBlock['gamestart'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `@gameStart\n`;
+  return code;
+};
+
+forBlock['onPostResponse'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `@onPostResponse\n`;
   return code;
 };
