@@ -77,6 +77,8 @@ const ifelse = {
     }
   ],
   "colour": 230,
+  "previousStatement": null,
+  "nextStatement": null,
   "tooltip": "",
   "helpUrl": ""
 };

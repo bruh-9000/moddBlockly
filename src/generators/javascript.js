@@ -268,7 +268,7 @@ forBlock['getplayername'] = function (block, generator) {
   console.log(player);
 
   // Generate the function call for this block.
-  const code = `getPlayerName(${player})\n`;
+  const code = `getPlayerName(${player})`;
   return [code, generator.ORDER_NONE];
 };
 
