@@ -360,6 +360,14 @@ export const toolbox = {
     
           ]
         },
+        {
+          'kind': 'category',
+          'name': 'Variables',
+          'categorystyle': 'procedure_category',
+          'contents': [
+    
+          ]
+        },
       ]
     },
   ],
