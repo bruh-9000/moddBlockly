@@ -86,13 +86,13 @@ forBlock['triggeringplayer'] = function (block, generator) {
 
 forBlock['triggeringunit'] = function (block, generator) {
   // Generate the function call for this block.
-  const code = `triggeringunit`;
+  const code = `triggeringUnit`;
   return [code, generator.ORDER_NONE];
 };
 
 forBlock['selectedunit'] = function (block, generator) {
   // Generate the function call for this block.
-  const code = `selectedunit`;
+  const code = `selectedUnit`;
   return [code, generator.ORDER_NONE];
 };
 
