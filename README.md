@@ -12,7 +12,7 @@ Run the following commands in Command Prompt in the location you want to copy th
 
 ```
 git clone https://github.com/bruh-9000/moddBlockly
-cd moddBlockly\hello-world
+cd moddBlockly
 npm start
 ```
 
