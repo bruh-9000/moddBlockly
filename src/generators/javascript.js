@@ -25,16 +25,24 @@ forBlock['triggers'] = function (block, generator) {
 
 forBlock['ifelse'] = function (block, generator) {
   const check = generator.valueToCode(block, 'check', Order.NONE) || "";
-  const do1 = generator.valueToCode(block, 'do1', Order.NONE) || "";
-  const else1 = generator.valueToCode(block, 'else1', Order.NONE) || "";
+  const do1 = generator.statementToCode(block, 'do1') || "";
+  const else1 = generator.statementToCode(block, 'else1') || "";
   
   // Generate the function call for this block.
   let code;
 
   if (else1) {
-    code = `if (${check}) {\n} else {\n}`;
+    if (do1) {
+      code = `if (${check}) {\n${do1}} else {\n${else1}}\n`;
+    } else {
+      code = `if (${check}) {\n\n${do1}} else {\n${else1}}\n`;
+    }
   } else {
-    code = `if (${check}) {\n}`;
+    if (do1) {
+      code = `if (${check}) {\n${do1}}\n`;
+    } else {
+      code = `if (${check}) {\n\n}\n`;
+    }
   }
 
   return code;

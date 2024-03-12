@@ -169,6 +169,40 @@ export const toolbox = {
         },
         {
           'kind': 'category',
+          'name': 'Text',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'text',
+            },
+            {
+              'kind': 'block',
+              'type': 'text_join',
+            },
+            {
+              'kind': 'block',
+              'type': 'num2str',
+            },  
+            {
+              'kind': 'block',
+              'type': 'getplayername',
+            },
+          ]
+        },
+        {
+          'kind': 'category',
+          'name': 'Boolean',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'logic_boolean',
+            },    
+          ]
+        },
+        {
+          'kind': 'category',
           'name': 'Positions',
           'categorystyle': 'procedure_category',
           'contents': [
@@ -203,29 +237,6 @@ export const toolbox = {
           'contents': [
             
           ]
-        },
-      ]
-    },
-    {
-      'kind': 'category',
-      'name': 'Text',
-      'categorystyle': 'procedure_category',
-      'contents': [
-        {
-          'kind': 'block',
-          'type': 'text',
-        },
-        {
-          'kind': 'block',
-          'type': 'text_join',
-        },
-        {
-          'kind': 'block',
-          'type': 'num2str',
-        },  
-        {
-          'kind': 'block',
-          'type': 'getplayername',
         },
       ]
     },
