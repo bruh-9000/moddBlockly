@@ -89,17 +89,19 @@ const pos = {
   "args0": [
     {
       "type": "input_value",
-      "name": "x"
+      "name": "x",
+      "check": "Number"
     },
     {
       "type": "input_dummy"
     },
     {
       "type": "input_value",
-      "name": "y"
+      "name": "y",
+      "check": "Number"
     }
   ],
-  "output": null,
+  "output": "Pos",
   "colour": 230,
   "tooltip": "",
   "helpUrl": ""
@@ -111,14 +113,16 @@ const moveEntity = {
   "args0": [
     {
       "type": "input_value",
-      "name": "entity"
+      "name": "entity",
+      "check": ["Unit", "Projectile", "Item"]
     },
     {
       "type": "input_dummy"
     },
     {
       "type": "input_value",
-      "name": "pos"
+      "name": "pos",
+      "check": "Pos"
     }
   ],
   "previousStatement": null,
@@ -131,7 +135,7 @@ const moveEntity = {
 const triggeringPlayer = {
   "type": "triggeringplayer",
   "message0": "triggeringPlayer",
-  "output": null,
+  "output": "Player",
   "colour": 260,
   "tooltip": "",
   "helpUrl": ""
@@ -140,7 +144,7 @@ const triggeringPlayer = {
 const owner = {
   "type": "owner",
   "message0": "owner",
-  "output": null,
+  "output": "Player",
   "colour": 260,
   "tooltip": "",
   "helpUrl": ""
@@ -152,10 +156,11 @@ const triggeringUnit = {
   "args0": [
     {
       "type": "input_value",
-      "name": "sub"
+      "name": "sub",
+      "check": "Player"
     }
   ],
-  "output": null,
+  "output": "Unit",
   "colour": 65,
   "tooltip": "",
   "helpUrl": ""
@@ -167,10 +172,11 @@ const selectedUnit = {
   "args0": [
     {
       "type": "input_value",
-      "name": "sub"
+      "name": "sub",
+      "check": "Player"
     }
   ],
-  "output": null,
+  "output": "Unit",
   "colour": 65,
   "tooltip": "",
   "helpUrl": ""
@@ -182,10 +188,11 @@ const lastCreatedUnit = {
   "args0": [
     {
       "type": "input_value",
-      "name": "sub"
+      "name": "sub",
+      "check": "Player"
     }
   ],
-  "output": null,
+  "output": "Unit",
   "colour": 65,
   "tooltip": "",
   "helpUrl": ""
@@ -409,7 +416,8 @@ const destroyEntity = {
   "args0": [
     {
       "type": "input_value",
-      "name": "entity"
+      "name": "entity",
+      "check": ["Unit", "Projectile", "Item"]
     }
   ],
   "colour": 290,
@@ -423,14 +431,16 @@ const playerCameraTrackUnit = {
   "args0": [
     {
       "type": "input_value",
-      "name": "player"
+      "name": "player",
+      "check": "Player"
     },
     {
       "type": "input_dummy"
     },
     {
       "type": "input_value",
-      "name": "unit"
+      "name": "unit",
+      "check": "Unit"
     }
   ],
   "previousStatement": null,
@@ -455,21 +465,24 @@ const createUnitAtPosition = {
     },
     {
       "type": "input_value",
-      "name": "player"
+      "name": "player",
+      "check": "Player"
     },
     {
       "type": "input_dummy"
     },
     {
       "type": "input_value",
-      "name": "pos"
+      "name": "pos",
+      "check": "Pos"
     },
     {
       "type": "input_dummy"
     },
     {
       "type": "input_value",
-      "name": "angle"
+      "name": "angle",
+      "check": "Number"
     }
   ],
   "colour": 65,
@@ -483,11 +496,12 @@ const getPlayerName = {
   "args0": [
     {
       "type": "input_value",
-      "name": "player"
+      "name": "player",
+      "check": "Player"
     }
   ],
   "colour": 160,
-  "output": null,
+  "output": "String",
   "tooltip": "",
   "helpUrl": ""
 };
@@ -498,11 +512,12 @@ const num2str = {
   "args0": [
     {
       "type": "input_value",
-      "name": "num"
+      "name": "num",
+      "check": "Number"
     }
   ],
   "colour": 160,
-  "output": null,
+  "output": "Number",
   "tooltip": "",
   "helpUrl": ""
 };
@@ -513,11 +528,12 @@ const str2num = {
   "args0": [
     {
       "type": "input_value",
-      "name": "str1"
+      "name": "str1",
+      "check": "String"
     }
   ],
   "colour": 230,
-  "output": null,
+  "output": "String",
   "tooltip": "",
   "helpUrl": ""
 }
