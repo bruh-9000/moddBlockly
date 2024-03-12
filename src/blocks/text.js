@@ -214,8 +214,158 @@ const onPostResponse = {
   "helpUrl": ""
 };
 
+const playerSendsChatMessage = {
+  "type": "playerSendsChatMessage",
+  "message0": "playerSendsChatMessage",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitTouchesWall = {
+  "type": "unitTouchesWall",
+  "message0": "unitTouchesWall",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitUsesItem = {
+  "type": "unitUsesItem",
+  "message0": "unitUsesItem",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitAttributeBecomesZero = {
+  "type": "unitAttributeBecomesZero",
+  "message0": "unitAttributeBecomesZero",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitStartsUsingAnItem = {
+  "type": "unitStartsUsingAnItem",
+  "message0": "unitStartsUsingAnItem",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitAttributeBecomesFull = {
+  "type": "unitAttributeBecomesFull",
+  "message0": "unitAttributeBecomesFull",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitEntersRegion = {
+  "type": "unitEntersRegion",
+  "message0": "unitEntersRegion",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitDroppedAnItem = {
+  "type": "unitDroppedAnItem",
+  "message0": "unitDroppedAnItemk",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitSelectsItem = {
+  "type": "unitSelectsItem",
+  "message0": "unitSelectsItem",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitLeavesRegion = {
+  "type": "unitLeavesRegion",
+  "message0": "unitLeavesRegion",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitAttacksUnit = {
+  "type": "unitAttacksUnit",
+  "message0": "unitAttacksUnit",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitStopsUsingAnItem = {
+  "type": "unitStopsUsingAnItem",
+  "message0": "unitStopsUsingAnItem",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitTouchesProjectile = {
+  "type": "unitTouchesProjectile",
+  "message0": "unitTouchesProjectile",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitPickedAnItem = {
+  "type": "unitPickedAnItem",
+  "message0": "unitPickedAnItem",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const unitTouchesItem = {
+  "type": "unitTouchesItem",
+  "message0": "unitTouchesItem",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 // Create the block definitions for the JSON-only blocks.
 // This does not register their definitions with Blockly.
 // This file has no side effects!
 export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
-  [script, secondTick, sendChatMessage, triggers, ifelse, pos, moveEntity, triggeringPlayer, owner, triggeringUnit, selectedUnit, onPostResponse, gameStart, serverShuttingDown, frameTick]);
+  [script, frameTick, secondTick, sendChatMessage, triggers, ifelse, pos, moveEntity, triggeringPlayer, owner, triggeringUnit, selectedUnit, onPostResponse, gameStart, serverShuttingDown, unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull, unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage]);

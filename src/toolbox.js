@@ -48,6 +48,66 @@ export const toolbox = {
           'kind': 'block',
           'type': 'onpostresponse',
         },
+        {
+          'kind': 'block',
+          'type': 'playerSendsChatMessage',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitTouchesWall',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitUsesItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitAttributeBecomesZero',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitStartsUsingAnItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitAttributeBecomesFull',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitEntersRegion',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitDroppedAnItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitLeavesRegion',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitSelectsItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitAttacksUnit',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitStopsUsingAnItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitTouchesProjectile',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitPickedAnItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitTouchesItem',
+        },
       ]
     },
     {
