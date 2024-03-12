@@ -96,6 +96,12 @@ forBlock['selectedunit'] = function (block, generator) {
   return [code, generator.ORDER_NONE];
 };
 
+forBlock['lastcreatedunit'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `lastCreatedUnit`;
+  return [code, generator.ORDER_NONE];
+};
+
 forBlock['frametick'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@frameTick\n`;
@@ -210,10 +216,42 @@ forBlock['unitTouchesItem'] = function (block, generator) {
   return code;
 };
 
+forBlock['playerjoinsgame'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `@playerJoinsGame\n`;
+  return code;
+};
+
+forBlock['@playerleavesgame'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `@playerLeavesGame\n`;
+  return code;
+};
+
 forBlock['destroyentity'] = function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
 
   // Generate the function call for this block.
   const code = `destroyEntity(${entity})\n`;
+  return code;
+};
+
+forBlock['playercameratrackunit'] = function (block, generator) {
+  const player = generator.valueToCode(block, 'player', Order.NONE) || "";
+  const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `playerCameraTrackUnit(${player}, ${unit})\n`;
+  return code;
+};
+
+forBlock['createunitatposition'] = function (block, generator) {
+  const player = generator.valueToCode(block, 'player', Order.NONE) || "";
+  const unittype = generator.valueToCode(block, 'unittype', Order.NONE) || "''";
+  const pos = generator.valueToCode(block, 'pos', Order.NONE) || "";
+  const angle = generator.valueToCode(block, 'angle', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `createUnitAtPosition(${unittype}, ${player}, ${pos}, ${angle})\n`;
   return code;
 };

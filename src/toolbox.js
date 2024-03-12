@@ -46,11 +46,19 @@ export const toolbox = {
         },
         {
           'kind': 'block',
-          'type': 'onpostresponse',
+          'type': 'playerjoinsgame',
+        },
+        {
+          'kind': 'block',
+          'type': 'playerleavesgame',
         },
         {
           'kind': 'block',
           'type': 'playerSendsChatMessage',
+        },
+        {
+          'kind': 'block',
+          'type': 'onpostresponse',
         },
         {
           'kind': 'block',
@@ -211,11 +219,19 @@ export const toolbox = {
           'contents': [
             {
               'kind': 'block',
+              'type': 'createunitatposition',
+            },
+            {
+              'kind': 'block',
               'type': 'triggeringunit',
             },
             {
               'kind': 'block',
               'type': 'selectedunit',
+            },
+            {
+              'kind': 'block',
+              'type': 'lastcreatedunit',
             },
           ]
         },
@@ -248,6 +264,10 @@ export const toolbox = {
           'name': 'Player',
           'categorystyle': 'procedure_category',
           'contents': [
+            {
+              'kind': 'block',
+              'type': 'playercameratrackunit',
+            },
             {
               'kind': 'block',
               'type': 'owner',

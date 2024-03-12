@@ -174,6 +174,21 @@ const selectedUnit = {
   "helpUrl": ""
 };
 
+const lastCreatedUnit = {
+  "type": "lastcreatedunit",
+  "message0": "lastCreatedUnit %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "NAME"
+    }
+  ],
+  "output": null,
+  "colour": 65,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 const frameTick = {
   "type": "frametick",
   "message0": "frameTick",
@@ -364,6 +379,26 @@ const unitTouchesItem = {
   "helpUrl": ""
 };
 
+const playerJoinsGame = {
+  "type": "playerjoinsgame",
+  "message0": "playerJoinsGame",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 120,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const playerLeavesGame = {
+  "type": "playerleavesgame",
+  "message0": "playerLeavesGame",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 120,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 const destroyEntity = {
   "type": "destroyentity",
   "message0": "destroy %1",
@@ -376,6 +411,66 @@ const destroyEntity = {
     }
   ],
   "colour": 290,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const playerCameraTrackUnit = {
+  "type": "playercameratrackunit",
+  "message0": "make %1 %2 track unit %3",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "player"
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "unit"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 260,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const createUnitAtPosition = {
+  "type": "createunitatposition",
+  "message0": "create %1 %2 for player %3 %4 at pos %5 %6 and angle %7",
+  "previousStatement": null,
+  "nextStatement": null,
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "unittype"
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "player"
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "pos"
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "angle"
+    }
+  ],
+  "colour": 65,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -394,4 +489,5 @@ const destroyEntity = {
 export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   [script, frameTick, secondTick, sendChatMessage, triggers, ifelse, pos, moveEntity, triggeringPlayer, owner, triggeringUnit, selectedUnit, onPostResponse, gameStart, serverShuttingDown,
   unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull,
-  unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity]);
+  unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
+  playerJoinsGame, playerLeavesGame]);
