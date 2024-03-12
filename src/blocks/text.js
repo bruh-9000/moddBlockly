@@ -16,7 +16,7 @@ const secondTick = {
   "message0": "secondTick",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -33,7 +33,7 @@ const sendChatMessage = {
   ],
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 330,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -43,7 +43,7 @@ const triggers = {
   "message0": "Triggers:",
   "inputsInline": true,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -53,7 +53,7 @@ const script = {
   "message0": "Script:",
   "inputsInline": true,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -98,7 +98,7 @@ const pos = {
     }
   ],
   "output": null,
-  "colour": 230,
+  "colour": 330,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -121,7 +121,7 @@ const moveEntity = {
   ],
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 290,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -130,7 +130,7 @@ const triggeringPlayer = {
   "type": "triggeringplayer",
   "message0": "triggeringPlayer",
   "output": null,
-  "colour": 230,
+  "colour": 260,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -139,7 +139,7 @@ const owner = {
   "type": "owner",
   "message0": "owner",
   "output": null,
-  "colour": 230,
+  "colour": 260,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -154,7 +154,7 @@ const triggeringUnit = {
     }
   ],
   "output": null,
-  "colour": 230,
+  "colour": 65,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -169,7 +169,7 @@ const selectedUnit = {
     }
   ],
   "output": null,
-  "colour": 230,
+  "colour": 65,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -179,7 +179,7 @@ const frameTick = {
   "message0": "frameTick",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -189,7 +189,7 @@ const serverShuttingDown = {
   "message0": "serverShuttingDown",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -199,7 +199,7 @@ const gameStart = {
   "message0": "gameStart",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -209,7 +209,7 @@ const onPostResponse = {
   "message0": "onPostResponse",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -219,7 +219,7 @@ const playerSendsChatMessage = {
   "message0": "playerSendsChatMessage",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -229,7 +229,7 @@ const unitTouchesWall = {
   "message0": "unitTouchesWall",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -239,7 +239,7 @@ const unitUsesItem = {
   "message0": "unitUsesItem",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -249,7 +249,7 @@ const unitAttributeBecomesZero = {
   "message0": "unitAttributeBecomesZero",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -259,7 +259,7 @@ const unitStartsUsingAnItem = {
   "message0": "unitStartsUsingAnItem",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -269,7 +269,7 @@ const unitAttributeBecomesFull = {
   "message0": "unitAttributeBecomesFull",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -279,7 +279,7 @@ const unitEntersRegion = {
   "message0": "unitEntersRegion",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -289,7 +289,7 @@ const unitDroppedAnItem = {
   "message0": "unitDroppedAnItemk",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -299,7 +299,7 @@ const unitSelectsItem = {
   "message0": "unitSelectsItem",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -309,7 +309,7 @@ const unitLeavesRegion = {
   "message0": "unitLeavesRegion",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -319,7 +319,7 @@ const unitAttacksUnit = {
   "message0": "unitAttacksUnit",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -329,7 +329,7 @@ const unitStopsUsingAnItem = {
   "message0": "unitStopsUsingAnItem",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -339,7 +339,7 @@ const unitTouchesProjectile = {
   "message0": "unitTouchesProjectile",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -349,7 +349,7 @@ const unitPickedAnItem = {
   "message0": "unitPickedAnItem",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -359,7 +359,7 @@ const unitTouchesItem = {
   "message0": "unitTouchesItem",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 230,
+  "colour": 120,
   "tooltip": "",
   "helpUrl": ""
 };
