@@ -98,7 +98,7 @@ const pos = {
     }
   ],
   "output": null,
-  "colour": 330,
+  "colour": 230,
   "tooltip": "",
   "helpUrl": ""
 };
@@ -364,8 +364,34 @@ const unitTouchesItem = {
   "helpUrl": ""
 };
 
+const destroyEntity = {
+  "type": "destroyentity",
+  "message0": "destroy %1",
+  "previousStatement": null,
+  "nextStatement": null,
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "entity"
+    }
+  ],
+  "colour": 290,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+// Colors per category
+// 120 for trigger
+// 65 for unit
+// 260 for player
+// 230 for logic
+// 330 for other
+// 290 for entity
+
 // Create the block definitions for the JSON-only blocks.
 // This does not register their definitions with Blockly.
 // This file has no side effects!
 export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
-  [script, frameTick, secondTick, sendChatMessage, triggers, ifelse, pos, moveEntity, triggeringPlayer, owner, triggeringUnit, selectedUnit, onPostResponse, gameStart, serverShuttingDown, unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull, unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage]);
+  [script, frameTick, secondTick, sendChatMessage, triggers, ifelse, pos, moveEntity, triggeringPlayer, owner, triggeringUnit, selectedUnit, onPostResponse, gameStart, serverShuttingDown,
+  unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull,
+  unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity]);

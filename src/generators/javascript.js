@@ -209,3 +209,11 @@ forBlock['unitTouchesItem'] = function (block, generator) {
   const code = `@unitTouchesItem\n`;
   return code;
 };
+
+forBlock['destroyentity'] = function (block, generator) {
+  const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `destroyEntity(${entity})\n`;
+  return code;
+};

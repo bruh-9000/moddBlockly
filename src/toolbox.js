@@ -157,6 +157,17 @@ export const toolbox = {
         },
         {
           'kind': 'category',
+          'name': 'Positions',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'pos',
+            },
+          ]
+        },
+        {
+          'kind': 'category',
           'name': 'Loops',
           'categorystyle': 'procedure_category',
           'contents': [
@@ -188,6 +199,10 @@ export const toolbox = {
         {
           'kind': 'block',
           'type': 'moveentity',
+        },
+        {
+          'kind': 'block',
+          'type': 'destroyentity',
         },
         {
           'kind': 'category',
@@ -228,29 +243,21 @@ export const toolbox = {
     
           ]
         },
-      ]
-    },
-    {
-      'kind': 'category',
-      'name': 'Player',
-      'categorystyle': 'procedure_category',
-      'contents': [
         {
-          'kind': 'block',
-          'type': 'owner',
+          'kind': 'category',
+          'name': 'Player',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'owner',
+            },
+            {
+              'kind': 'block',
+              'type': 'triggeringplayer',
+            },
+          ]
         },
-        {
-          'kind': 'block',
-          'type': 'triggeringplayer',
-        },
-      ]
-    },
-    {
-      'kind': 'category',
-      'name': 'UI',
-      'categorystyle': 'procedure_category',
-      'contents': [
-
       ]
     },
     {
@@ -260,6 +267,25 @@ export const toolbox = {
       'contents': [
         {
           'kind': 'category',
+          'name': 'UI',
+          'categorystyle': 'procedure_category',
+          'contents': [
+    
+          ]
+        },
+        {
+          'kind': 'category',
+          'name': 'Chat',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'sendchatmessage',
+            },
+          ]
+        },
+        {
+          'kind': 'category',
           'name': 'AI',
           'categorystyle': 'procedure_category',
           'contents': [
@@ -267,12 +293,12 @@ export const toolbox = {
           ]
         },
         {
-          'kind': 'block',
-          'type': 'sendchatmessage',
-        },
-        {
-          'kind': 'block',
-          'type': 'pos',
+          'kind': 'category',
+          'name': 'Sound & Music',
+          'categorystyle': 'procedure_category',
+          'contents': [
+    
+          ]
         },
       ]
     },
