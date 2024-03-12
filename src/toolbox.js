@@ -175,6 +175,24 @@ export const toolbox = {
             {
               'kind': 'block',
               'type': 'pos',
+              'inputs': {
+                'x': {
+                  'shadow': {
+                    'type': 'math_number',
+                    'fields': {
+                      'NUM': 64,
+                    },
+                  },
+                },
+                'y': {
+                  'shadow': {
+                    'type': 'math_number',
+                    'fields': {
+                      'NUM': 64,
+                    },
+                  },
+                },
+              },
             },
           ]
         },
@@ -313,6 +331,16 @@ export const toolbox = {
             {
               'kind': 'block',
               'type': 'sendchatmessage',
+              'inputs': {
+                'message': {
+                  'shadow': {
+                    'type': 'text',
+                    'fields': {
+                      'TEXT': "Hello world!",
+                    },
+                  },
+                },
+              },
             },
           ]
         },
