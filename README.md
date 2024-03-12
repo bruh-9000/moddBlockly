@@ -13,6 +13,7 @@ Run the following commands in Command Prompt / Terminal in the location you want
 ```
 git clone https://github.com/bruh-9000/moddBlockly
 cd moddBlockly
+npm install
 npm start
 ```
 
