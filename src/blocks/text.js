@@ -490,6 +490,36 @@ const getPlayerName = {
   "helpUrl": ""
 };
 
+const num2str = {
+  "type": "num2str",
+  "message0": "convert %1 to string",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "num"
+    }
+  ],
+  "colour": 160,
+  "output": null,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const str2num = {
+  "type": "str2num",
+  "message0": "convert %1 to num",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "str1"
+    }
+  ],
+  "colour": 230,
+  "output": null,
+  "tooltip": "",
+  "helpUrl": ""
+}
+
 // Colors per category
 // 65 for unit
 // 120 for trigger
@@ -506,4 +536,4 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   [script, frameTick, secondTick, sendChatMessage, triggers, ifelse, pos, moveEntity, triggeringPlayer, owner, triggeringUnit, selectedUnit, onPostResponse, gameStart, serverShuttingDown,
   unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull,
   unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
-  playerJoinsGame, playerLeavesGame, getPlayerName]);
+  playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str]);

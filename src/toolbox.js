@@ -160,7 +160,11 @@ export const toolbox = {
                   },
                 },
               },
-            },    
+            },  
+            {
+              'kind': 'block',
+              'type': 'str2num',
+            },  
           ]
         },
         {
@@ -197,6 +201,10 @@ export const toolbox = {
           'kind': 'block',
           'type': 'text_join',
         },
+        {
+          'kind': 'block',
+          'type': 'num2str',
+        },  
         {
           'kind': 'block',
           'type': 'getplayername',

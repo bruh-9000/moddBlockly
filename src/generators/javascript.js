@@ -271,3 +271,19 @@ forBlock['getplayername'] = function (block, generator) {
   const code = `getPlayerName(${player})\n`;
   return [code, generator.ORDER_NONE];
 };
+
+forBlock['num2str'] = function (block, generator) {
+  const num = generator.valueToCode(block, 'num', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `num2str(${num})\n`;
+  return code;
+};
+
+forBlock['str2num'] = function (block, generator) {
+  const str1 = generator.valueToCode(block, 'str1', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `str2num(${str1})\n`;
+  return code;
+};
