@@ -536,7 +536,52 @@ const str2num = {
   "output": "String",
   "tooltip": "",
   "helpUrl": ""
-}
+};
+
+const sendChatMessageToPlayer = {
+  "type": "sendchatmessagetoplayer",
+  "message0": "send chat message %1 %2 to player %3",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "message",
+      "check": "String"
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "player",
+      "check": "Player"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 330,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const break1 = {
+  "type": "break",
+  "message0": "break",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const continue1 = {
+  "type": "continue",
+  "message0": "continue",
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
 
 // Colors per category
 // 65 for unit
@@ -554,4 +599,4 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   [script, frameTick, secondTick, sendChatMessage, triggers, ifelse, pos, moveEntity, triggeringPlayer, owner, triggeringUnit, selectedUnit, onPostResponse, gameStart, serverShuttingDown,
   unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull,
   unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
-  playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str]);
+  playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str, sendChatMessageToPlayer, break1, continue1]);

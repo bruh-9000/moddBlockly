@@ -235,7 +235,14 @@ export const toolbox = {
           'name': 'Loops',
           'categorystyle': 'procedure_category',
           'contents': [
-            
+            {
+              'kind': 'block',
+              'type': 'break',
+            }, 
+            {
+              'kind': 'block',
+              'type': 'continue',
+            },   
           ]
         },
       ]
@@ -342,6 +349,20 @@ export const toolbox = {
             {
               'kind': 'block',
               'type': 'sendchatmessage',
+              'inputs': {
+                'message': {
+                  'shadow': {
+                    'type': 'text',
+                    'fields': {
+                      'TEXT': "Hello world!",
+                    },
+                  },
+                },
+              },
+            },
+            {
+              'kind': 'block',
+              'type': 'sendchatmessagetoplayer',
               'inputs': {
                 'message': {
                   'shadow': {

@@ -295,3 +295,24 @@ forBlock['str2num'] = function (block, generator) {
   const code = `str2num(${str1})\n`;
   return code;
 };
+
+forBlock['sendchatmessagetoplayer'] = function (block, generator) {
+  const player = generator.valueToCode(block, 'player', Order.NONE) || "";
+  const message = generator.valueToCode(block, 'unittype', Order.NONE) || "''";
+
+  // Generate the function call for this block.
+  const code = `sendChatMessageToPlayer(${message}, ${player})\n`;
+  return code;
+};
+
+forBlock['break'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `break()\n`;
+  return code;
+};
+
+forBlock['continue'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `continue()\n`;
+  return code;
+};
