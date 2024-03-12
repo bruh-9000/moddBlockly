@@ -46,7 +46,75 @@ export const toolbox = {
         },
         {
           'kind': 'block',
+          'type': 'playerjoinsgame',
+        },
+        {
+          'kind': 'block',
+          'type': 'playerleavesgame',
+        },
+        {
+          'kind': 'block',
+          'type': 'playerSendsChatMessage',
+        },
+        {
+          'kind': 'block',
           'type': 'onpostresponse',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitTouchesWall',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitUsesItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitAttributeBecomesZero',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitStartsUsingAnItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitAttributeBecomesFull',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitEntersRegion',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitDroppedAnItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitLeavesRegion',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitSelectsItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitAttacksUnit',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitStopsUsingAnItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitTouchesProjectile',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitPickedAnItem',
+        },
+        {
+          'kind': 'block',
+          'type': 'unitTouchesItem',
         },
       ]
     },
@@ -97,6 +165,17 @@ export const toolbox = {
         },
         {
           'kind': 'category',
+          'name': 'Positions',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'pos',
+            },
+          ]
+        },
+        {
+          'kind': 'category',
           'name': 'Loops',
           'categorystyle': 'procedure_category',
           'contents': [
@@ -118,6 +197,10 @@ export const toolbox = {
           'kind': 'block',
           'type': 'text_join',
         },
+        {
+          'kind': 'block',
+          'type': 'getplayername',
+        },
       ]
     },
     {
@@ -130,10 +213,18 @@ export const toolbox = {
           'type': 'moveentity',
         },
         {
+          'kind': 'block',
+          'type': 'destroyentity',
+        },
+        {
           'kind': 'category',
           'name': 'Unit',
           'categorystyle': 'procedure_category',
           'contents': [
+            {
+              'kind': 'block',
+              'type': 'createunitatposition',
+            },
             {
               'kind': 'block',
               'type': 'triggeringunit',
@@ -141,6 +232,10 @@ export const toolbox = {
             {
               'kind': 'block',
               'type': 'selectedunit',
+            },
+            {
+              'kind': 'block',
+              'type': 'lastcreatedunit',
             },
           ]
         },
@@ -168,29 +263,25 @@ export const toolbox = {
     
           ]
         },
-      ]
-    },
-    {
-      'kind': 'category',
-      'name': 'Player',
-      'categorystyle': 'procedure_category',
-      'contents': [
         {
-          'kind': 'block',
-          'type': 'owner',
+          'kind': 'category',
+          'name': 'Player',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'playercameratrackunit',
+            },
+            {
+              'kind': 'block',
+              'type': 'owner',
+            },
+            {
+              'kind': 'block',
+              'type': 'triggeringplayer',
+            },
+          ]
         },
-        {
-          'kind': 'block',
-          'type': 'triggeringplayer',
-        },
-      ]
-    },
-    {
-      'kind': 'category',
-      'name': 'UI',
-      'categorystyle': 'procedure_category',
-      'contents': [
-
       ]
     },
     {
@@ -200,6 +291,25 @@ export const toolbox = {
       'contents': [
         {
           'kind': 'category',
+          'name': 'UI',
+          'categorystyle': 'procedure_category',
+          'contents': [
+    
+          ]
+        },
+        {
+          'kind': 'category',
+          'name': 'Chat',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'sendchatmessage',
+            },
+          ]
+        },
+        {
+          'kind': 'category',
           'name': 'AI',
           'categorystyle': 'procedure_category',
           'contents': [
@@ -207,12 +317,12 @@ export const toolbox = {
           ]
         },
         {
-          'kind': 'block',
-          'type': 'sendchatmessage',
-        },
-        {
-          'kind': 'block',
-          'type': 'pos',
+          'kind': 'category',
+          'name': 'Sound & Music',
+          'categorystyle': 'procedure_category',
+          'contents': [
+    
+          ]
         },
       ]
     },
