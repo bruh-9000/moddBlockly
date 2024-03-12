@@ -150,7 +150,7 @@ const triggeringUnit = {
   "args0": [
     {
       "type": "input_value",
-      "name": "NAME"
+      "name": "sub"
     }
   ],
   "output": null,
@@ -165,7 +165,7 @@ const selectedUnit = {
   "args0": [
     {
       "type": "input_value",
-      "name": "NAME"
+      "name": "sub"
     }
   ],
   "output": null,
@@ -180,7 +180,7 @@ const lastCreatedUnit = {
   "args0": [
     {
       "type": "input_value",
-      "name": "NAME"
+      "name": "sub"
     }
   ],
   "output": null,
@@ -475,13 +475,29 @@ const createUnitAtPosition = {
   "helpUrl": ""
 };
 
+const getPlayerName = {
+  "type": "getplayername",
+  "message0": "get name of %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "player"
+    }
+  ],
+  "colour": 160,
+  "output": null,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 // Colors per category
-// 120 for trigger
 // 65 for unit
-// 260 for player
+// 120 for trigger
+// 160 for text
 // 230 for logic
-// 330 for other
+// 260 for player
 // 290 for entity
+// 330 for other
 
 // Create the block definitions for the JSON-only blocks.
 // This does not register their definitions with Blockly.
@@ -490,4 +506,4 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   [script, frameTick, secondTick, sendChatMessage, triggers, ifelse, pos, moveEntity, triggeringPlayer, owner, triggeringUnit, selectedUnit, onPostResponse, gameStart, serverShuttingDown,
   unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull,
   unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
-  playerJoinsGame, playerLeavesGame]);
+  playerJoinsGame, playerLeavesGame, getPlayerName]);

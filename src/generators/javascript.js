@@ -85,20 +85,26 @@ forBlock['triggeringplayer'] = function (block, generator) {
 };
 
 forBlock['triggeringunit'] = function (block, generator) {
+  const sub = generator.valueToCode(block, 'sub', Order.NONE) || "";
+
   // Generate the function call for this block.
-  const code = `triggeringUnit`;
+  const code = `triggeringUnit${sub}`;
   return [code, generator.ORDER_NONE];
 };
 
 forBlock['selectedunit'] = function (block, generator) {
+  const sub = generator.valueToCode(block, 'sub', Order.NONE) || "";
+
   // Generate the function call for this block.
-  const code = `selectedUnit`;
+  const code = `selectedUnit${sub}`;
   return [code, generator.ORDER_NONE];
 };
 
 forBlock['lastcreatedunit'] = function (block, generator) {
+  const sub = generator.valueToCode(block, 'sub', Order.NONE) || "";
+
   // Generate the function call for this block.
-  const code = `lastCreatedUnit`;
+  const code = `lastCreatedUnit${sub}`;
   return [code, generator.ORDER_NONE];
 };
 
@@ -254,4 +260,14 @@ forBlock['createunitatposition'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `createUnitAtPosition(${unittype}, ${player}, ${pos}, ${angle})\n`;
   return code;
+};
+
+forBlock['getplayername'] = function (block, generator) {
+  const player = generator.valueToCode(block, 'player', Order.NONE) || "";
+
+  console.log(player);
+
+  // Generate the function call for this block.
+  const code = `getPlayerName(${player})\n`;
+  return [code, generator.ORDER_NONE];
 };

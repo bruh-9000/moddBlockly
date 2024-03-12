@@ -197,6 +197,10 @@ export const toolbox = {
           'kind': 'block',
           'type': 'text_join',
         },
+        {
+          'kind': 'block',
+          'type': 'getplayername',
+        },
       ]
     },
     {
