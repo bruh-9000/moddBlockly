@@ -8,7 +8,7 @@ Blockly implementation for moddScript.
 
 Make sure you have nodeJS installed along with git.
 
-Run the following commands in Command Prompt in the location you want to copy this repository in:
+Run the following commands in Command Prompt / Terminal in the location you want to copy this repository in:
 
 ```
 git clone https://github.com/bruh-9000/moddBlockly
