@@ -228,7 +228,7 @@ forBlock['playerjoinsgame'] = function (block, generator) {
   return code;
 };
 
-forBlock['@playerleavesgame'] = function (block, generator) {
+forBlock['playerleavesgame'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@playerLeavesGame\n`;
   return code;
