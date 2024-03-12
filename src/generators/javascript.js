@@ -120,31 +120,31 @@ forBlock['onPostResponse'] = function (block, generator) {
   return code;
 };
 
-forBlock['playersendschatmessage'] = function (block, generator) {
+forBlock['playerSendsChatMessage'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@playerSendsChatMessage\n`;
   return code;
 };
 
-forBlock['unittoucheswall'] = function (block, generator) {
+forBlock['unitTouchesWall'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitTouchesWall\n`;
   return code;
 };
 
-forBlock['unitysesiItem'] = function (block, generator) {
+forBlock['unitUsesItem'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitUsesItem\n`;
   return code;
 };
 
-forBlock['unitattributebecomeszero'] = function (block, generator) {
+forBlock['unitAttributeBecomesZero'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitAttributeBecomesZero\n`;
   return code;
 };
 
-forBlock['unitstartsysinganitem'] = function (block, generator) {
+forBlock['unitStartUsingAnItem'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitStartsUsingAnItem\n`;
   return code;
@@ -174,37 +174,37 @@ forBlock['unitLeavesRegion'] = function (block, generator) {
   return code;
 };
 
-forBlock['unitselectsitem'] = function (block, generator) {
+forBlock['unitSelectsItem'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitSelectsItem\n`;
   return code;
 };
 
-forBlock['unitattacksynit'] = function (block, generator) {
+forBlock['unitAttacksUnit'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitAttacksUnit\n`;
   return code;
 };
 
-forBlock['unitstopsusinganitem'] = function (block, generator) {
+forBlock['unitStopsUsingAnItem'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitStopsUsingAnItem\n`;
   return code;
 };
 
-forBlock['unittouchesprojectile'] = function (block, generator) {
+forBlock['unitTouchesProjectile'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitTouchesProjectile\n`;
   return code;
 };
 
-forBlock['unitpickedanitem'] = function (block, generator) {
+forBlock['unitPickedAnItem'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitPickedAnItem\n`;
   return code;
 };
 
-forBlock['unittouchesitem'] = function (block, generator) {
+forBlock['unitTouchesItem'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `@unitTouchesItem\n`;
   return code;
