@@ -138,14 +138,6 @@ export const toolbox = {
             },
             {
               'kind': 'block',
-              'type': 'repeat',
-            },
-            {
-              'kind': 'block',
-              'type': 'while',
-            },
-            {
-              'kind': 'block',
               'type': 'colour_picker',
             },
           ]
@@ -258,6 +250,14 @@ export const toolbox = {
           'name': 'Loops',
           'categorystyle': 'procedure_category',
           'contents': [
+            {
+              'kind': 'block',
+              'type': 'repeat',
+            },
+            {
+              'kind': 'block',
+              'type': 'while',
+            },
             {
               'kind': 'block',
               'type': 'break',
