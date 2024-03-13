@@ -347,19 +347,19 @@ forBlock['setvariable'] = function (block, generator) {
 forBlock['triggeringregion'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `triggeringRegion`;
-  return code;
+  return [code, generator.ORDER_NONE];
 };
 
 forBlock['triggeringitem'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `triggeringItem`;
-  return code;
+  return [code, generator.ORDER_NONE];
 };
 
 forBlock['triggeringprojectile'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `triggeringProjectile`;
-  return code;
+  return [code, generator.ORDER_NONE];
 };
 
 forBlock['repeat'] = function (block, generator) {

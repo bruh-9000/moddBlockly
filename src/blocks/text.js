@@ -665,7 +665,7 @@ const triggeringProjectile = {
       "name": "sub"
     }
   ],
-  "output": null,
+  "output": "Projectile",
   "colour": 290,
   "tooltip": "",
   "helpUrl": ""
@@ -680,7 +680,7 @@ const triggeringItem = {
       "name": "sub"
     }
   ],
-  "output": null,
+  "output": "Item",
   "colour": 290,
   "tooltip": "",
   "helpUrl": ""
@@ -689,7 +689,7 @@ const triggeringItem = {
 const triggeringRegion = {
   "type": "triggeringregion",
   "message0": "triggeringRegion",
-  "output": null,
+  "output": "Region",
   "colour": 290,
   "tooltip": "",
   "helpUrl": ""
