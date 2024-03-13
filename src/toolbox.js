@@ -132,6 +132,10 @@ export const toolbox = {
           'type': 'repeat',
         },
         {
+          'kind': 'block',
+          'type': 'colour_picker',
+        },
+        {
           'kind': 'category',
           'name': 'Math',
           'categorystyle': 'procedure_category',
