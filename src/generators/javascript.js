@@ -411,3 +411,11 @@ forBlock['comment'] = function (block, generator) {
   const code = `// ${text}\ncomment()\n`;
   return code;
 };
+
+forBlock['dropallitems'] = function (block, generator) {
+  const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `dropAllItems(${unit})\n`;
+  return code;
+};

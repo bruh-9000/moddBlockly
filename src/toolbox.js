@@ -301,6 +301,10 @@ export const toolbox = {
             },
             {
               'kind': 'block',
+              'type': 'dropallitems',
+            },
+            {
+              'kind': 'block',
               'type': 'triggeringunit',
             },
             {
