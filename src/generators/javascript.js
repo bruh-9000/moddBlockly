@@ -393,3 +393,12 @@ forBlock['while'] = function (block, generator) {
 
   return code;
 };
+
+forBlock['kickplayer'] = function (block, generator) {
+  const player = generator.valueToCode(block, 'player', Order.NONE) || "";
+  const message = generator.valueToCode(block, 'message', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `kickPlayer(${player}, ${message})`;
+  return code;
+};

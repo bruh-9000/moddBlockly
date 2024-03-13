@@ -339,6 +339,10 @@ export const toolbox = {
             },
             {
               'kind': 'block',
+              'type': 'kickplayer',
+            },
+            {
+              'kind': 'block',
               'type': 'owner',
             },
             {

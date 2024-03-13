@@ -738,6 +738,31 @@ const while1 = {
   "helpUrl": ""
 };
 
+const kickPlayer = {
+  "type": "kickplayer",
+  "message0": "kick player %1 %2 with message %3",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "player",
+      "check": "Player"
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "message",
+      "check": "String"
+    }
+  ],
+  "colour": 260,
+  "previousStatement": null,
+  "nextStatement": null,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 // Colors per category
 // 65 for unit
 // 120 for trigger
@@ -755,4 +780,4 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull,
   unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
   playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str, sendChatMessageToPlayer, break1, continue1, decreaseVariableByNumber, increaseVariableByNumber, setVariable, triggeringItem,
-  triggeringRegion, triggeringProjectile, repeat, while1]);
+  triggeringRegion, triggeringProjectile, repeat, while1, kickPlayer]);
