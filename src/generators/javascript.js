@@ -361,3 +361,19 @@ forBlock['triggeringprojectile'] = function (block, generator) {
   const code = `triggeringProjectile`;
   return code;
 };
+
+forBlock['repeat'] = function (block, generator) {
+  const times = generator.valueToCode(block, 'times', Order.NONE) || "";
+  const code1 = generator.statementToCode(block, 'code') || "";
+  
+  // Generate the function call for this block.
+  let code;
+
+  if (code1) {
+    code = `repeat (${times})\n${code1}{\n`;
+  } else {
+    code = `repeat (${times})\n\n{\n`;
+  }
+
+  return code;
+};

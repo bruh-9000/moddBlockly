@@ -128,6 +128,10 @@ export const toolbox = {
           'type': 'ifelse',
         },
         {
+          'kind': 'block',
+          'type': 'repeat',
+        },
+        {
           'kind': 'category',
           'name': 'Math',
           'categorystyle': 'procedure_category',
