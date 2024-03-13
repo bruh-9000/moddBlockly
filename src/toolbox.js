@@ -397,7 +397,64 @@ export const toolbox = {
           'name': 'Variables',
           'categorystyle': 'procedure_category',
           'contents': [
-    
+            {
+              'kind': 'block',
+              'type': 'increasevariablebynumber',
+              'inputs': {
+                'var': {
+                  'shadow': {
+                    'type': 'text',
+                    'fields': {
+                      'TEXT': "",
+                    },
+                  },
+                },
+                'num': {
+                  'shadow': {
+                    'type': 'math_number',
+                    'fields': {
+                      'NUM': 0,
+                    },
+                  },
+                },
+              },
+            },
+            {
+              'kind': 'block',
+              'type': 'decreasevariablebynumber',
+              'inputs': {
+                'var': {
+                  'shadow': {
+                    'type': 'text',
+                    'fields': {
+                      'TEXT': "",
+                    },
+                  },
+                },
+                'num': {
+                  'shadow': {
+                    'type': 'math_number',
+                    'fields': {
+                      'NUM': 0,
+                    },
+                  },
+                },
+              },
+            },
+            {
+              'kind': 'block',
+              'type': 'setvariable',
+              'inputs': {
+                'var': {
+                  'shadow': {
+                    'type': 'text',
+                    'fields': {
+                      'TEXT': "",
+                    },
+                  },
+                },
+              },
+            },
           ]
         },
       ]

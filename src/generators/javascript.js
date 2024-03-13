@@ -316,3 +316,30 @@ forBlock['continue'] = function (block, generator) {
   const code = `continue()\n`;
   return code;
 };
+
+forBlock['increasevariablebynumber'] = function (block, generator) {
+  const var1 = generator.valueToCode(block, 'var', Order.NONE) || "";
+  const number = generator.valueToCode(block, 'number', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `increaseVariableByNumber(${var1}, ${number})\n`;
+  return code;
+};
+
+forBlock['decreasevariablebynumber'] = function (block, generator) {
+  const var1 = generator.valueToCode(block, 'var', Order.NONE) || "";
+  const number = generator.valueToCode(block, 'number', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `decreaseVariableByNumber(${var1}, ${number})\n`;
+  return code;
+};
+
+forBlock['setvariable'] = function (block, generator) {
+  const var1 = generator.valueToCode(block, 'var', Order.NONE) || "";
+  const number = generator.valueToCode(block, 'value', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `setVariable(${var1}, ${number})\n`;
+  return code;
+};
