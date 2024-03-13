@@ -400,7 +400,7 @@ forBlock['kickplayer'] = function (block, generator) {
   const message = generator.valueToCode(block, 'message', Order.NONE) || "";
 
   // Generate the function call for this block.
-  const code = `kickPlayer(${player}, ${message})`;
+  const code = `kickPlayer(${player}, ${message})\n`;
   return code;
 };
 
