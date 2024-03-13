@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { FieldTextInput } from 'blockly';
 import {Order} from 'blockly/javascript';
 
 // Export all the code generators for our custom blocks,
@@ -400,5 +401,13 @@ forBlock['kickplayer'] = function (block, generator) {
 
   // Generate the function call for this block.
   const code = `kickPlayer(${player}, ${message})`;
+  return code;
+};
+
+forBlock['comment'] = function (block, generator) {
+  const text = generator.valueToCode(block, 'text', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `// ${text}\ncomment()\n`;
   return code;
 };

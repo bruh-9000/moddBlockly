@@ -763,6 +763,23 @@ const kickPlayer = {
   "helpUrl": ""
 };
 
+const comment = {
+  "type": "comment",
+  "message0": "comment %1",
+  "args0": [
+    {
+      "type": "field_input",
+      "name": "text",
+      "text": " "
+    }
+  ],
+  "colour": 230,
+  "previousStatement": null,
+  "nextStatement": null,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 // Colors per category
 // 65 for unit
 // 120 for trigger
@@ -780,4 +797,4 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull,
   unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
   playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str, sendChatMessageToPlayer, break1, continue1, decreaseVariableByNumber, increaseVariableByNumber, setVariable, triggeringItem,
-  triggeringRegion, triggeringProjectile, repeat, while1, kickPlayer]);
+  triggeringRegion, triggeringProjectile, repeat, while1, kickPlayer, comment]);

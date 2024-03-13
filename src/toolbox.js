@@ -124,20 +124,31 @@ export const toolbox = {
       'categorystyle': 'procedure_category',
       'contents': [
         {
-          'kind': 'block',
-          'type': 'ifelse',
-        },
-        {
-          'kind': 'block',
-          'type': 'repeat',
-        },
-        {
-          'kind': 'block',
-          'type': 'while',
-        },
-        {
-          'kind': 'block',
-          'type': 'colour_picker',
+          'kind': 'category',
+          'name': 'System',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'comment',
+            },
+            {
+              'kind': 'block',
+              'type': 'ifelse',
+            },
+            {
+              'kind': 'block',
+              'type': 'repeat',
+            },
+            {
+              'kind': 'block',
+              'type': 'while',
+            },
+            {
+              'kind': 'block',
+              'type': 'colour_picker',
+            },
+          ]
         },
         {
           'kind': 'category',
@@ -265,12 +276,19 @@ export const toolbox = {
       'categorystyle': 'procedure_category',
       'contents': [
         {
-          'kind': 'block',
-          'type': 'moveentity',
-        },
-        {
-          'kind': 'block',
-          'type': 'destroyentity',
+          'kind': 'category',
+          'name': 'All',
+          'categorystyle': 'procedure_category',
+          'contents': [
+            {
+              'kind': 'block',
+              'type': 'moveentity',
+            },
+            {
+              'kind': 'block',
+              'type': 'destroyentity',
+            },
+          ]
         },
         {
           'kind': 'category',
