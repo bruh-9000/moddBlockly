@@ -719,6 +719,25 @@ const repeat = {
   "helpUrl": ""
 };
 
+const while1 = {
+  "type": "while",
+  "message0": "while %1 %2",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "bool",
+      "check": "Boolean"
+    },
+    {
+      "type": "input_statement",
+      "name": "code"
+    }
+  ],
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 // Colors per category
 // 65 for unit
 // 120 for trigger
@@ -736,4 +755,4 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull,
   unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
   playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str, sendChatMessageToPlayer, break1, continue1, decreaseVariableByNumber, increaseVariableByNumber, setVariable, triggeringItem,
-  triggeringRegion, triggeringProjectile, repeat]);
+  triggeringRegion, triggeringProjectile, repeat, while1]);

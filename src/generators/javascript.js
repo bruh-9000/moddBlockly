@@ -377,3 +377,19 @@ forBlock['repeat'] = function (block, generator) {
 
   return code;
 };
+
+forBlock['while'] = function (block, generator) {
+  const bool = generator.valueToCode(block, 'bool', Order.NONE) || "";
+  const code1 = generator.statementToCode(block, 'code') || "";
+  
+  // Generate the function call for this block.
+  let code;
+
+  if (code1) {
+    code = `while (${bool})\n${code1}{\n`;
+  } else {
+    code = `while (${bool})\n\n{\n`;
+  }
+
+  return code;
+};

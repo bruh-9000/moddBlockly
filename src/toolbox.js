@@ -133,6 +133,10 @@ export const toolbox = {
         },
         {
           'kind': 'block',
+          'type': 'while',
+        },
+        {
+          'kind': 'block',
           'type': 'colour_picker',
         },
         {
