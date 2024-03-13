@@ -343,3 +343,21 @@ forBlock['setvariable'] = function (block, generator) {
   const code = `setVariable(${var1}, ${number})\n`;
   return code;
 };
+
+forBlock['triggeringregion'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `triggeringRegion`;
+  return code;
+};
+
+forBlock['triggeringitem'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `triggeringItem`;
+  return code;
+};
+
+forBlock['triggeringprojectile'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `triggeringProjectile`;
+  return code;
+};

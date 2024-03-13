@@ -288,7 +288,10 @@ export const toolbox = {
           'name': 'Item',
           'categorystyle': 'procedure_category',
           'contents': [
-    
+            {
+              'kind': 'block',
+              'type': 'triggeringitem',
+            },
           ]
         },
         {
@@ -296,7 +299,10 @@ export const toolbox = {
           'name': 'Projectile',
           'categorystyle': 'procedure_category',
           'contents': [
-    
+            {
+              'kind': 'block',
+              'type': 'triggeringprojectile',
+            },
           ]
         },
         {
@@ -304,7 +310,10 @@ export const toolbox = {
           'name': 'Region',
           'categorystyle': 'procedure_category',
           'contents': [
-    
+            {
+              'kind': 'block',
+              'type': 'triggeringregion',
+            },
           ]
         },
         {

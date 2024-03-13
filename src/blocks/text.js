@@ -656,6 +656,45 @@ const setVariable = {
   "helpUrl": ""
 };
 
+const triggeringProjectile = {
+  "type": "triggeringprojectile",
+  "message0": "triggeringProjectile %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "sub"
+    }
+  ],
+  "output": null,
+  "colour": 290,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const triggeringItem = {
+  "type": "triggeringitem",
+  "message0": "triggeringItem %1",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "sub"
+    }
+  ],
+  "output": null,
+  "colour": 290,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const triggeringRegion = {
+  "type": "triggeringregion",
+  "message0": "triggeringRegion",
+  "output": null,
+  "colour": 290,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 // Colors per category
 // 65 for unit
 // 120 for trigger
@@ -672,4 +711,5 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   [script, frameTick, secondTick, sendChatMessage, triggers, ifelse, pos, moveEntity, triggeringPlayer, owner, triggeringUnit, selectedUnit, onPostResponse, gameStart, serverShuttingDown,
   unitTouchesItem, unitPickedAnItem, unitTouchesProjectile, unitStopsUsingAnItem, unitAttacksUnit, unitSelectsItem, unitLeavesRegion, unitDroppedAnItem, unitEntersRegion, unitAttributeBecomesFull,
   unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
-  playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str, sendChatMessageToPlayer, break1, continue1, decreaseVariableByNumber, increaseVariableByNumber, setVariable]);
+  playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str, sendChatMessageToPlayer, break1, continue1, decreaseVariableByNumber, increaseVariableByNumber, setVariable, triggeringItem,
+  triggeringRegion, triggeringProjectile]);
