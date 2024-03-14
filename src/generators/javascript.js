@@ -469,3 +469,21 @@ forBlock['itemtypeofitem'] = function (block, generator) {
   const code = `.type`;
   return [code, generator.ORDER_NONE];
 };
+
+forBlock['setplayername'] = function (block, generator) {
+  const player = generator.valueToCode(block, 'player', Order.NONE) || "";
+  const name = generator.valueToCode(block, 'name', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `setPlayerName(${player}, ${name})\n`;
+  return code;
+};
+
+forBlock['setunitnamelabel'] = function (block, generator) {
+  const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
+  const name = generator.valueToCode(block, 'name', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `setUnitNameLabel(${unit}, ${name})\n`;
+  return code;
+};

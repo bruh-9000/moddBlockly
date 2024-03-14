@@ -305,6 +305,10 @@ export const toolbox = {
             },
             {
               'kind': 'block',
+              'type': 'setunitnamelabel',
+            },
+            {
+              'kind': 'block',
               'type': 'dropallitems',
             },
             {
@@ -382,6 +386,10 @@ export const toolbox = {
             {
               'kind': 'block',
               'type': 'kickplayer',
+            },
+            {
+              'kind': 'block',
+              'type': 'setplayername',
             },
             {
               'kind': 'block',
