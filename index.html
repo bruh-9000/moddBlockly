@@ -1,4 +1,12 @@
-<!doctype html><html><head><meta charset="utf-8"/><title>moddBlockly</title><script defer="defer" src="bundle.js"></script></head><body><div id="pageContainer"><div id="outputPane"><pre id="generatedCode"><code></code></pre><div id="output"></div><button onclick="copyToClipboard()" id="copyText">Copy Text</button><script>function copyToClipboard() {
+<!doctype html><html><head><meta charset="utf-8"/><title>moddBlockly</title><script defer="defer" src="bundle.js"></script></head><body><div id="pageContainer"><div id="outputPane"><pre id="generatedCode"><code></code></pre><div id="output"></div><button onclick="copyToClipboard()" id="copyText">Copy Text</button> <button onclick="save()" id="saveButton">Save</button> <button onclick="load()" id="loadButton">Load</button><script>function save() {
+
+          }
+
+          function load() {
+            
+          }
+
+          function copyToClipboard() {
             const text = document.getElementById('generatedCode').innerHTML
                 .replace(/<code>/g, "")
                 .replace(/<\/code>/g, "")
