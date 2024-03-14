@@ -352,14 +352,30 @@ forBlock['triggeringregion'] = function (block, generator) {
 };
 
 forBlock['triggeringitem'] = function (block, generator) {
+  const sub = generator.valueToCode(block, 'sub', Order.NONE) || "";
+  
   // Generate the function call for this block.
-  const code = `triggeringItem`;
+  let code;
+
+  if (sub) {
+    code = `triggeringItem.type`;
+  } else {
+    code = `triggeringItem`;
+  }
   return [code, generator.ORDER_NONE];
 };
 
 forBlock['triggeringprojectile'] = function (block, generator) {
+  const sub = generator.valueToCode(block, 'sub', Order.NONE) || "";
+
   // Generate the function call for this block.
-  const code = `triggeringProjectile`;
+  let code;
+
+  if (sub) {
+    code = `getProjectileTypeOfProjectile(triggeringProjectile)`;
+  } else {
+    code = `triggeringProjectile`;
+  }
   return [code, generator.ORDER_NONE];
 };
 
@@ -439,5 +455,17 @@ forBlock['getentityposition'] = function (block, generator) {
 forBlock['getentiremapregion'] = function (block, generator) {
   // Generate the function call for this block.
   const code = `getEntireMapRegion()`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['projectiletypeofprojectile'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `getProjectileTypeOfProjectile()`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['itemtypeofitem'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `.type`;
   return [code, generator.ORDER_NONE];
 };

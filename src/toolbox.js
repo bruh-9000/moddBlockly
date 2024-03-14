@@ -328,6 +328,10 @@ export const toolbox = {
           'contents': [
             {
               'kind': 'block',
+              'type': 'itemtypeofitem',
+            }, 
+            {
+              'kind': 'block',
               'type': 'triggeringitem',
             },
           ]
@@ -337,6 +341,10 @@ export const toolbox = {
           'name': 'Projectile',
           'categorystyle': 'procedure_category',
           'contents': [
+            {
+              'kind': 'block',
+              'type': 'projectiletypeofprojectile',
+            }, 
             {
               'kind': 'block',
               'type': 'triggeringprojectile',
