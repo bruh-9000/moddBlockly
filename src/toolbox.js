@@ -323,6 +323,10 @@ export const toolbox = {
               'kind': 'block',
               'type': 'lastcreatedunit',
             },
+            {
+              'kind': 'block',
+              'type': 'getplayerselectedunit',
+            },
           ]
         },
         {

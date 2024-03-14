@@ -487,3 +487,11 @@ forBlock['setunitnamelabel'] = function (block, generator) {
   const code = `setUnitNameLabel(${unit}, ${name})\n`;
   return code;
 };
+
+forBlock['getplayerselectedunit'] = function (block, generator) {
+  const player = generator.valueToCode(block, 'player', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `getPlayerSelectedUnit(${player})`;
+  return [code, generator.ORDER_NONE];
+};
