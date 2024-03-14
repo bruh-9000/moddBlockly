@@ -1,1 +1,9 @@
-<!doctype html><html><head><meta charset="utf-8"/><title>moddBlockly</title><script defer="defer" src="bundle.js"></script></head><body><div id="pageContainer"><div id="outputPane"><pre id="generatedCode"><code></code></pre><div id="output"></div></div><div id="blocklyDiv"></div></div></body></html>
+<!doctype html><html><head><meta charset="utf-8"/><title>moddBlockly</title><script defer="defer" src="bundle.js"></script></head><body><div id="pageContainer"><div id="outputPane"><pre id="generatedCode"><code></code></pre><div id="output"></div><button onclick="copyToClipboard()" id="copyText">Copy Text</button><script>function copyToClipboard() {
+            const text = document.getElementById('generatedCode').innerHTML
+                .replace(/<code>/g, "")
+                .replace(/<\/code>/g, "")
+                .replace(/<br>/g, "\n")
+                .trim();
+
+            navigator.clipboard.writeText(text)
+          }</script><img src="https://i.ibb.co/ByT4LvV/cooltext453890906460730.png" alt="moddBlockly" id="title"></div><div id="blocklyDiv"></div></div></body></html>
