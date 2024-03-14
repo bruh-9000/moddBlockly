@@ -29,11 +29,26 @@ pre, code {
     margin: 1rem;
 }
 
+#output {
+    height: 0%;
+}
+
+#title {
+    position: absolute;
+    width: 400px;
+}
+
 #generatedCode {
-    height: 50%;
+    position: absolute;
+    top: 8.5%;
+    height: 45%;
+    width: 400px;
+    bottom: 30%;
     background-color: rgb(247, 240, 228);
 }
 
-#output {
-    height: 50%;
+#copyText {
+    position: absolute;
+    width: 400px;
+    top: 57%;
 }
