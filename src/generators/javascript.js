@@ -419,3 +419,25 @@ forBlock['dropallitems'] = function (block, generator) {
   const code = `dropAllItems(${unit})\n`;
   return code;
 };
+
+forBlock['centerofregion'] = function (block, generator) {
+  const region = generator.valueToCode(block, 'region', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `centerOfRegion(${region})`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['getentityposition'] = function (block, generator) {
+  const entity = generator.valueToCode(block, 'region', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `getEntityPosition(${entity})`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['getentiremapregion'] = function (block, generator) {
+  // Generate the function call for this block.
+  const code = `getEntireMapRegion()`;
+  return [code, generator.ORDER_NONE];
+};

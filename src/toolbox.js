@@ -243,6 +243,10 @@ export const toolbox = {
                 },
               },
             },
+            {
+              'kind': 'block',
+              'type': 'getentityposition',
+            },
           ]
         },
         {
@@ -344,6 +348,14 @@ export const toolbox = {
           'name': 'Region',
           'categorystyle': 'procedure_category',
           'contents': [
+            {
+              'kind': 'block',
+              'type': 'getentiremapregion',
+            },
+            {
+              'kind': 'block',
+              'type': 'centerofregion',
+            },
             {
               'kind': 'block',
               'type': 'triggeringregion',
