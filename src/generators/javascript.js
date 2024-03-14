@@ -405,7 +405,7 @@ forBlock['kickplayer'] = function (block, generator) {
 };
 
 forBlock['comment'] = function (block, generator) {
-  const text = generator.valueToCode(block, 'text', Order.NONE) || "";
+  const text = block.getFieldValue('text') || "";
 
   // Generate the function call for this block.
   const code = `// ${text}\ncomment()\n`;
