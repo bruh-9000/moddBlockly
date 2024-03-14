@@ -372,9 +372,9 @@ forBlock['triggeringprojectile'] = function (block, generator) {
   let code;
 
   if (sub) {
-    code = `getProjectileTypeOfProjectile(triggeringProjectile)`;
+    code = `getProjectileTypeOfProjectile(triggeringProj)`;
   } else {
-    code = `triggeringProjectile`;
+    code = `triggeringProj`;
   }
   return [code, generator.ORDER_NONE];
 };
