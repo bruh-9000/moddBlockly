@@ -517,7 +517,7 @@ const num2str = {
     }
   ],
   "colour": 160,
-  "output": "Number",
+  "output": "String",
   "tooltip": "",
   "helpUrl": ""
 };
@@ -533,7 +533,7 @@ const str2num = {
     }
   ],
   "colour": 230,
-  "output": "String",
+  "output": "Number",
   "tooltip": "",
   "helpUrl": ""
 };
