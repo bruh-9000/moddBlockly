@@ -40,15 +40,26 @@ pre, code {
 
 #generatedCode {
     position: absolute;
-    top: 8.5%;
+    top: 80px;
     height: 45%;
     width: 400px;
-    bottom: 30%;
     background-color: rgb(247, 240, 228);
 }
 
 #copyText {
     position: absolute;
     width: 400px;
-    top: 57%;
+    top: calc(45% + 110px)
+}
+
+#saveButton {
+    position: absolute;
+    width: 400px;
+    top: calc(45% + 140px)
+}
+
+#loadButton {
+    position: absolute;
+    width: 400px;
+    top: calc(45% + 170px)
 }
