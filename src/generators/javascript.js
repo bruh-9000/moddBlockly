@@ -445,7 +445,7 @@ forBlock['centerofregion'] = function (block, generator) {
 };
 
 forBlock['getentityposition'] = function (block, generator) {
-  const entity = generator.valueToCode(block, 'region', Order.NONE) || "";
+  const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
 
   // Generate the function call for this block.
   const code = `getEntityPosition(${entity})`;

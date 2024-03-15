@@ -736,6 +736,8 @@ const while1 = {
     }
   ],
   "colour": 230,
+  "previousStatement": null,
+  "nextStatement": null,
   "tooltip": "",
   "helpUrl": ""
 };
