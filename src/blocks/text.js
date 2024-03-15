@@ -922,6 +922,26 @@ const getPlayerSelectedUnit = {
   "helpUrl": ""
 };
 
+const join = {
+  "type": "join",
+  "message0": "join %1 %2",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "text1"
+    },
+    {
+      "type": "input_value",
+      "name": "text2"
+    }
+  ],
+  "inputsInline": true,
+  "output": null,
+  "colour": 160,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 // Colors per category
 // 65 for unit
 // 120 for trigger
@@ -940,4 +960,4 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
   playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str, sendChatMessageToPlayer, break1, continue1, decreaseVariableByNumber, increaseVariableByNumber, setVariable, triggeringItem,
   triggeringRegion, triggeringProjectile, repeat, while1, kickPlayer, comment, dropAllItems, centerOfRegion, getEntireMapRegion, getEntityPosition, itemTypeOfItem, projectileTypeOfProjectile,
-  setPlayerName, setUnitNameLabel, getPlayerSelectedUnit]);
+  setPlayerName, setUnitNameLabel, getPlayerSelectedUnit, join]);

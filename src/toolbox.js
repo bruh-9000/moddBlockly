@@ -193,7 +193,7 @@ export const toolbox = {
             },
             {
               'kind': 'block',
-              'type': 'text_join',
+              'type': 'join',
             },
             {
               'kind': 'block',
