@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack serve --open --mode development"
+    "start": "webpack serve --open --mode development",
+    "buildActions": "node ./src/generators/converter.js"
   },
   "keywords": [
     "blockly"
@@ -24,6 +25,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "blockly": "^10.0.0"
+    "axios": "^1.6.8",
+    "blockly": "^10.0.0",
+    "jsonfile": "^6.1.0"
   }
 }
