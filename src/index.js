@@ -15,7 +15,6 @@ import './index.css';
 // Register the blocks and generator with Blockly
 Blockly.common.defineBlocks(blocks);
 Object.assign(javascriptGenerator.forBlock, forBlock);
-
 // Set up UI elements and inject Blockly
 const codeDiv = document.getElementById('generatedCode').firstChild;
 const outputDiv = document.getElementById('output');
@@ -27,7 +26,7 @@ const ws = Blockly.inject(blocklyDiv, {toolbox});
 // In a real application, you probably shouldn't use `eval`.
 const runCode = () => {
   const code = javascriptGenerator.workspaceToCode(ws).replace(/;\s*$/gm, '\n');
-  
+  console.log(code)
   codeDiv.innerText = code;
 
   outputDiv.innerHTML = '';

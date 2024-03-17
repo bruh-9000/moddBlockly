@@ -16,12 +16,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "item in front of unit",
         "helpUrl": ""
       });
@@ -34,6 +36,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectile",
+        
         "tooltip": "selected projectile (from the loop)",
         "helpUrl": ""
       });
@@ -44,12 +48,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "attribute",
+              "check": "Attribute",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Attributetype",
+        
         "tooltip": "attribute type of attribute",
         "helpUrl": ""
       });
@@ -60,12 +66,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ad",
+        
         "tooltip": "play video ad for player",
         "helpUrl": ""
       });
@@ -76,18 +84,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "min",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "max",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "random number",
         "helpUrl": ""
       });
@@ -98,12 +108,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "duration",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Timer",
+        
         "tooltip": "set timeout (wait, then run)",
         "helpUrl": ""
       });
@@ -114,12 +126,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "unit's facing angle",
         "helpUrl": ""
       });
@@ -132,6 +146,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "map's height",
         "helpUrl": ""
       });
@@ -142,12 +158,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "entity type",
         "helpUrl": ""
       });
@@ -160,6 +178,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "selected entity (from the loop)",
         "helpUrl": ""
       });
@@ -170,18 +190,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "rotate entity to face a position instantly (ignore physics)",
         "helpUrl": ""
       });
@@ -192,12 +214,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "destroy entity",
         "helpUrl": ""
       });
@@ -208,18 +232,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "set entity depth",
         "helpUrl": ""
       });
@@ -230,18 +256,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "slot",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "item at slot",
         "helpUrl": ""
       });
@@ -252,18 +280,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "hide unit from player",
         "helpUrl": ""
       });
@@ -274,18 +304,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "show unit to player",
         "helpUrl": ""
       });
@@ -298,6 +330,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entitygroup",
+        
         "tooltip": "entities colliding with last triggering raycast",
         "helpUrl": ""
       });
@@ -310,6 +344,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last purchased unit",
         "helpUrl": ""
       });
@@ -320,12 +356,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "message",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "send chat message",
         "helpUrl": ""
       });
@@ -336,18 +374,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "sound",
-              "check": "sound",
+              "check": "Sound",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Sound",
+        
         "tooltip": "play sound at position",
         "helpUrl": ""
       });
@@ -358,18 +398,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "x",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "y",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "xy coordinate",
         "helpUrl": ""
       });
@@ -380,18 +422,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "precision",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "number at fixed decimal places",
         "helpUrl": ""
       });
@@ -402,12 +446,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "State",
+        
         "tooltip": "current state of entity",
         "helpUrl": ""
       });
@@ -418,18 +464,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "drop item at position",
         "helpUrl": ""
       });
@@ -440,24 +488,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "force",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "apply force on entity at an angle",
         "helpUrl": ""
       });
@@ -468,18 +518,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "inputlabel",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show input modal to player",
         "helpUrl": ""
       });
@@ -490,12 +542,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "item quantity",
         "helpUrl": ""
       });
@@ -506,12 +560,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "player is logged in",
         "helpUrl": ""
       });
@@ -522,18 +578,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "dialogue",
-              "check": "dialogue",
+              "check": "Dialogue",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Dialogue",
+        
         "tooltip": "open dialogue for player",
         "helpUrl": ""
       });
@@ -546,6 +604,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "skip iteration",
         "helpUrl": ""
       });
@@ -556,18 +616,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "open website for player",
         "helpUrl": ""
       });
@@ -578,18 +640,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "lifespan",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "set entity life span",
         "helpUrl": ""
       });
@@ -602,6 +666,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "selected item (from the loop)",
         "helpUrl": ""
       });
@@ -612,12 +678,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "hide unit's name label from hostile players",
         "helpUrl": ""
       });
@@ -628,12 +696,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "set triggering unit",
         "helpUrl": ""
       });
@@ -644,30 +714,32 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "create unit at position",
         "helpUrl": ""
       });
@@ -678,12 +750,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "target",
-              "check": "updateUiText.target",
+              "check": "Updateuitext.target",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "hide overlay text for everyone",
         "helpUrl": ""
       });
@@ -694,18 +768,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "playera",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "playerb",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "players is friendly to another player",
         "helpUrl": ""
       });
@@ -716,12 +792,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "hide game suggestions",
         "helpUrl": ""
       });
@@ -732,12 +810,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "cos of an angle",
         "helpUrl": ""
       });
@@ -748,36 +828,38 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "x",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "y",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "width",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "height",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Region",
+        
         "tooltip": "transform region to [ x, y, width, height ]",
         "helpUrl": ""
       });
@@ -788,12 +870,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit invisible to friendly players",
         "helpUrl": ""
       });
@@ -804,24 +888,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "set entity attribute min value",
         "helpUrl": ""
       });
@@ -832,12 +918,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "entity height",
         "helpUrl": ""
       });
@@ -848,12 +936,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unitgroup",
+        
         "tooltip": "all units owned by player",
         "helpUrl": ""
       });
@@ -864,12 +954,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show invite friends modal to player",
         "helpUrl": ""
       });
@@ -880,18 +972,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "htmlcontent",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show custom modal to player",
         "helpUrl": ""
       });
@@ -904,6 +998,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "last player selecting a dialogue option",
         "helpUrl": ""
       });
@@ -914,18 +1010,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "player attribute max",
         "helpUrl": ""
       });
@@ -938,6 +1036,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "last triggering item",
         "helpUrl": ""
       });
@@ -948,18 +1048,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "particletype",
-              "check": "particleType",
+              "check": "Particletype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Particle",
+        
         "tooltip": "item particle",
         "helpUrl": ""
       });
@@ -970,12 +1072,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectilegroup",
+        
         "tooltip": "all projectiles attached to unit",
         "helpUrl": ""
       });
@@ -986,12 +1090,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "target",
-              "check": "updateUiText.target",
+              "check": "Updateuitext.target",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show overlay text for everyone",
         "helpUrl": ""
       });
@@ -1002,12 +1108,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemgroup",
-              "check": "itemGroup",
+              "check": "Itemgroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all items in a item group",
         "helpUrl": ""
       });
@@ -1018,18 +1126,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "playergroup",
-              "check": "playerGroup",
+              "check": "Playergroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Playergroup",
+        
         "tooltip": "remove player from player group",
         "helpUrl": ""
       });
@@ -1040,18 +1150,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "player attribute value",
         "helpUrl": ""
       });
@@ -1062,12 +1174,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "player is controlled by a human",
         "helpUrl": ""
       });
@@ -1078,18 +1192,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "set owner of a unit",
         "helpUrl": ""
       });
@@ -1102,6 +1218,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "map's width",
         "helpUrl": ""
       });
@@ -1112,18 +1230,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "item",
+              "check": "Item",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "quantity",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "update item quantity",
         "helpUrl": ""
       });
@@ -1134,24 +1254,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "force",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "apply force on entity at angle (loss tolerant)",
         "helpUrl": ""
       });
@@ -1162,18 +1284,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "state",
-              "check": "state",
+              "check": "State",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "set entity state",
         "helpUrl": ""
       });
@@ -1184,12 +1308,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "entity width",
         "helpUrl": ""
       });
@@ -1200,18 +1326,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "hide minimap unit",
         "helpUrl": ""
       });
@@ -1224,6 +1352,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemtype",
+        
         "tooltip": "selected item type (from the loop)",
         "helpUrl": ""
       });
@@ -1236,6 +1366,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "number of human players",
         "helpUrl": ""
       });
@@ -1246,12 +1378,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "item currently held by unit",
         "helpUrl": ""
       });
@@ -1264,6 +1398,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemgroup",
+        
         "tooltip": "all items dropped on ground",
         "helpUrl": ""
       });
@@ -1276,6 +1412,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "System",
+        
         "tooltip": "return",
         "helpUrl": ""
       });
@@ -1286,12 +1424,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "scriptname",
-              "check": "script",
+              "check": "Script",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Script",
+        
         "tooltip": "run script",
         "helpUrl": ""
       });
@@ -1302,18 +1442,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unitgroup",
-              "check": "unitGroup",
+              "check": "Unitgroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unitgroup",
+        
         "tooltip": "add unit to unit group",
         "helpUrl": ""
       });
@@ -1326,6 +1468,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Playergroup",
+        
         "tooltip": "human players",
         "helpUrl": ""
       });
@@ -1338,6 +1482,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "last used item",
         "helpUrl": ""
       });
@@ -1348,12 +1494,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "last player custom input",
         "helpUrl": ""
       });
@@ -1364,12 +1512,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "arctan of angle",
         "helpUrl": ""
       });
@@ -1380,18 +1530,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "texta",
-              "check": "string,number",
+              "check": [String,Number],
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "textb",
-              "check": "string,number",
+              "check": [String,Number],
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "concatenate",
         "helpUrl": ""
       });
@@ -1402,12 +1554,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "name of player",
         "helpUrl": ""
       });
@@ -1418,12 +1572,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "projectile",
+              "check": "Projectile",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "source item of projectile",
         "helpUrl": ""
       });
@@ -1434,12 +1590,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unittype",
+        
         "tooltip": "unit type of unit",
         "helpUrl": ""
       });
@@ -1450,12 +1608,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemtype",
+        
         "tooltip": "item type of item",
         "helpUrl": ""
       });
@@ -1468,6 +1628,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Region",
+        
         "tooltip": "last triggering region",
         "helpUrl": ""
       });
@@ -1478,18 +1640,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "zoom",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Camera",
+        
         "tooltip": "set player camera zoom",
         "helpUrl": ""
       });
@@ -1500,12 +1664,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "math floor",
         "helpUrl": ""
       });
@@ -1516,18 +1682,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "name",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "set unit name label",
         "helpUrl": ""
       });
@@ -1538,12 +1706,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "name of unit type",
         "helpUrl": ""
       });
@@ -1554,18 +1724,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "shop",
-              "check": "shop",
+              "check": "Shop",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Shop",
+        
         "tooltip": "open shop for player",
         "helpUrl": ""
       });
@@ -1576,12 +1748,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "y-coordinate of region",
         "helpUrl": ""
       });
@@ -1592,12 +1766,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "square root",
         "helpUrl": ""
       });
@@ -1608,12 +1784,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Dialogue",
+        
         "tooltip": "close dialogue for player",
         "helpUrl": ""
       });
@@ -1626,6 +1804,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "comment",
         "helpUrl": ""
       });
@@ -1636,42 +1816,44 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "height",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "width",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "create entity at position",
         "helpUrl": ""
       });
@@ -1682,18 +1864,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "variable",
-              "check": "variable",
+              "check": "Variable",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "increase variable by number",
         "helpUrl": ""
       });
@@ -1704,12 +1888,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "mouse cursor position",
         "helpUrl": ""
       });
@@ -1722,6 +1908,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last overlapping unit",
         "helpUrl": ""
       });
@@ -1734,6 +1922,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemgroup",
+        
         "tooltip": "all items in the game",
         "helpUrl": ""
       });
@@ -1744,12 +1934,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemgroup",
+        
         "tooltip": "all items attached to unit",
         "helpUrl": ""
       });
@@ -1762,6 +1954,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Region",
+        
         "tooltip": "entire map region",
         "helpUrl": ""
       });
@@ -1772,18 +1966,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Camera",
+        
         "tooltip": "make player camera to track a unit",
         "helpUrl": ""
       });
@@ -1794,18 +1990,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "abilityname",
-              "check": "ability",
+              "check": "Ability",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit cast ability once",
         "helpUrl": ""
       });
@@ -1816,18 +2014,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "playera",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "playerb",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "player is hostile against another player",
         "helpUrl": ""
       });
@@ -1838,12 +2038,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemgroup",
+        
         "tooltip": "all items owned by unit",
         "helpUrl": ""
       });
@@ -1856,6 +2058,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Playergroup",
+        
         "tooltip": "computer players",
         "helpUrl": ""
       });
@@ -1866,18 +2070,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "animation",
-              "check": "animationType",
+              "check": "Animationtype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "play entity's animation",
         "helpUrl": ""
       });
@@ -1888,12 +2094,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "conditions",
-              "check": "conditions",
+              "check": "Conditions",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "while",
         "helpUrl": ""
       });
@@ -1906,6 +2114,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entitygroup",
+        
         "tooltip": "all entities in the game",
         "helpUrl": ""
       });
@@ -1918,6 +2128,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unittype",
+        
         "tooltip": "unit type of last purchased unit",
         "helpUrl": ""
       });
@@ -1928,24 +2140,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "forcex",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "forcey",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "apply force on entity XY",
         "helpUrl": ""
       });
@@ -1956,24 +2170,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "color",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "show unit in minimap",
         "helpUrl": ""
       });
@@ -1984,12 +2200,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "save player data",
         "helpUrl": ""
       });
@@ -2000,18 +2218,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "hide unit's name label from player",
         "helpUrl": ""
       });
@@ -2022,18 +2242,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "regiona",
-              "check": "region",
+              "check": "Region",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "regionb",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "region overlaps with region",
         "helpUrl": ""
       });
@@ -2046,6 +2268,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemtypegroup",
+        
         "tooltip": "all item types in game",
         "helpUrl": ""
       });
@@ -2058,6 +2282,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "last triggering player",
         "helpUrl": ""
       });
@@ -2068,12 +2294,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "projectile",
+              "check": "Projectile",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectiletype",
+        
         "tooltip": "projectile type of projectile",
         "helpUrl": ""
       });
@@ -2086,6 +2314,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Playergroup",
+        
         "tooltip": "All players including both human, bot, and computer players",
         "helpUrl": ""
       });
@@ -2096,24 +2326,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "set player attribute value",
         "helpUrl": ""
       });
@@ -2124,24 +2356,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "target",
-              "check": "updateUiText.target",
+              "check": "Updateuitext.target",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "update overlay text for player",
         "helpUrl": ""
       });
@@ -2152,12 +2386,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "show unit's name label to hostile players",
         "helpUrl": ""
       });
@@ -2168,12 +2404,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Shop",
+        
         "tooltip": "close shop for player",
         "helpUrl": ""
       });
@@ -2184,12 +2422,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "count",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "repeat X times",
         "helpUrl": ""
       });
@@ -2202,6 +2442,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Sound",
+        
         "tooltip": "stop music for everyone",
         "helpUrl": ""
       });
@@ -2212,24 +2454,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "velocityx",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "velocityy",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "set velocity of entity XY",
         "helpUrl": ""
       });
@@ -2242,6 +2486,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Region",
+        
         "tooltip": "selected region (from the loop)",
         "helpUrl": ""
       });
@@ -2252,18 +2498,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "show unit's name label to player",
         "helpUrl": ""
       });
@@ -2274,18 +2522,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "create item at position",
         "helpUrl": ""
       });
@@ -2296,18 +2546,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "create item with max quantity at position",
         "helpUrl": ""
       });
@@ -2318,12 +2570,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtypegroup",
-              "check": "itemTypeGroup",
+              "check": "Itemtypegroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemtype",
+        
         "tooltip": "random item type from item type group",
         "helpUrl": ""
       });
@@ -2336,6 +2590,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last overlapped unit",
         "helpUrl": ""
       });
@@ -2346,12 +2602,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show menu",
         "helpUrl": ""
       });
@@ -2364,6 +2622,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "start accepting players",
         "helpUrl": ""
       });
@@ -2374,12 +2634,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entitygroup",
-              "check": "entityGroup",
+              "check": "Entitygroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all entities in an entity group",
         "helpUrl": ""
       });
@@ -2390,18 +2652,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "make player select unit",
         "helpUrl": ""
       });
@@ -2412,24 +2676,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "set entity attribute value",
         "helpUrl": ""
       });
@@ -2442,6 +2708,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "last created item",
         "helpUrl": ""
       });
@@ -2454,6 +2722,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectile",
+        
         "tooltip": "last created projectile",
         "helpUrl": ""
       });
@@ -2464,12 +2734,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtypegroup",
-              "check": "itemTypeGroup",
+              "check": "Itemtypegroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all item types in an item type group",
         "helpUrl": ""
       });
@@ -2480,42 +2752,44 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "height",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "width",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "create unit at position with dimension",
         "helpUrl": ""
       });
@@ -2528,6 +2802,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "number of all units in the game",
         "helpUrl": ""
       });
@@ -2540,6 +2816,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last touching unit",
         "helpUrl": ""
       });
@@ -2552,6 +2830,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "last overlapping item",
         "helpUrl": ""
       });
@@ -2562,18 +2842,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "slot",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "item in inventory slot of unit",
         "helpUrl": ""
       });
@@ -2584,18 +2866,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "target",
-              "check": "updateUiText.target",
+              "check": "Updateuitext.target",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "update overlay text for everyone",
         "helpUrl": ""
       });
@@ -2606,12 +2890,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "projectilegroup",
-              "check": "projectileGroup",
+              "check": "Projectilegroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all projectiles in a projectile group",
         "helpUrl": ""
       });
@@ -2622,12 +2908,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Playertype",
+        
         "tooltip": "player type of player",
         "helpUrl": ""
       });
@@ -2638,18 +2926,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "positiona",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "positionb",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "angle between positions",
         "helpUrl": ""
       });
@@ -2660,12 +2950,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Music",
+        
         "tooltip": "stop music for player",
         "helpUrl": ""
       });
@@ -2676,18 +2968,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Camera",
+        
         "tooltip": "make camera look at position",
         "helpUrl": ""
       });
@@ -2698,30 +2992,32 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "projectiletype",
-              "check": "projectileType",
+              "check": "Projectiletype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "force",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectile",
+        
         "tooltip": "create projectile at position",
         "helpUrl": ""
       });
@@ -2732,12 +3028,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "width of region",
         "helpUrl": ""
       });
@@ -2748,12 +3046,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show menu and select currently connected server",
         "helpUrl": ""
       });
@@ -2764,12 +3064,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "projectile",
+              "check": "Projectile",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "source unit of projectile",
         "helpUrl": ""
       });
@@ -2780,24 +3082,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "text",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "color",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "set fading text of unit",
         "helpUrl": ""
       });
@@ -2808,18 +3112,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "scale",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "change scale of entity's body",
         "helpUrl": ""
       });
@@ -2830,12 +3136,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Region",
+        
         "tooltip": "entity bounds",
         "helpUrl": ""
       });
@@ -2846,18 +3154,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "entity attribute min",
         "helpUrl": ""
       });
@@ -2868,12 +3178,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "regiongroup",
-              "check": "regionGroup",
+              "check": "Regiongroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all regions in a region group",
         "helpUrl": ""
       });
@@ -2884,18 +3196,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "radians",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "rotate entity to radians (loss tolerant)",
         "helpUrl": ""
       });
@@ -2906,12 +3220,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "number converted from string",
         "helpUrl": ""
       });
@@ -2922,24 +3238,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attributetype",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "set player attribute max value",
         "helpUrl": ""
       });
@@ -2950,24 +3268,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attributetype",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "set player attribute regeneration rate",
         "helpUrl": ""
       });
@@ -2978,18 +3298,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unittypegroup",
-              "check": "unitTypeGroup",
+              "check": "Unittypegroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "quantity of unit type in unit type group",
         "helpUrl": ""
       });
@@ -3000,12 +3322,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittypegroup",
-              "check": "unitTypeGroup",
+              "check": "Unittypegroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all unit types in a unit type group",
         "helpUrl": ""
       });
@@ -3016,12 +3340,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "center of region",
         "helpUrl": ""
       });
@@ -3032,12 +3358,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "get entity last raycast collision position",
         "helpUrl": ""
       });
@@ -3048,18 +3376,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "variable",
-              "check": "variable",
+              "check": "Variable",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "decrease variable by number",
         "helpUrl": ""
       });
@@ -3070,12 +3400,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "y-coordinate of position",
         "helpUrl": ""
       });
@@ -3088,6 +3420,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last ability casting unit",
         "helpUrl": ""
       });
@@ -3100,6 +3434,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last touched unit",
         "helpUrl": ""
       });
@@ -3112,6 +3448,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Particle",
+        
         "tooltip": "selected particle",
         "helpUrl": ""
       });
@@ -3122,12 +3460,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unitgroup",
+        
         "tooltip": "all units attached to unit",
         "helpUrl": ""
       });
@@ -3138,18 +3478,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "message",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "kick player",
         "helpUrl": ""
       });
@@ -3160,12 +3502,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "playergroup",
-              "check": "playerGroup",
+              "check": "Playergroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all players in a player group",
         "helpUrl": ""
       });
@@ -3176,18 +3520,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unitgroup",
-              "check": "unitGroup",
+              "check": "Unitgroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unitgroup",
+        
         "tooltip": "remove unit from unit group",
         "helpUrl": ""
       });
@@ -3198,18 +3544,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "playera",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "playerb",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "player is neutral to another player",
         "helpUrl": ""
       });
@@ -3220,18 +3568,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "positiona",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "positionb",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "distance between positions",
         "helpUrl": ""
       });
@@ -3242,18 +3592,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "flip",
-              "check": "flip",
+              "check": "Flip",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "flip entity sprite",
         "helpUrl": ""
       });
@@ -3264,12 +3616,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit invisible to neutral players",
         "helpUrl": ""
       });
@@ -3280,18 +3634,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "entity attribute max",
         "helpUrl": ""
       });
@@ -3302,12 +3658,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "entity position",
         "helpUrl": ""
       });
@@ -3318,12 +3676,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "player has adblock enabled",
         "helpUrl": ""
       });
@@ -3334,12 +3694,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "save unit data",
         "helpUrl": ""
       });
@@ -3350,18 +3712,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "torque",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "apply torque on entity",
         "helpUrl": ""
       });
@@ -3372,18 +3736,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "give new item to unit",
         "helpUrl": ""
       });
@@ -3394,18 +3760,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "player attribute min",
         "helpUrl": ""
       });
@@ -3416,12 +3784,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "start using item",
         "helpUrl": ""
       });
@@ -3432,18 +3802,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "move entity",
         "helpUrl": ""
       });
@@ -3454,24 +3826,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "variablename",
-              "check": "variable",
+              "check": "Variable",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "start",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "stop",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for loop",
         "helpUrl": ""
       });
@@ -3482,12 +3856,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "sin of an angle",
         "helpUrl": ""
       });
@@ -3498,12 +3874,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "x-coordinate of region",
         "helpUrl": ""
       });
@@ -3514,12 +3892,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show menu and select best server",
         "helpUrl": ""
       });
@@ -3530,18 +3910,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "variable",
-              "check": "entityVariable",
+              "check": "Entityvariable",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        
+        
         "tooltip": "entity variable",
         "helpUrl": ""
       });
@@ -3552,12 +3934,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entitygroup",
+        
         "tooltip": "entities in region",
         "helpUrl": ""
       });
@@ -3568,24 +3952,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "forcex",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "forcey",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "apply force on entity XY relative to its facing angle",
         "helpUrl": ""
       });
@@ -3596,24 +3982,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "forcex",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "forcey",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "apply force on entity XY (loss tolerant)",
         "helpUrl": ""
       });
@@ -3624,18 +4012,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "targetingentity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "attach entity to entity",
         "helpUrl": ""
       });
@@ -3646,12 +4036,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "entity exists",
         "helpUrl": ""
       });
@@ -3662,12 +4054,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "name of region",
         "helpUrl": ""
       });
@@ -3680,6 +4074,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        
+        
         "tooltip": "undefined value",
         "helpUrl": ""
       });
@@ -3690,12 +4086,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "mute player from chat",
         "helpUrl": ""
       });
@@ -3706,12 +4104,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "get entity velocity y",
         "helpUrl": ""
       });
@@ -3724,6 +4124,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unittypegroup",
+        
         "tooltip": "all unit types in game",
         "helpUrl": ""
       });
@@ -3734,12 +4136,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "x-coordinate of position",
         "helpUrl": ""
       });
@@ -3750,12 +4154,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "random position in region",
         "helpUrl": ""
       });
@@ -3768,6 +4174,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectile",
+        
         "tooltip": "last triggering projectile",
         "helpUrl": ""
       });
@@ -3778,18 +4186,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "particletype",
-              "check": "particleType",
+              "check": "Particletype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Particle",
+        
         "tooltip": "unit particle",
         "helpUrl": ""
       });
@@ -3800,18 +4210,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "change unit type",
         "helpUrl": ""
       });
@@ -3822,18 +4234,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "playergroup",
-              "check": "playerGroup",
+              "check": "Playergroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Playergroup",
+        
         "tooltip": "add player to player group",
         "helpUrl": ""
       });
@@ -3844,18 +4258,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "music",
-              "check": "music",
+              "check": "Music",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Music",
+        
         "tooltip": "play music for player repeatedly",
         "helpUrl": ""
       });
@@ -3866,12 +4282,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "show game suggestions",
         "helpUrl": ""
       });
@@ -3882,18 +4300,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "positionx",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "positiony",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "is position in wall",
         "helpUrl": ""
       });
@@ -3904,30 +4324,32 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "width",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "height",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "distance",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entitygroup",
+        
         "tooltip": "entities in region[width, height] in front of entity at distance",
         "helpUrl": ""
       });
@@ -3938,24 +4360,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "set entity attribute regeneration rate",
         "helpUrl": ""
       });
@@ -3966,12 +4390,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "player's last played time",
         "helpUrl": ""
       });
@@ -3982,18 +4408,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "selectedUnit",
+              "check": "Selectedunit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "slotindex",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit select item at slot",
         "helpUrl": ""
       });
@@ -4004,12 +4432,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "name of item type",
         "helpUrl": ""
       });
@@ -4020,18 +4450,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "num1",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "num2",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "maximum value between two numbers",
         "helpUrl": ""
       });
@@ -4044,6 +4476,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last created unit",
         "helpUrl": ""
       });
@@ -4054,12 +4488,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "rotate speed of unit type",
         "helpUrl": ""
       });
@@ -4070,12 +4506,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "owner of item",
         "helpUrl": ""
       });
@@ -4088,6 +4526,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unitgroup",
+        
         "tooltip": "all units in the game",
         "helpUrl": ""
       });
@@ -4098,12 +4538,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "stop using item",
         "helpUrl": ""
       });
@@ -4114,12 +4556,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit visible to hostile players",
         "helpUrl": ""
       });
@@ -4130,12 +4574,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit invisible to hostile players",
         "helpUrl": ""
       });
@@ -4148,6 +4594,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "break",
         "helpUrl": ""
       });
@@ -4158,12 +4606,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "ammo in current magazine of item",
         "helpUrl": ""
       });
@@ -4174,12 +4624,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "height of region",
         "helpUrl": ""
       });
@@ -4190,18 +4642,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "scale",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "change scale of entity's sprite",
         "helpUrl": ""
       });
@@ -4212,24 +4666,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "fromindex",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "toindex",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "substring of",
         "helpUrl": ""
       });
@@ -4240,18 +4696,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "name",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "set player name",
         "helpUrl": ""
       });
@@ -4262,24 +4720,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "selectedUnit",
+              "check": "Selectedunit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "slotindex",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit pick up item at slot",
         "helpUrl": ""
       });
@@ -4290,18 +4750,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "selectedUnit",
+              "check": "Selectedunit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "slotindex",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "drop item in inventory at slot",
         "helpUrl": ""
       });
@@ -4312,18 +4774,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "sourcestring",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "patternstring",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "string contains string",
         "helpUrl": ""
       });
@@ -4334,12 +4798,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "item quantity (max)",
         "helpUrl": ""
       });
@@ -4350,12 +4816,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "unmute player from chat",
         "helpUrl": ""
       });
@@ -4366,12 +4834,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "absolute value of number",
         "helpUrl": ""
       });
@@ -4382,18 +4852,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "change description of item",
         "helpUrl": ""
       });
@@ -4406,6 +4878,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last triggering unit",
         "helpUrl": ""
       });
@@ -4416,12 +4890,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "owner of a unit",
         "helpUrl": ""
       });
@@ -4434,6 +4910,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "selected player (from the loop)",
         "helpUrl": ""
       });
@@ -4446,6 +4924,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "last touched item",
         "helpUrl": ""
       });
@@ -4458,6 +4938,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectile",
+        
         "tooltip": "last touched projectile",
         "helpUrl": ""
       });
@@ -4468,12 +4950,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unitgroup",
+        
         "tooltip": "all units attached to item",
         "helpUrl": ""
       });
@@ -4484,18 +4968,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "message",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "send chat message to player",
         "helpUrl": ""
       });
@@ -4508,6 +4994,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ad",
+        
         "tooltip": "play video ad for everyone",
         "helpUrl": ""
       });
@@ -4518,18 +5006,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "target",
-              "check": "updateUiText.target",
+              "check": "Updateuitext.target",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "hide overlay text for player",
         "helpUrl": ""
       });
@@ -4540,18 +5030,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "target",
-              "check": "updateUiText.target",
+              "check": "Updateuitext.target",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show overlay text for player",
         "helpUrl": ""
       });
@@ -4562,12 +5054,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "music",
-              "check": "music",
+              "check": "Music",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Music",
+        
         "tooltip": "play music for everyone",
         "helpUrl": ""
       });
@@ -4578,18 +5072,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "playertype",
-              "check": "playerType",
+              "check": "Playertype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "assign player to player type",
         "helpUrl": ""
       });
@@ -4602,6 +5098,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectilegroup",
+        
         "tooltip": "all projectiles in the game",
         "helpUrl": ""
       });
@@ -4612,18 +5110,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "music",
-              "check": "music",
+              "check": "Music",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Music",
+        
         "tooltip": "play music for player",
         "helpUrl": ""
       });
@@ -4634,12 +5134,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "conditions",
-              "check": "conditions",
+              "check": "Conditions",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "System",
+        
         "tooltip": "if / else / then",
         "helpUrl": ""
       });
@@ -4650,12 +5152,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit visible to neutral players",
         "helpUrl": ""
       });
@@ -4666,12 +5170,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit visible to friendly players",
         "helpUrl": ""
       });
@@ -4682,18 +5188,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "selectedUnit",
+              "check": "Selectedunit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "make unit pick up item",
         "helpUrl": ""
       });
@@ -4704,30 +5212,32 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "x",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "y",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "width",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "height",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Region",
+        
         "tooltip": "dynamic region [ x, y, width, height ]",
         "helpUrl": ""
       });
@@ -4738,18 +5248,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "entity attribute value",
         "helpUrl": ""
       });
@@ -4762,6 +5274,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "current time",
         "helpUrl": ""
       });
@@ -4772,24 +5286,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "give new item to unit with quantity",
         "helpUrl": ""
       });
@@ -4800,12 +5316,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "get entity velocity x",
         "helpUrl": ""
       });
@@ -4816,12 +5334,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "default quantity of item type",
         "helpUrl": ""
       });
@@ -4832,18 +5352,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "itemtypegroup",
-              "check": "itemTypeGroup",
+              "check": "Itemtypegroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "quantity of item type in item type group",
         "helpUrl": ""
       });
@@ -4854,12 +5376,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittypegroup",
-              "check": "unitTypeGroup",
+              "check": "Unittypegroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unittype",
+        
         "tooltip": "random unit type from unit type group",
         "helpUrl": ""
       });
@@ -4872,6 +5396,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unittype",
+        
         "tooltip": "selected unit type (from the loop)",
         "helpUrl": ""
       });
@@ -4884,6 +5410,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "number of items present",
         "helpUrl": ""
       });
@@ -4894,18 +5422,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "num1",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "num2",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "minimum value between two numbers",
         "helpUrl": ""
       });
@@ -4918,6 +5448,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "selected unit (from the loop)",
         "helpUrl": ""
       });
@@ -4930,6 +5462,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectile",
+        
         "tooltip": "last overlapping projectile",
         "helpUrl": ""
       });
@@ -4942,6 +5476,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Attribute",
+        
         "tooltip": "last triggering attribute",
         "helpUrl": ""
       });
@@ -4952,12 +5488,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unitgroup",
+        
         "tooltip": "all units mounted on unit",
         "helpUrl": ""
       });
@@ -4968,12 +5506,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unitgroup",
+        
         "tooltip": "all units in region",
         "helpUrl": ""
       });
@@ -4984,12 +5524,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "drop all items",
         "helpUrl": ""
       });
@@ -5000,12 +5542,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "use item once",
         "helpUrl": ""
       });
@@ -5018,6 +5562,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "stop accepting players",
         "helpUrl": ""
       });
@@ -5028,24 +5574,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "speed",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "set entity velocity at angle",
         "helpUrl": ""
       });
@@ -5056,24 +5604,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "set entity attribute max value",
         "helpUrl": ""
       });
@@ -5084,18 +5634,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "variable",
-              "check": "playerVariable",
+              "check": "Playervariable",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        
+        
         "tooltip": "player variable",
         "helpUrl": ""
       });
@@ -5108,6 +5660,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Regiongroup",
+        
         "tooltip": "all regions in the game",
         "helpUrl": ""
       });
@@ -5118,12 +5672,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "max quantity of item type",
         "helpUrl": ""
       });
@@ -5134,12 +5690,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "angle between player mouse cursor and center of window",
         "helpUrl": ""
       });
@@ -5150,24 +5708,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attributetype",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "set player attribute min value",
         "helpUrl": ""
       });
@@ -5178,18 +5738,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "playera",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "playerb",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "make player initiate item trade with player",
         "helpUrl": ""
       });
@@ -5200,18 +5762,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "base",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "power",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "get exponent value",
         "helpUrl": ""
       });
@@ -5224,6 +5788,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last attacked unit",
         "helpUrl": ""
       });
@@ -5236,6 +5802,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "last attacking unit",
         "helpUrl": ""
       });
@@ -5246,30 +5814,32 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "target",
-              "check": "updateUiText.target",
+              "check": "Updateuitext.target",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "time",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "update overlay text for X milliseconds",
         "helpUrl": ""
       });
@@ -5280,12 +5850,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "number of units of unit type",
         "helpUrl": ""
       });
@@ -5296,18 +5868,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ai",
+        
         "tooltip": "command AI unit to move to a position",
         "helpUrl": ""
       });
@@ -5318,18 +5892,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "targetunit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ai",
+        
         "tooltip": "command AI unit to attack a unit",
         "helpUrl": ""
       });
@@ -5340,12 +5916,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "playertype",
-              "check": "playerType",
+              "check": "Playertype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "number of players of player type",
         "helpUrl": ""
       });
@@ -5356,18 +5934,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "sensor",
-              "check": "sensor",
+              "check": "Sensor",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "radius",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Sensor",
+        
         "tooltip": "change sensor radius",
         "helpUrl": ""
       });
@@ -5378,12 +5958,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "sensor",
-              "check": "sensor",
+              "check": "Sensor",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "owner unit of sensor",
         "helpUrl": ""
       });
@@ -5394,12 +5976,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Sensor",
+        
         "tooltip": "get sensor of unit",
         "helpUrl": ""
       });
@@ -5412,6 +5996,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Sensor",
+        
         "tooltip": "last triggering sensor",
         "helpUrl": ""
       });
@@ -5422,12 +6008,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "last chat message sent by player",
         "helpUrl": ""
       });
@@ -5438,18 +6026,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "apply loaded user data to player and unit",
         "helpUrl": ""
       });
@@ -5460,24 +6050,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "text",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "color",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "create floating text",
         "helpUrl": ""
       });
@@ -5488,12 +6080,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "length of string",
         "helpUrl": ""
       });
@@ -5504,12 +6098,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "set last attacked unit",
         "helpUrl": ""
       });
@@ -5520,12 +6116,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "set last attacking unit",
         "helpUrl": ""
       });
@@ -5536,18 +6134,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "set fire rate of item",
         "helpUrl": ""
       });
@@ -5558,24 +6158,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "impulsex",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "impulsey",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "apply impulse on entity XY",
         "helpUrl": ""
       });
@@ -5586,12 +6188,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "to lower case",
         "helpUrl": ""
       });
@@ -5602,18 +6206,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "sourcestring",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "patternstring",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "string starts with string",
         "helpUrl": ""
       });
@@ -5624,18 +6230,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "sourcestring",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "patternstring",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "string ends with string",
         "helpUrl": ""
       });
@@ -5646,24 +6254,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "matchstring",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "sourcestring",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "newstring",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "replace value in string",
         "helpUrl": ""
       });
@@ -5676,6 +6286,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "last attacking item",
         "helpUrl": ""
       });
@@ -5686,18 +6298,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "sound",
-              "check": "sound",
+              "check": "Sound",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "play sound for player",
         "helpUrl": ""
       });
@@ -5708,18 +6322,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "sound",
-              "check": "sound",
+              "check": "Sound",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "stop sound for player",
         "helpUrl": ""
       });
@@ -5730,18 +6346,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "inputlabel",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show dismissible input modal to player",
         "helpUrl": ""
       });
@@ -5752,12 +6370,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "seconds",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "get time string",
         "helpUrl": ""
       });
@@ -5768,18 +6388,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "name",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "set item name",
         "helpUrl": ""
       });
@@ -5790,18 +6412,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "url",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "set item inventory image",
         "helpUrl": ""
       });
@@ -5812,12 +6436,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "get item description",
         "helpUrl": ""
       });
@@ -5828,30 +6454,32 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "time",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "add attribute buff to unit for x seconds",
         "helpUrl": ""
       });
@@ -5862,30 +6490,32 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "time",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "add attribute % buff to unit for x seconds",
         "helpUrl": ""
       });
@@ -5896,12 +6526,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "stun unit (DEPRECATED)",
         "helpUrl": ""
       });
@@ -5912,12 +6544,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "remove stun from unit (DEPRECATED)",
         "helpUrl": ""
       });
@@ -5928,12 +6562,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "set last attacking item",
         "helpUrl": ""
       });
@@ -5944,12 +6580,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "mute player's microphone",
         "helpUrl": ""
       });
@@ -5960,12 +6598,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "unmute player's microphone",
         "helpUrl": ""
       });
@@ -5976,24 +6616,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "url",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "varname",
-              "check": "variable",
+              "check": "Variable",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "System",
+        
         "tooltip": "send post request",
         "helpUrl": ""
       });
@@ -6004,18 +6646,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "load unit data from a string",
         "helpUrl": ""
       });
@@ -6026,18 +6670,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "load player data from string",
         "helpUrl": ""
       });
@@ -6048,12 +6694,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "get unit data",
         "helpUrl": ""
       });
@@ -6064,12 +6712,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "get player data",
         "helpUrl": ""
       });
@@ -6080,12 +6730,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "get unit id",
         "helpUrl": ""
       });
@@ -6096,12 +6748,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "get player id",
         "helpUrl": ""
       });
@@ -6112,12 +6766,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "get unit from id",
         "helpUrl": ""
       });
@@ -6128,12 +6784,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Player",
+        
         "tooltip": "get player from id",
         "helpUrl": ""
       });
@@ -6144,12 +6802,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "get json array length",
         "helpUrl": ""
       });
@@ -6160,18 +6820,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "get json array element",
         "helpUrl": ""
       });
@@ -6182,18 +6844,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "insert element into json array",
         "helpUrl": ""
       });
@@ -6204,24 +6868,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "update json array element",
         "helpUrl": ""
       });
@@ -6232,18 +6898,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "remove json array element",
         "helpUrl": ""
       });
@@ -6254,12 +6922,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "remove all attribute buffs from unit",
         "helpUrl": ""
       });
@@ -6270,18 +6940,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Item",
+        
         "tooltip": "change item inventory slot color",
         "helpUrl": ""
       });
@@ -6292,18 +6964,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "projectile",
-              "check": "projectile",
+              "check": "Projectile",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectile",
+        
         "tooltip": "set source unit of a projectile",
         "helpUrl": ""
       });
@@ -6316,6 +6990,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "this entity (of entity-script)",
         "helpUrl": ""
       });
@@ -6326,12 +7002,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "name of entity",
         "helpUrl": ""
       });
@@ -6342,12 +7020,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "selected inventory slot",
         "helpUrl": ""
       });
@@ -6358,12 +7038,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "log (base 10)",
         "helpUrl": ""
       });
@@ -6374,12 +7056,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "name",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ai",
+        
         "tooltip": "add a new bot player",
         "helpUrl": ""
       });
@@ -6392,6 +7076,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Playergroup",
+        
         "tooltip": "bot players",
         "helpUrl": ""
       });
@@ -6402,12 +7088,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ai",
+        
         "tooltip": "enable AI",
         "helpUrl": ""
       });
@@ -6418,12 +7106,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ai",
+        
         "tooltip": "disable AI",
         "helpUrl": ""
       });
@@ -6434,12 +7124,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "unit has AI enabled",
         "helpUrl": ""
       });
@@ -6450,12 +7142,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "player is controlled by a bot",
         "helpUrl": ""
       });
@@ -6466,12 +7160,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "player is controlled by computer",
         "helpUrl": ""
       });
@@ -6482,18 +7178,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "positiona",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "positionb",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entitygroup",
+        
         "tooltip": "entities between two positions",
         "helpUrl": ""
       });
@@ -6504,12 +7202,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "unit sensor radius",
         "helpUrl": ""
       });
@@ -6520,12 +7220,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ai",
+        
         "tooltip": "command AI unit to go idle",
         "helpUrl": ""
       });
@@ -6536,12 +7238,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "target unit of a unit",
         "helpUrl": ""
       });
@@ -6552,18 +7256,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "coins",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Coins",
+        
         "tooltip": "send Modd Coins to player (player pays fee)",
         "helpUrl": ""
       });
@@ -6574,12 +7280,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "words",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "add words to chat filter",
         "helpUrl": ""
       });
@@ -6590,12 +7298,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "string converted from number",
         "helpUrl": ""
       });
@@ -6606,18 +7316,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "coins",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Coins",
+        
         "tooltip": "send Modd Coins to player (owner pays fee)",
         "helpUrl": ""
       });
@@ -6628,12 +7340,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "player is the creator",
         "helpUrl": ""
       });
@@ -6644,18 +7358,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ai",
+        
         "tooltip": "set unit's max attack range",
         "helpUrl": ""
       });
@@ -6666,18 +7382,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ai",
+        
         "tooltip": "set unit's let go distance",
         "helpUrl": ""
       });
@@ -6688,18 +7406,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ai",
+        
         "tooltip": "set unit's max travel distance",
         "helpUrl": ""
       });
@@ -6710,12 +7430,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "get selected unit of player",
         "helpUrl": ""
       });
@@ -6726,12 +7448,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "convert radians to degrees",
         "helpUrl": ""
       });
@@ -6742,12 +7466,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "number",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "convert degrees into radians",
         "helpUrl": ""
       });
@@ -6758,24 +7484,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "distance",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "get position in front of position",
         "helpUrl": ""
       });
@@ -6786,30 +7514,32 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "gid",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "layer",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "x",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "y",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Multiple",
+        
         "tooltip": "edit map tile",
         "helpUrl": ""
       });
@@ -6820,12 +7550,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Multiple",
+        
         "tooltip": "load map from string",
         "helpUrl": ""
       });
@@ -6838,6 +7570,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "get map json",
         "helpUrl": ""
       });
@@ -6848,18 +7582,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "teleport entity",
         "helpUrl": ""
       });
@@ -6870,12 +7606,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "debrisgroup",
-              "check": "debrisGroup",
+              "check": "Debrisgroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all debris in a debris group",
         "helpUrl": ""
       });
@@ -6886,18 +7624,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "name",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "role name exists for player",
         "helpUrl": ""
       });
@@ -6908,24 +7648,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "particletype",
-              "check": "particleType",
+              "check": "Particletype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Particle",
+        
         "tooltip": "create particle emitter on entity",
         "helpUrl": ""
       });
@@ -6936,24 +7678,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "particletype",
-              "check": "particleType",
+              "check": "Particletype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Particle",
+        
         "tooltip": "create particle emitter at position",
         "helpUrl": ""
       });
@@ -6964,42 +7708,44 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "gid",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "layer",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "x",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "y",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "width",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "height",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Multiple",
+        
         "tooltip": "edit map tiles",
         "helpUrl": ""
       });
@@ -7010,24 +7756,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "x",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "y",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "layer",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "get map tile ID at position",
         "helpUrl": ""
       });
@@ -7038,12 +7786,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "string is a number",
         "helpUrl": ""
       });
@@ -7054,18 +7804,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "projectile",
-              "check": "projectile",
+              "check": "Projectile",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectile",
+        
         "tooltip": "set source item of a projectile",
         "helpUrl": ""
       });
@@ -7076,12 +7828,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "name",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "System",
+        
         "tooltip": "global variable by name",
         "helpUrl": ""
       });
@@ -7094,6 +7848,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "last received POST response",
         "helpUrl": ""
       });
@@ -7106,6 +7862,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "last updated variable name",
         "helpUrl": ""
       });
@@ -7116,12 +7874,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "name",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Multiple",
+        
         "tooltip": "global variable",
         "helpUrl": ""
       });
@@ -7132,12 +7892,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Object",
+        
         "tooltip": "object converted from string",
         "helpUrl": ""
       });
@@ -7148,18 +7910,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "key",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "object",
-              "check": "object",
+              "check": "Object",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Object",
+        
         "tooltip": "element from object",
         "helpUrl": ""
       });
@@ -7170,12 +7934,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "object",
-              "check": "object",
+              "check": "Object",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "string converted from object",
         "helpUrl": ""
       });
@@ -7186,18 +7952,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "key",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "object",
-              "check": "object",
+              "check": "Object",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Object",
+        
         "tooltip": "remove element from object",
         "helpUrl": ""
       });
@@ -7208,18 +7976,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "message",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Chat",
+        
         "tooltip": "make player send chat message",
         "helpUrl": ""
       });
@@ -7232,6 +8002,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Object",
+        
         "tooltip": "empty object",
         "helpUrl": ""
       });
@@ -7242,24 +8014,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "key",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "object",
-              "check": "object",
+              "check": "Object",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Object",
+        
         "tooltip": "add (string) element into object",
         "helpUrl": ""
       });
@@ -7270,12 +8044,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "object",
-              "check": "object",
+              "check": "Object",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "number of elements in object",
         "helpUrl": ""
       });
@@ -7286,24 +8062,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "key",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "object",
+              "check": "Object",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "object",
-              "check": "object",
+              "check": "Object",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Object",
+        
         "tooltip": "add (object) element into object",
         "helpUrl": ""
       });
@@ -7314,24 +8092,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "data",
-              "check": "object",
+              "check": "Object",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "url",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "varname",
-              "check": "variable",
+              "check": "Variable",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "System",
+        
         "tooltip": "send post request (new version)",
         "helpUrl": ""
       });
@@ -7342,18 +8122,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "unit is carrying an item of item type",
         "helpUrl": ""
       });
@@ -7364,18 +8146,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "ability",
-              "check": "ability",
+              "check": "Ability",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "start casting ability",
         "helpUrl": ""
       });
@@ -7386,18 +8170,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "ability",
-              "check": "ability",
+              "check": "Ability",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "stop casting ability",
         "helpUrl": ""
       });
@@ -7408,24 +8194,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "force",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "position",
-              "check": "position",
+              "check": "Position",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Entity",
+        
         "tooltip": "apply torque on entity to face position",
         "helpUrl": ""
       });
@@ -7436,24 +8224,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "region",
-              "check": "region",
+              "check": "Region",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "inside",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "alpha",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Region",
+        
         "tooltip": "change region color",
         "helpUrl": ""
       });
@@ -7464,12 +8254,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "move unit up",
         "helpUrl": ""
       });
@@ -7480,12 +8272,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "move unit down",
         "helpUrl": ""
       });
@@ -7496,12 +8290,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "move unit left",
         "helpUrl": ""
       });
@@ -7512,12 +8308,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "move unit right",
         "helpUrl": ""
       });
@@ -7528,12 +8326,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "stop unit X",
         "helpUrl": ""
       });
@@ -7544,12 +8344,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "stop unit Y",
         "helpUrl": ""
       });
@@ -7560,12 +8362,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "open backpack for player",
         "helpUrl": ""
       });
@@ -7576,12 +8380,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "close backpack for player",
         "helpUrl": ""
       });
@@ -7592,18 +8398,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "color",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "set unit name label color",
         "helpUrl": ""
       });
@@ -7616,6 +8424,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "camera position (local)",
         "helpUrl": ""
       });
@@ -7628,6 +8438,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "camera width (local)",
         "helpUrl": ""
       });
@@ -7640,6 +8452,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "camera height (local)",
         "helpUrl": ""
       });
@@ -7650,12 +8464,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unitgroup",
+        
         "tooltip": "all units of unit type",
         "helpUrl": ""
       });
@@ -7666,12 +8482,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unitgroup",
-              "check": "unitGroup",
+              "check": "Unitgroup",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all units in a unit group",
         "helpUrl": ""
       });
@@ -7682,12 +8500,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemgroup",
+        
         "tooltip": "all items of item type",
         "helpUrl": ""
       });
@@ -7698,24 +8518,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "color",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "set unit name label color for player",
         "helpUrl": ""
       });
@@ -7726,18 +8548,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "attribute",
-              "check": "attributeType",
+              "check": "Attributetype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "default attribute value of a unit type",
         "helpUrl": ""
       });
@@ -7748,12 +8572,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Camera",
+        
         "tooltip": "make player camera to stop tracking a unit",
         "helpUrl": ""
       });
@@ -7764,18 +8590,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "elementid",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "hide UI element for player",
         "helpUrl": ""
       });
@@ -7786,18 +8614,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "elementid",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "show UI element for player",
         "helpUrl": ""
       });
@@ -7808,24 +8638,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "htmlstr",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "elementid",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "set innerHTML of UI element with ID",
         "helpUrl": ""
       });
@@ -7836,12 +8668,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "last player clicked UI element ID",
         "helpUrl": ""
       });
@@ -7852,18 +8686,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "append realtime CSS for player",
         "helpUrl": ""
       });
@@ -7874,18 +8710,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "update realtime CSS for player",
         "helpUrl": ""
       });
@@ -7896,12 +8734,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "realtime CSS of player",
         "helpUrl": ""
       });
@@ -7912,12 +8752,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "math ceiling",
         "helpUrl": ""
       });
@@ -7928,12 +8770,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unit",
+        
         "tooltip": "stop moving unit",
         "helpUrl": ""
       });
@@ -7944,12 +8788,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "string",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "to upper case",
         "helpUrl": ""
       });
@@ -7960,12 +8806,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "get player high score",
         "helpUrl": ""
       });
@@ -7976,12 +8824,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unit",
-              "check": "unit",
+              "check": "Unit",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "is unit moving",
         "helpUrl": ""
       });
@@ -7992,18 +8842,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "variablenamemain",
-              "check": "variable",
+              "check": "Variable",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "variablenamesource",
-              "check": "variable",
+              "check": "Variable",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for in loop",
         "helpUrl": ""
       });
@@ -8014,24 +8866,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "classname",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "elementid",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "add class to UI element",
         "helpUrl": ""
       });
@@ -8042,24 +8896,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "classname",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "elementid",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Ui",
+        
         "tooltip": "remove class from UI Element",
         "helpUrl": ""
       });
@@ -8070,12 +8926,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "is player (local) client",
         "helpUrl": ""
       });
@@ -8086,18 +8944,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "width",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "height",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Camera",
+        
         "tooltip": "set camera deadzone (local)",
         "helpUrl": ""
       });
@@ -8108,24 +8968,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "itemType",
+              "check": "Itemtype",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "shop",
-              "check": "shop",
+              "check": "Shop",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Shop",
+        
         "tooltip": "trigger purchase of item from shop for player",
         "helpUrl": ""
       });
@@ -8136,12 +8998,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittype",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Unittype",
+        
         "tooltip": "get unit type from string id",
         "helpUrl": ""
       });
@@ -8152,12 +9016,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "itemtype",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Itemtype",
+        
         "tooltip": "get item type from string id",
         "helpUrl": ""
       });
@@ -8168,12 +9034,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "projectiletype",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectiletype",
+        
         "tooltip": "get projectile type from string id",
         "helpUrl": ""
       });
@@ -8186,6 +9054,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "mobile secondary touch position (local)",
         "helpUrl": ""
       });
@@ -8196,12 +9066,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "projectiletype",
-              "check": "projectileType",
+              "check": "Projectiletype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Projectilegroup",
+        
         "tooltip": "all projectiles of projectile type",
         "helpUrl": ""
       });
@@ -8212,12 +9084,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "unit type's default width",
         "helpUrl": ""
       });
@@ -8228,12 +9102,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "unittype",
-              "check": "unitType",
+              "check": "Unittype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "unit type's default height",
         "helpUrl": ""
       });
@@ -8244,12 +9120,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "boolean",
-              "check": "boolean",
+              "check": "Boolean",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "not value",
         "helpUrl": ""
       });
@@ -8260,12 +9138,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "is player on mobile",
         "helpUrl": ""
       });
@@ -8276,12 +9156,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "get player username",
         "helpUrl": ""
       });
@@ -8292,18 +9174,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "count",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "delay",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "repeat X times with delay",
         "helpUrl": ""
       });
@@ -8314,12 +9198,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "entity",
-              "check": "entity",
+              "check": "Entity",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "entity's facing angle",
         "helpUrl": ""
       });
@@ -8330,12 +9216,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "playertype",
-              "check": "playerType",
+              "check": "Playertype",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Playergroup",
+        
         "tooltip": "all players of player type",
         "helpUrl": ""
       });
@@ -8346,24 +9234,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "apicredentials",
-              "check": "secrets",
+              "check": "Secrets",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "data",
-              "check": "object",
+              "check": "Object",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "varname",
-              "check": "variable",
+              "check": "Variable",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "System",
+        
         "tooltip": "send secure post request",
         "helpUrl": ""
       });
@@ -8374,12 +9264,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Shop",
+        
         "tooltip": "open skin shop for player",
         "helpUrl": ""
       });
@@ -8390,12 +9282,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Shop",
+        
         "tooltip": "open skin submission page for player",
         "helpUrl": ""
       });
@@ -8406,18 +9300,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "angle",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Camera",
+        
         "tooltip": "set player camera pitch",
         "helpUrl": ""
       });
@@ -8428,12 +9324,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "name",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Region",
+        
         "tooltip": "region with matching name",
         "helpUrl": ""
       });
@@ -8444,18 +9342,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "layer",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "alpha",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Multiple",
+        
         "tooltip": "change layer opacity",
         "helpUrl": ""
       });
@@ -8466,12 +9366,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "object",
-              "check": "object",
+              "check": "Object",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Loop",
+        
         "tooltip": "for all elements in an object",
         "helpUrl": ""
       });
@@ -8484,6 +9386,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Object",
+        
         "tooltip": "selected element (from the loop)",
         "helpUrl": ""
       });
@@ -8494,18 +9398,20 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "object",
-              "check": "object",
+              "check": "Object",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "key",
-              "check": "string",
+              "check": "String",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "object contains element",
         "helpUrl": ""
       });
@@ -8518,6 +9424,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "String",
+        
         "tooltip": "selected element's key",
         "helpUrl": ""
       });
@@ -8528,24 +9436,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "music",
-              "check": "music",
+              "check": "Music",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "player",
-              "check": "player",
+              "check": "Player",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "time",
-              "check": "time",
+              "check": "Time",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Music",
+        
         "tooltip": "play music for player at time",
         "helpUrl": ""
       });
@@ -8558,6 +9468,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "get server age",
         "helpUrl": ""
       });
@@ -8570,6 +9482,8 @@ actionsDefinition.push({
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "get server start time",
         "helpUrl": ""
       });
@@ -8580,12 +9494,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "math round",
         "helpUrl": ""
       });
@@ -8596,24 +9512,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "key",
-              "check": "string",
+              "check": "String",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "object",
-              "check": "object",
+              "check": "Object",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Object",
+        
         "tooltip": "add (number) element into object",
         "helpUrl": ""
       });
@@ -8624,12 +9542,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "value",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "math sign",
         "helpUrl": ""
       });
@@ -8640,12 +9560,14 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "item",
-              "check": "item",
+              "check": "Item",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Boolean",
+        
         "tooltip": "item fires projectiles",
         "helpUrl": ""
       });
@@ -8656,24 +9578,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "valuea",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "valueb",
-              "check": "number",
+              "check": "Number",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "alpha",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Number",
+        
         "tooltip": "lerp",
         "helpUrl": ""
       });
@@ -8684,24 +9608,26 @@ actionsDefinition.push({
           {
               "type": "input_value",
               "name": "positiona",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "positionb",
-              "check": "position",
+              "check": "Position",
             },{
               "type": "input_dummy"
             },{
               "type": "input_value",
               "name": "alpha",
-              "check": "number",
+              "check": "Number",
             }
         ],
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        "output": "Position",
+        
         "tooltip": "lerp position",
         "helpUrl": ""
       });

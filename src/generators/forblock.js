@@ -1,178 +1,186 @@
-export const forBlock = {
-      getItemInFrontOfUnit: (block, generator) => {
+/**
+      * @license
+      * Copyright 2023 Google LLC
+      * SPDX-License-Identifier: Apache-2.0
+      */
+     
+     import { FieldTextInput } from 'blockly';
+     import {Order} from 'blockly/javascript';
+      export const forBlock = {
+      getiteminfrontofunit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getItemInFrontOfUnit(${entity})`
 },
-selectedProjectile: (block, generator) => {
+selectedprojectile: function (block, generator) {
   return `selectedProjectile()`
 },
-getAttributeTypeOfAttribute: (block, generator) => {
+getattributetypeofattribute: function (block, generator) {
   const entity = generator.valueToCode(block, 'attribute', Order.NONE) || "";
   return `getAttributeTypeOfAttribute(${entity})`
 },
-playAdForPlayer: (block, generator) => {
+playadforplayer: function (block, generator) {
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playAdForPlayer(${entity})`
 },
-getRandomNumberBetween: (block, generator) => {
+getrandomnumberbetween: function (block, generator) {
   const min = generator.valueToCode(block, 'number', Order.NONE) || "";
   const max = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `getRandomNumberBetween(${min, max})`
 },
-setTimeOut: (block, generator) => {
+settimeout: function (block, generator) {
   const duration = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setTimeOut(${duration})`
 },
-unitsFacingAngle: (block, generator) => {
+unitsfacingangle: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `unitsFacingAngle(${unit})`
 },
-getMapHeight: (block, generator) => {
+getmapheight: function (block, generator) {
   return `getMapHeight()`
 },
-getEntityType: (block, generator) => {
+getentitytype: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `getEntityType(${entity})`
 },
-getSelectedEntity: (block, generator) => {
+getselectedentity: function (block, generator) {
   return `getSelectedEntity()`
 },
-rotateEntityToFacePosition: (block, generator) => {
+rotateentitytofaceposition: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `rotateEntityToFacePosition(${entity, position})`
 },
-destroyEntity: (block, generator) => {
+destroyentity: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `destroyEntity(${entity})`
 },
-setEntityDepth: (block, generator) => {
+setentitydepth: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setEntityDepth(${entity, value})`
 },
-getItemAtSlot: (block, generator) => {
+getitematslot: function (block, generator) {
   const slot = generator.valueToCode(block, 'number', Order.NONE) || "";
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getItemAtSlot(${slot, unit})`
 },
-hideUnitFromPlayer: (block, generator) => {
+hideunitfromplayer: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `hideUnitFromPlayer(${entity, player})`
 },
-showUnitToPlayer: (block, generator) => {
+showunittoplayer: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showUnitToPlayer(${entity, player})`
 },
-entitiesCollidingWithLastRaycast: (block, generator) => {
+entitiescollidingwithlastraycast: function (block, generator) {
   return `entitiesCollidingWithLastRaycast()`
 },
-getLastPurchasedUnit: (block, generator) => {
+getlastpurchasedunit: function (block, generator) {
   return `getLastPurchasedUnit()`
 },
-sendChatMessage: (block, generator) => {
+sendchatmessage: function (block, generator) {
   const message = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `sendChatMessage(${message})`
 },
-playSoundAtPosition: (block, generator) => {
+playsoundatposition: function (block, generator) {
   const sound = generator.valueToCode(block, 'sound', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `playSoundAtPosition(${sound, position})`
 },
-xyCoordinate: (block, generator) => {
+xycoordinate: function (block, generator) {
   const x = generator.valueToCode(block, 'number', Order.NONE) || "";
   const y = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `xyCoordinate(${x, y})`
 },
-toFixed: (block, generator) => {
+tofixed: function (block, generator) {
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   const precision = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `toFixed(${value, precision})`
 },
-getEntityState: (block, generator) => {
+getentitystate: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `getEntityState(${entity})`
 },
-dropItemAtPosition: (block, generator) => {
+dropitematposition: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `dropItemAtPosition(${item, position})`
 },
-applyForceOnEntityAngle: (block, generator) => {
+applyforceonentityangle: function (block, generator) {
   const force = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `applyForceOnEntityAngle(${force, entity, angle})`
 },
-showInputModalToPlayer: (block, generator) => {
+showinputmodaltoplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const inputLabel = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `showInputModalToPlayer(${player, inputlabel})`
 },
-getItemQuantity: (block, generator) => {
+getitemquantity: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `getItemQuantity(${item})`
 },
-isPlayerLoggedIn: (block, generator) => {
+isplayerloggedin: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `isPlayerLoggedIn(${player})`
 },
-openDialogueForPlayer: (block, generator) => {
+opendialogueforplayer: function (block, generator) {
   const dialogue = generator.valueToCode(block, 'dialogue', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `openDialogueForPlayer(${dialogue, player})`
 },
-continue: (block, generator) => {
+continue: function (block, generator) {
   return `continue()`
 },
-openWebsiteForPlayer: (block, generator) => {
+openwebsiteforplayer: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `openWebsiteForPlayer(${string, player})`
 },
-setEntityLifeSpan: (block, generator) => {
+setentitylifespan: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const lifeSpan = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setEntityLifeSpan(${entity, lifespan})`
 },
-selectedItem: (block, generator) => {
+selecteditem: function (block, generator) {
   return `selectedItem()`
 },
-hideUnitNameLabel: (block, generator) => {
+hideunitnamelabel: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `hideUnitNameLabel(${entity})`
 },
-setTriggeringUnit: (block, generator) => {
+settriggeringunit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `setTriggeringUnit(${entity})`
 },
-createUnitAtPosition: (block, generator) => {
+createunitatposition: function (block, generator) {
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `createUnitAtPosition(${unittype, entity, position, angle})`
 },
-hideUiTextForEveryone: (block, generator) => {
+hideuitextforeveryone: function (block, generator) {
   const target = generator.valueToCode(block, 'updateUiText.target', Order.NONE) || "";
   return `hideUiTextForEveryone(${target})`
 },
-playersAreFriendly: (block, generator) => {
+playersarefriendly: function (block, generator) {
   const playerA = generator.valueToCode(block, 'player', Order.NONE) || "";
   const playerB = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playersAreFriendly(${playera, playerb})`
 },
-hideGameSuggestionsForPlayer: (block, generator) => {
+hidegamesuggestionsforplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `hideGameSuggestionsForPlayer(${player})`
 },
-cos: (block, generator) => {
+cos: function (block, generator) {
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `cos(${angle})`
 },
-transformRegionDimensions: (block, generator) => {
+transformregiondimensions: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   const x = generator.valueToCode(block, 'number', Order.NONE) || "";
   const y = generator.valueToCode(block, 'number', Order.NONE) || "";
@@ -180,210 +188,210 @@ transformRegionDimensions: (block, generator) => {
   const height = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `transformRegionDimensions(${region, x, y, width, height})`
 },
-makeUnitInvisibleToFriendlyPlayers: (block, generator) => {
+makeunitinvisibletofriendlyplayers: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `makeUnitInvisibleToFriendlyPlayers(${entity})`
 },
-setEntityAttributeMin: (block, generator) => {
+setentityattributemin: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setEntityAttributeMin(${attribute, entity, value})`
 },
-entityHeight: (block, generator) => {
+entityheight: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `entityHeight(${entity})`
 },
-allUnitsOwnedByPlayer: (block, generator) => {
+allunitsownedbyplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `allUnitsOwnedByPlayer(${player})`
 },
-showInviteFriendsModal: (block, generator) => {
+showinvitefriendsmodal: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showInviteFriendsModal(${player})`
 },
-showCustomModalToPlayer: (block, generator) => {
+showcustommodaltoplayer: function (block, generator) {
   const htmlContent = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showCustomModalToPlayer(${htmlcontent, player})`
 },
-getLastPlayerSelectingDialogueOption: (block, generator) => {
+getlastplayerselectingdialogueoption: function (block, generator) {
   return `getLastPlayerSelectingDialogueOption()`
 },
-playerAttributeMax: (block, generator) => {
+playerattributemax: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playerAttributeMax(${attribute, entity})`
 },
-getTriggeringItem: (block, generator) => {
+gettriggeringitem: function (block, generator) {
   return `getTriggeringItem()`
 },
-getItemParticle: (block, generator) => {
+getitemparticle: function (block, generator) {
   const particleType = generator.valueToCode(block, 'particleType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `getItemParticle(${particletype, entity})`
 },
-allProjectilesAttachedToUnit: (block, generator) => {
+allprojectilesattachedtounit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `allProjectilesAttachedToUnit(${entity})`
 },
-showUiTextForEveryone: (block, generator) => {
+showuitextforeveryone: function (block, generator) {
   const target = generator.valueToCode(block, 'updateUiText.target', Order.NONE) || "";
   return `showUiTextForEveryone(${target})`
 },
-forAllItems: (block, generator) => {
+forallitems: function (block, generator) {
   const itemGroup = generator.valueToCode(block, 'itemGroup', Order.NONE) || "";
   return `forAllItems(${itemgroup})`
 },
-removePlayerFromPlayerGroup: (block, generator) => {
+removeplayerfromplayergroup: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const playerGroup = generator.valueToCode(block, 'playerGroup', Order.NONE) || "";
   return `removePlayerFromPlayerGroup(${player, playergroup})`
 },
-getPlayerAttribute: (block, generator) => {
+getplayerattribute: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getPlayerAttribute(${attribute, entity})`
 },
-playerIsControlledByHuman: (block, generator) => {
+playeriscontrolledbyhuman: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playerIsControlledByHuman(${player})`
 },
-setUnitOwner: (block, generator) => {
+setunitowner: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `setUnitOwner(${unit, player})`
 },
-getMapWidth: (block, generator) => {
+getmapwidth: function (block, generator) {
   return `getMapWidth()`
 },
-updateItemQuantity: (block, generator) => {
+updateitemquantity: function (block, generator) {
   const entity = generator.valueToCode(block, 'item', Order.NONE) || "";
   const quantity = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `updateItemQuantity(${entity, quantity})`
 },
-applyForceOnEntityAngleLT: (block, generator) => {
+applyforceonentityanglelt: function (block, generator) {
   const force = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `applyForceOnEntityAngleLT(${force, entity, angle})`
 },
-setEntityState: (block, generator) => {
+setentitystate: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const state = generator.valueToCode(block, 'state', Order.NONE) || "";
   return `setEntityState(${entity, state})`
 },
-entityWidth: (block, generator) => {
+entitywidth: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `entityWidth(${entity})`
 },
-hideUnitInPlayerMinimap: (block, generator) => {
+hideunitinplayerminimap: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `hideUnitInPlayerMinimap(${unit, player})`
 },
-selectedItemType: (block, generator) => {
+selecteditemtype: function (block, generator) {
   return `selectedItemType()`
 },
-getPlayerCount: (block, generator) => {
+getplayercount: function (block, generator) {
   return `getPlayerCount()`
 },
-getItemCurrentlyHeldByUnit: (block, generator) => {
+getitemcurrentlyheldbyunit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getItemCurrentlyHeldByUnit(${entity})`
 },
-allItemsDroppedOnGround: (block, generator) => {
+allitemsdroppedonground: function (block, generator) {
   return `allItemsDroppedOnGround()`
 },
-return: (block, generator) => {
+return: function (block, generator) {
   return `return()`
 },
-runScript: (block, generator) => {
+runscript: function (block, generator) {
   const scriptName = generator.valueToCode(block, 'script', Order.NONE) || "";
   return `runScript(${scriptname})`
 },
-addUnitToUnitGroup: (block, generator) => {
+addunittounitgroup: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const unitGroup = generator.valueToCode(block, 'unitGroup', Order.NONE) || "";
   return `addUnitToUnitGroup(${unit, unitgroup})`
 },
-humanPlayers: (block, generator) => {
+humanplayers: function (block, generator) {
   return `humanPlayers()`
 },
-lastUsedItem: (block, generator) => {
+lastuseditem: function (block, generator) {
   return `lastUsedItem()`
 },
-playerCustomInput: (block, generator) => {
+playercustominput: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playerCustomInput(${player})`
 },
-arctan: (block, generator) => {
+arctan: function (block, generator) {
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `arctan(${number})`
 },
-concat: (block, generator) => {
+concat: function (block, generator) {
   const textA = generator.valueToCode(block, 'string,number', Order.NONE) || "";
   const textB = generator.valueToCode(block, 'string,number', Order.NONE) || "";
   return `concat(${texta, textb})`
 },
-getPlayerName: (block, generator) => {
+getplayername: function (block, generator) {
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getPlayerName(${entity})`
 },
-getSourceItemOfProjectile: (block, generator) => {
+getsourceitemofprojectile: function (block, generator) {
   const entity = generator.valueToCode(block, 'projectile', Order.NONE) || "";
   return `getSourceItemOfProjectile(${entity})`
 },
-getUnitTypeOfUnit: (block, generator) => {
+getunittypeofunit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getUnitTypeOfUnit(${entity})`
 },
-getItemTypeOfItem: (block, generator) => {
+getitemtypeofitem: function (block, generator) {
   const entity = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `getItemTypeOfItem(${entity})`
 },
-getTriggeringRegion: (block, generator) => {
+gettriggeringregion: function (block, generator) {
   return `getTriggeringRegion()`
 },
-playerCameraSetZoom: (block, generator) => {
+playercamerasetzoom: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const zoom = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `playerCameraSetZoom(${player, zoom})`
 },
-mathFloor: (block, generator) => {
+mathfloor: function (block, generator) {
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `mathFloor(${value})`
 },
-setUnitNameLabel: (block, generator) => {
+setunitnamelabel: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const name = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `setUnitNameLabel(${unit, name})`
 },
-getUnitTypeName: (block, generator) => {
+getunittypename: function (block, generator) {
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   return `getUnitTypeName(${unittype})`
 },
-openShopForPlayer: (block, generator) => {
+openshopforplayer: function (block, generator) {
   const shop = generator.valueToCode(block, 'shop', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `openShopForPlayer(${shop, player})`
 },
-getYCoordinateOfRegion: (block, generator) => {
+getycoordinateofregion: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `getYCoordinateOfRegion(${region})`
 },
-squareRoot: (block, generator) => {
+squareroot: function (block, generator) {
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `squareRoot(${number})`
 },
-closeDialogueForPlayer: (block, generator) => {
+closedialogueforplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `closeDialogueForPlayer(${player})`
 },
-comment: (block, generator) => {
+comment: function (block, generator) {
   return `comment()`
 },
-createEntityAtPositionWithDimensions: (block, generator) => {
+createentityatpositionwithdimensions: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
@@ -392,195 +400,195 @@ createEntityAtPositionWithDimensions: (block, generator) => {
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `createEntityAtPositionWithDimensions(${entity, position, player, height, width, angle})`
 },
-increaseVariableByNumber: (block, generator) => {
+increasevariablebynumber: function (block, generator) {
   const variable = generator.valueToCode(block, 'variable', Order.NONE) || "";
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `increaseVariableByNumber(${variable, number})`
 },
-getMouseCursorPosition: (block, generator) => {
+getmousecursorposition: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getMouseCursorPosition(${player})`
 },
-getLastOverlappingUnit: (block, generator) => {
+getlastoverlappingunit: function (block, generator) {
   return `getLastOverlappingUnit()`
 },
-allItems: (block, generator) => {
+allitems: function (block, generator) {
   return `allItems()`
 },
-allItemsAttachedToUnit: (block, generator) => {
+allitemsattachedtounit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `allItemsAttachedToUnit(${entity})`
 },
-getEntireMapRegion: (block, generator) => {
+getentiremapregion: function (block, generator) {
   return `getEntireMapRegion()`
 },
-playerCameraTrackUnit: (block, generator) => {
+playercameratrackunit: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `playerCameraTrackUnit(${player, unit})`
 },
-castAbility: (block, generator) => {
+castability: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const abilityName = generator.valueToCode(block, 'ability', Order.NONE) || "";
   return `castAbility(${entity, abilityname})`
 },
-playersAreHostile: (block, generator) => {
+playersarehostile: function (block, generator) {
   const playerA = generator.valueToCode(block, 'player', Order.NONE) || "";
   const playerB = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playersAreHostile(${playera, playerb})`
 },
-allItemsOwnedByUnit: (block, generator) => {
+allitemsownedbyunit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `allItemsOwnedByUnit(${entity})`
 },
-computerPlayers: (block, generator) => {
+computerplayers: function (block, generator) {
   return `computerPlayers()`
 },
-playEntityAnimation: (block, generator) => {
+playentityanimation: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const animation = generator.valueToCode(block, 'animationType', Order.NONE) || "";
   return `playEntityAnimation(${entity, animation})`
 },
-while: (block, generator) => {
+while: function (block, generator) {
   const conditions = generator.valueToCode(block, 'conditions', Order.NONE) || "";
   return `while(${conditions})`
 },
-allEntities: (block, generator) => {
+allentities: function (block, generator) {
   return `allEntities()`
 },
-lastPurchasedUnitTypetId: (block, generator) => {
+lastpurchasedunittypetid: function (block, generator) {
   return `lastPurchasedUnitTypetId()`
 },
-applyForceOnEntityXY: (block, generator) => {
+applyforceonentityxy: function (block, generator) {
   const forcex = generator.valueToCode(block, 'number', Order.NONE) || "";
   const forcey = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `applyForceOnEntityXY(${forcex, forcey, entity})`
 },
-showUnitInPlayerMinimap: (block, generator) => {
+showunitinplayerminimap: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const color = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showUnitInPlayerMinimap(${unit, color, player})`
 },
-savePlayerData: (block, generator) => {
+saveplayerdata: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `savePlayerData(${player})`
 },
-hideUnitNameLabelFromPlayer: (block, generator) => {
+hideunitnamelabelfromplayer: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `hideUnitNameLabelFromPlayer(${entity, player})`
 },
-regionOverlapsWithRegion: (block, generator) => {
+regionoverlapswithregion: function (block, generator) {
   const regionA = generator.valueToCode(block, 'region', Order.NONE) || "";
   const regionB = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `regionOverlapsWithRegion(${regiona, regionb})`
 },
-allItemTypesInGame: (block, generator) => {
+allitemtypesingame: function (block, generator) {
   return `allItemTypesInGame()`
 },
-getTriggeringPlayer: (block, generator) => {
+gettriggeringplayer: function (block, generator) {
   return `getTriggeringPlayer()`
 },
-getProjectileTypeOfProjectile: (block, generator) => {
+getprojectiletypeofprojectile: function (block, generator) {
   const entity = generator.valueToCode(block, 'projectile', Order.NONE) || "";
   return `getProjectileTypeOfProjectile(${entity})`
 },
-allPlayers: (block, generator) => {
+allplayers: function (block, generator) {
   return `allPlayers()`
 },
-setPlayerAttribute: (block, generator) => {
+setplayerattribute: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setPlayerAttribute(${attribute, entity, value})`
 },
-updateUiTextForPlayer: (block, generator) => {
+updateuitextforplayer: function (block, generator) {
   const target = generator.valueToCode(block, 'updateUiText.target', Order.NONE) || "";
   const value = generator.valueToCode(block, 'string', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `updateUiTextForPlayer(${target, value, entity})`
 },
-showUnitNameLabel: (block, generator) => {
+showunitnamelabel: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `showUnitNameLabel(${entity})`
 },
-closeShopForPlayer: (block, generator) => {
+closeshopforplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `closeShopForPlayer(${player})`
 },
-repeat: (block, generator) => {
+repeat: function (block, generator) {
   const count = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `repeat(${count})`
 },
-stopMusic: (block, generator) => {
+stopmusic: function (block, generator) {
   return `stopMusic()`
 },
-setVelocityOfEntityXY: (block, generator) => {
+setvelocityofentityxy: function (block, generator) {
   const velocityx = generator.valueToCode(block, 'number', Order.NONE) || "";
   const velocityy = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `setVelocityOfEntityXY(${velocityx, velocityy, entity})`
 },
-selectedRegion: (block, generator) => {
+selectedregion: function (block, generator) {
   return `selectedRegion()`
 },
-showUnitNameLabelToPlayer: (block, generator) => {
+showunitnamelabeltoplayer: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showUnitNameLabelToPlayer(${entity, player})`
 },
-spawnItem: (block, generator) => {
+spawnitem: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `spawnItem(${itemtype, position})`
 },
-createItemWithMaxQuantityAtPosition: (block, generator) => {
+createitemwithmaxquantityatposition: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `createItemWithMaxQuantityAtPosition(${itemtype, position})`
 },
-getRandomItemTypeFromItemTypeGroup: (block, generator) => {
+getrandomitemtypefromitemtypegroup: function (block, generator) {
   const itemTypeGroup = generator.valueToCode(block, 'itemTypeGroup', Order.NONE) || "";
   return `getRandomItemTypeFromItemTypeGroup(${itemtypegroup})`
 },
-getLastOverlappedUnit: (block, generator) => {
+getlastoverlappedunit: function (block, generator) {
   return `getLastOverlappedUnit()`
 },
-showMenu: (block, generator) => {
+showmenu: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showMenu(${player})`
 },
-startAcceptingPlayers: (block, generator) => {
+startacceptingplayers: function (block, generator) {
   return `startAcceptingPlayers()`
 },
-forAllEntities: (block, generator) => {
+forallentities: function (block, generator) {
   const entityGroup = generator.valueToCode(block, 'entityGroup', Order.NONE) || "";
   return `forAllEntities(${entitygroup})`
 },
-makePlayerSelectUnit: (block, generator) => {
+makeplayerselectunit: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `makePlayerSelectUnit(${player, unit})`
 },
-setEntityAttribute: (block, generator) => {
+setentityattribute: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setEntityAttribute(${attribute, entity, value})`
 },
-getLastCreatedItem: (block, generator) => {
+getlastcreateditem: function (block, generator) {
   return `getLastCreatedItem()`
 },
-getLastCreatedProjectile: (block, generator) => {
+getlastcreatedprojectile: function (block, generator) {
   return `getLastCreatedProjectile()`
 },
-forAllItemTypes: (block, generator) => {
+forallitemtypes: function (block, generator) {
   const itemTypeGroup = generator.valueToCode(block, 'itemTypeGroup', Order.NONE) || "";
   return `forAllItemTypes(${itemtypegroup})`
 },
-createEntityForPlayerAtPositionWithDimensions: (block, generator) => {
+createentityforplayeratpositionwithdimensions: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
@@ -589,1049 +597,1049 @@ createEntityForPlayerAtPositionWithDimensions: (block, generator) => {
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `createEntityForPlayerAtPositionWithDimensions(${entity, player, position, height, width, angle})`
 },
-getUnitCount: (block, generator) => {
+getunitcount: function (block, generator) {
   return `getUnitCount()`
 },
-getLastTouchingUnit: (block, generator) => {
+getlasttouchingunit: function (block, generator) {
   return `getLastTouchingUnit()`
 },
-getLastOverlappingItem: (block, generator) => {
+getlastoverlappingitem: function (block, generator) {
   return `getLastOverlappingItem()`
 },
-getItemInInventorySlot: (block, generator) => {
+getitemininventoryslot: function (block, generator) {
   const slot = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getItemInInventorySlot(${slot, entity})`
 },
-updateUiTextForEveryone: (block, generator) => {
+updateuitextforeveryone: function (block, generator) {
   const target = generator.valueToCode(block, 'updateUiText.target', Order.NONE) || "";
   const value = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `updateUiTextForEveryone(${target, value})`
 },
-forAllProjectiles: (block, generator) => {
+forallprojectiles: function (block, generator) {
   const projectileGroup = generator.valueToCode(block, 'projectileGroup', Order.NONE) || "";
   return `forAllProjectiles(${projectilegroup})`
 },
-playerTypeOfPlayer: (block, generator) => {
+playertypeofplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playerTypeOfPlayer(${player})`
 },
-angleBetweenPositions: (block, generator) => {
+anglebetweenpositions: function (block, generator) {
   const positionA = generator.valueToCode(block, 'position', Order.NONE) || "";
   const positionB = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `angleBetweenPositions(${positiona, positionb})`
 },
-stopMusicForPlayer: (block, generator) => {
+stopmusicforplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `stopMusicForPlayer(${player})`
 },
-positionCamera: (block, generator) => {
+positioncamera: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `positionCamera(${player, position})`
 },
-createProjectileAtPosition: (block, generator) => {
+createprojectileatposition: function (block, generator) {
   const projectileType = generator.valueToCode(block, 'projectileType', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   const force = generator.valueToCode(block, 'number', Order.NONE) || "";
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `createProjectileAtPosition(${projectiletype, position, force, angle})`
 },
-getWidthOfRegion: (block, generator) => {
+getwidthofregion: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `getWidthOfRegion(${region})`
 },
-showMenuAndSelectCurrentServer: (block, generator) => {
+showmenuandselectcurrentserver: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showMenuAndSelectCurrentServer(${player})`
 },
-getSourceUnitOfProjectile: (block, generator) => {
+getsourceunitofprojectile: function (block, generator) {
   const entity = generator.valueToCode(block, 'projectile', Order.NONE) || "";
   return `getSourceUnitOfProjectile(${entity})`
 },
-setFadingTextOfUnit: (block, generator) => {
+setfadingtextofunit: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const text = generator.valueToCode(block, 'string', Order.NONE) || "";
   const color = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `setFadingTextOfUnit(${unit, text, color})`
 },
-changeScaleOfEntityBody: (block, generator) => {
+changescaleofentitybody: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const scale = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `changeScaleOfEntityBody(${entity, scale})`
 },
-entityBounds: (block, generator) => {
+entitybounds: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `entityBounds(${entity})`
 },
-entityAttributeMin: (block, generator) => {
+entityattributemin: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `entityAttributeMin(${attribute, entity})`
 },
-forAllRegions: (block, generator) => {
+forallregions: function (block, generator) {
   const regionGroup = generator.valueToCode(block, 'regionGroup', Order.NONE) || "";
   return `forAllRegions(${regiongroup})`
 },
-rotateEntityToRadiansLT: (block, generator) => {
+rotateentitytoradianslt: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const radians = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `rotateEntityToRadiansLT(${entity, radians})`
 },
-stringToNumber: (block, generator) => {
+stringtonumber: function (block, generator) {
   const value = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `stringToNumber(${value})`
 },
-setPlayerAttributeMax: (block, generator) => {
+setplayerattributemax: function (block, generator) {
   const attributeType = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setPlayerAttributeMax(${attributetype, player, number})`
 },
-setPlayerAttributeRegenerationRate: (block, generator) => {
+setplayerattributeregenerationrate: function (block, generator) {
   const attributeType = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setPlayerAttributeRegenerationRate(${attributetype, player, number})`
 },
-getQuantityOfUnitTypeInUnitTypeGroup: (block, generator) => {
+getquantityofunittypeinunittypegroup: function (block, generator) {
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   const unitTypeGroup = generator.valueToCode(block, 'unitTypeGroup', Order.NONE) || "";
   return `getQuantityOfUnitTypeInUnitTypeGroup(${unittype, unittypegroup})`
 },
-forAllUnitTypes: (block, generator) => {
+forallunittypes: function (block, generator) {
   const unitTypeGroup = generator.valueToCode(block, 'unitTypeGroup', Order.NONE) || "";
   return `forAllUnitTypes(${unittypegroup})`
 },
-centerOfRegion: (block, generator) => {
+centerofregion: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `centerOfRegion(${region})`
 },
-entityLastRaycastCollisionPosition: (block, generator) => {
+entitylastraycastcollisionposition: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `entityLastRaycastCollisionPosition(${entity})`
 },
-decreaseVariableByNumber: (block, generator) => {
+decreasevariablebynumber: function (block, generator) {
   const variable = generator.valueToCode(block, 'variable', Order.NONE) || "";
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `decreaseVariableByNumber(${variable, number})`
 },
-getPositionY: (block, generator) => {
+getpositiony: function (block, generator) {
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `getPositionY(${position})`
 },
-getLastCastingUnit: (block, generator) => {
+getlastcastingunit: function (block, generator) {
   return `getLastCastingUnit()`
 },
-getLastTouchedUnit: (block, generator) => {
+getlasttouchedunit: function (block, generator) {
   return `getLastTouchedUnit()`
 },
-selectedParticle: (block, generator) => {
+selectedparticle: function (block, generator) {
   return `selectedParticle()`
 },
-allUnitsAttachedToUnit: (block, generator) => {
+allunitsattachedtounit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `allUnitsAttachedToUnit(${entity})`
 },
-kickPlayer: (block, generator) => {
+kickplayer: function (block, generator) {
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   const message = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `kickPlayer(${entity, message})`
 },
-forAllPlayers: (block, generator) => {
+forallplayers: function (block, generator) {
   const playerGroup = generator.valueToCode(block, 'playerGroup', Order.NONE) || "";
   return `forAllPlayers(${playergroup})`
 },
-removeUnitFromUnitGroup: (block, generator) => {
+removeunitfromunitgroup: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const unitGroup = generator.valueToCode(block, 'unitGroup', Order.NONE) || "";
   return `removeUnitFromUnitGroup(${unit, unitgroup})`
 },
-playersAreNeutral: (block, generator) => {
+playersareneutral: function (block, generator) {
   const playerA = generator.valueToCode(block, 'player', Order.NONE) || "";
   const playerB = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playersAreNeutral(${playera, playerb})`
 },
-distanceBetweenPositions: (block, generator) => {
+distancebetweenpositions: function (block, generator) {
   const positionA = generator.valueToCode(block, 'position', Order.NONE) || "";
   const positionB = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `distanceBetweenPositions(${positiona, positionb})`
 },
-flipEntitySprite: (block, generator) => {
+flipentitysprite: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const flip = generator.valueToCode(block, 'flip', Order.NONE) || "";
   return `flipEntitySprite(${entity, flip})`
 },
-makeUnitInvisibleToNeutralPlayers: (block, generator) => {
+makeunitinvisibletoneutralplayers: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `makeUnitInvisibleToNeutralPlayers(${entity})`
 },
-entityAttributeMax: (block, generator) => {
+entityattributemax: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `entityAttributeMax(${attribute, entity})`
 },
-getEntityPosition: (block, generator) => {
+getentityposition: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `getEntityPosition(${entity})`
 },
-playerHasAdblockEnabled: (block, generator) => {
+playerhasadblockenabled: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playerHasAdblockEnabled(${player})`
 },
-saveUnitData: (block, generator) => {
+saveunitdata: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `saveUnitData(${unit})`
 },
-applyTorqueOnEntity: (block, generator) => {
+applytorqueonentity: function (block, generator) {
   const torque = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `applyTorqueOnEntity(${torque, entity})`
 },
-giveNewItemToUnit: (block, generator) => {
+givenewitemtounit: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `giveNewItemToUnit(${itemtype, unit})`
 },
-playerAttributeMin: (block, generator) => {
+playerattributemin: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playerAttributeMin(${attribute, entity})`
 },
-startUsingItem: (block, generator) => {
+startusingitem: function (block, generator) {
   const entity = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `startUsingItem(${entity})`
 },
-moveEntity: (block, generator) => {
+moveentity: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `moveEntity(${entity, position})`
 },
-for: (block, generator) => {
+for: function (block, generator) {
   const variableName = generator.valueToCode(block, 'variable', Order.NONE) || "";
   const start = generator.valueToCode(block, 'number', Order.NONE) || "";
   const stop = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `for(${variablename, start, stop})`
 },
-sin: (block, generator) => {
+sin: function (block, generator) {
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `sin(${angle})`
 },
-getXCoordinateOfRegion: (block, generator) => {
+getxcoordinateofregion: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `getXCoordinateOfRegion(${region})`
 },
-showMenuAndSelectBestServer: (block, generator) => {
+showmenuandselectbestserver: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showMenuAndSelectBestServer(${player})`
 },
-getValueOfEntityVariable: (block, generator) => {
+getvalueofentityvariable: function (block, generator) {
   const variable = generator.valueToCode(block, 'entityVariable', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `getValueOfEntityVariable(${variable, entity})`
 },
-entitiesInRegion: (block, generator) => {
+entitiesinregion: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `entitiesInRegion(${region})`
 },
-applyForceOnEntityXYRelative: (block, generator) => {
+applyforceonentityxyrelative: function (block, generator) {
   const forcex = generator.valueToCode(block, 'number', Order.NONE) || "";
   const forcey = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `applyForceOnEntityXYRelative(${forcex, forcey, entity})`
 },
-applyForceOnEntityXYLT: (block, generator) => {
+applyforceonentityxylt: function (block, generator) {
   const forcex = generator.valueToCode(block, 'number', Order.NONE) || "";
   const forcey = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `applyForceOnEntityXYLT(${forcex, forcey, entity})`
 },
-attachEntityToEntity: (block, generator) => {
+attachentitytoentity: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const targetingEntity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `attachEntityToEntity(${entity, targetingentity})`
 },
-entityExists: (block, generator) => {
+entityexists: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `entityExists(${entity})`
 },
-nameOfRegion: (block, generator) => {
+nameofregion: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `nameOfRegion(${region})`
 },
-undefinedValue: (block, generator) => {
+undefinedvalue: function (block, generator) {
   return `undefinedValue()`
 },
-banPlayerFromChat: (block, generator) => {
+banplayerfromchat: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `banPlayerFromChat(${player})`
 },
-getEntityVelocityY: (block, generator) => {
+getentityvelocityy: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `getEntityVelocityY(${entity})`
 },
-allUnitTypesInGame: (block, generator) => {
+allunittypesingame: function (block, generator) {
   return `allUnitTypesInGame()`
 },
-getPositionX: (block, generator) => {
+getpositionx: function (block, generator) {
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `getPositionX(${position})`
 },
-getRandomPositionInRegion: (block, generator) => {
+getrandompositioninregion: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `getRandomPositionInRegion(${region})`
 },
-getTriggeringProjectile: (block, generator) => {
+gettriggeringprojectile: function (block, generator) {
   return `getTriggeringProjectile()`
 },
-getUnitParticle: (block, generator) => {
+getunitparticle: function (block, generator) {
   const particleType = generator.valueToCode(block, 'particleType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getUnitParticle(${particletype, entity})`
 },
-changeUnitType: (block, generator) => {
+changeunittype: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   return `changeUnitType(${entity, unittype})`
 },
-addPlayerToPlayerGroup: (block, generator) => {
+addplayertoplayergroup: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const playerGroup = generator.valueToCode(block, 'playerGroup', Order.NONE) || "";
   return `addPlayerToPlayerGroup(${player, playergroup})`
 },
-playMusicForPlayerRepeatedly: (block, generator) => {
+playmusicforplayerrepeatedly: function (block, generator) {
   const music = generator.valueToCode(block, 'music', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playMusicForPlayerRepeatedly(${music, player})`
 },
-showGameSuggestionsForPlayer: (block, generator) => {
+showgamesuggestionsforplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showGameSuggestionsForPlayer(${player})`
 },
-isPositionInWall: (block, generator) => {
+ispositioninwall: function (block, generator) {
   const positionx = generator.valueToCode(block, 'number', Order.NONE) || "";
   const positiony = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `isPositionInWall(${positionx, positiony})`
 },
-entitiesInRegionInFrontOfEntityAtDistance: (block, generator) => {
+entitiesinregioninfrontofentityatdistance: function (block, generator) {
   const width = generator.valueToCode(block, 'number', Order.NONE) || "";
   const height = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const distance = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `entitiesInRegionInFrontOfEntityAtDistance(${width, height, entity, distance})`
 },
-setEntityAttributeRegenerationRate: (block, generator) => {
+setentityattributeregenerationrate: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setEntityAttributeRegenerationRate(${attribute, entity, value})`
 },
-lastPlayedTimeOfPlayer: (block, generator) => {
+lastplayedtimeofplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `lastPlayedTimeOfPlayer(${player})`
 },
-makeUnitSelectItemAtSlot: (block, generator) => {
+makeunitselectitematslot: function (block, generator) {
   const unit = generator.valueToCode(block, 'selectedUnit', Order.NONE) || "";
   const slotIndex = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `makeUnitSelectItemAtSlot(${unit, slotindex})`
 },
-getItemTypeName: (block, generator) => {
+getitemtypename: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   return `getItemTypeName(${itemtype})`
 },
-getMax: (block, generator) => {
+getmax: function (block, generator) {
   const num1 = generator.valueToCode(block, 'number', Order.NONE) || "";
   const num2 = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `getMax(${num1, num2})`
 },
-getLastCreatedUnit: (block, generator) => {
+getlastcreatedunit: function (block, generator) {
   return `getLastCreatedUnit()`
 },
-getRotateSpeed: (block, generator) => {
+getrotatespeed: function (block, generator) {
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   return `getRotateSpeed(${unittype})`
 },
-getOwnerOfItem: (block, generator) => {
+getownerofitem: function (block, generator) {
   const entity = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `getOwnerOfItem(${entity})`
 },
-allUnits: (block, generator) => {
+allunits: function (block, generator) {
   return `allUnits()`
 },
-stopUsingItem: (block, generator) => {
+stopusingitem: function (block, generator) {
   const entity = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `stopUsingItem(${entity})`
 },
-makeUnitVisible: (block, generator) => {
+makeunitvisible: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `makeUnitVisible(${entity})`
 },
-makeUnitInvisible: (block, generator) => {
+makeunitinvisible: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `makeUnitInvisible(${entity})`
 },
-break: (block, generator) => {
+break: function (block, generator) {
   return `break()`
 },
-getCurrentAmmoOfItem: (block, generator) => {
+getcurrentammoofitem: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `getCurrentAmmoOfItem(${item})`
 },
-getHeightOfRegion: (block, generator) => {
+getheightofregion: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `getHeightOfRegion(${region})`
 },
-changeScaleOfEntitySprite: (block, generator) => {
+changescaleofentitysprite: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const scale = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `changeScaleOfEntitySprite(${entity, scale})`
 },
-substringOf: (block, generator) => {
+substringof: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   const fromIndex = generator.valueToCode(block, 'number', Order.NONE) || "";
   const toIndex = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `substringOf(${string, fromindex, toindex})`
 },
-setPlayerName: (block, generator) => {
+setplayername: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const name = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `setPlayerName(${player, name})`
 },
-makeUnitPickupItemAtSlot: (block, generator) => {
+makeunitpickupitematslot: function (block, generator) {
   const unit = generator.valueToCode(block, 'selectedUnit', Order.NONE) || "";
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   const slotIndex = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `makeUnitPickupItemAtSlot(${unit, item, slotindex})`
 },
-dropItemInInventorySlot: (block, generator) => {
+dropitemininventoryslot: function (block, generator) {
   const unit = generator.valueToCode(block, 'selectedUnit', Order.NONE) || "";
   const slotIndex = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `dropItemInInventorySlot(${unit, slotindex})`
 },
-subString: (block, generator) => {
+substring: function (block, generator) {
   const sourceString = generator.valueToCode(block, 'string', Order.NONE) || "";
   const patternString = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `subString(${sourcestring, patternstring})`
 },
-getItemMaxQuantity: (block, generator) => {
+getitemmaxquantity: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `getItemMaxQuantity(${item})`
 },
-unbanPlayerFromChat: (block, generator) => {
+unbanplayerfromchat: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `unbanPlayerFromChat(${player})`
 },
-absoluteValueOfNumber: (block, generator) => {
+absolutevalueofnumber: function (block, generator) {
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `absoluteValueOfNumber(${number})`
 },
-changeDescriptionOfItem: (block, generator) => {
+changedescriptionofitem: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `changeDescriptionOfItem(${item, string})`
 },
-getTriggeringUnit: (block, generator) => {
+gettriggeringunit: function (block, generator) {
   return `getTriggeringUnit()`
 },
-getOwner: (block, generator) => {
+getowner: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getOwner(${entity})`
 },
-selectedPlayer: (block, generator) => {
+selectedplayer: function (block, generator) {
   return `selectedPlayer()`
 },
-getLastTouchedItem: (block, generator) => {
+getlasttoucheditem: function (block, generator) {
   return `getLastTouchedItem()`
 },
-getLastTouchedProjectile: (block, generator) => {
+getlasttouchedprojectile: function (block, generator) {
   return `getLastTouchedProjectile()`
 },
-allUnitsAttachedToItem: (block, generator) => {
+allunitsattachedtoitem: function (block, generator) {
   const entity = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `allUnitsAttachedToItem(${entity})`
 },
-sendChatMessageToPlayer: (block, generator) => {
+sendchatmessagetoplayer: function (block, generator) {
   const message = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `sendChatMessageToPlayer(${message, player})`
 },
-playAdForEveryone: (block, generator) => {
+playadforeveryone: function (block, generator) {
   return `playAdForEveryone()`
 },
-hideUiTextForPlayer: (block, generator) => {
+hideuitextforplayer: function (block, generator) {
   const target = generator.valueToCode(block, 'updateUiText.target', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `hideUiTextForPlayer(${target, entity})`
 },
-showUiTextForPlayer: (block, generator) => {
+showuitextforplayer: function (block, generator) {
   const target = generator.valueToCode(block, 'updateUiText.target', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showUiTextForPlayer(${target, entity})`
 },
-playMusic: (block, generator) => {
+playmusic: function (block, generator) {
   const music = generator.valueToCode(block, 'music', Order.NONE) || "";
   return `playMusic(${music})`
 },
-assignPlayerType: (block, generator) => {
+assignplayertype: function (block, generator) {
   const entity = generator.valueToCode(block, 'player', Order.NONE) || "";
   const playerType = generator.valueToCode(block, 'playerType', Order.NONE) || "";
   return `assignPlayerType(${entity, playertype})`
 },
-allProjectiles: (block, generator) => {
+allprojectiles: function (block, generator) {
   return `allProjectiles()`
 },
-playMusicForPlayer: (block, generator) => {
+playmusicforplayer: function (block, generator) {
   const music = generator.valueToCode(block, 'music', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playMusicForPlayer(${music, player})`
 },
-condition: (block, generator) => {
+condition: function (block, generator) {
   const conditions = generator.valueToCode(block, 'conditions', Order.NONE) || "";
   return `condition(${conditions})`
 },
-makeUnitVisibleToNeutralPlayers: (block, generator) => {
+makeunitvisibletoneutralplayers: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `makeUnitVisibleToNeutralPlayers(${entity})`
 },
-makeUnitVisibleToFriendlyPlayers: (block, generator) => {
+makeunitvisibletofriendlyplayers: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `makeUnitVisibleToFriendlyPlayers(${entity})`
 },
-makeUnitPickupItem: (block, generator) => {
+makeunitpickupitem: function (block, generator) {
   const unit = generator.valueToCode(block, 'selectedUnit', Order.NONE) || "";
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `makeUnitPickupItem(${unit, item})`
 },
-dynamicRegion: (block, generator) => {
+dynamicregion: function (block, generator) {
   const x = generator.valueToCode(block, 'number', Order.NONE) || "";
   const y = generator.valueToCode(block, 'number', Order.NONE) || "";
   const width = generator.valueToCode(block, 'number', Order.NONE) || "";
   const height = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `dynamicRegion(${x, y, width, height})`
 },
-getEntityAttribute: (block, generator) => {
+getentityattribute: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `getEntityAttribute(${attribute, entity})`
 },
-currentTimeStamp: (block, generator) => {
+currenttimestamp: function (block, generator) {
   return `currentTimeStamp()`
 },
-giveNewItemWithQuantityToUnit: (block, generator) => {
+givenewitemwithquantitytounit: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `giveNewItemWithQuantityToUnit(${itemtype, number, unit})`
 },
-getEntityVelocityX: (block, generator) => {
+getentityvelocityx: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `getEntityVelocityX(${entity})`
 },
-defaultQuantityOfItemType: (block, generator) => {
+defaultquantityofitemtype: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   return `defaultQuantityOfItemType(${itemtype})`
 },
-getQuantityOfItemTypeInItemTypeGroup: (block, generator) => {
+getquantityofitemtypeinitemtypegroup: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   const itemTypeGroup = generator.valueToCode(block, 'itemTypeGroup', Order.NONE) || "";
   return `getQuantityOfItemTypeInItemTypeGroup(${itemtype, itemtypegroup})`
 },
-getRandomUnitTypeFromUnitTypeGroup: (block, generator) => {
+getrandomunittypefromunittypegroup: function (block, generator) {
   const unitTypeGroup = generator.valueToCode(block, 'unitTypeGroup', Order.NONE) || "";
   return `getRandomUnitTypeFromUnitTypeGroup(${unittypegroup})`
 },
-selectedUnitType: (block, generator) => {
+selectedunittype: function (block, generator) {
   return `selectedUnitType()`
 },
-getNumberOfItemsPresent: (block, generator) => {
+getnumberofitemspresent: function (block, generator) {
   return `getNumberOfItemsPresent()`
 },
-getMin: (block, generator) => {
+getmin: function (block, generator) {
   const num1 = generator.valueToCode(block, 'number', Order.NONE) || "";
   const num2 = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `getMin(${num1, num2})`
 },
-selectedUnit: (block, generator) => {
+selectedunit: function (block, generator) {
   return `selectedUnit()`
 },
-getLastOverlappingProjectile: (block, generator) => {
+getlastoverlappingprojectile: function (block, generator) {
   return `getLastOverlappingProjectile()`
 },
-getTriggeringAttribute: (block, generator) => {
+gettriggeringattribute: function (block, generator) {
   return `getTriggeringAttribute()`
 },
-allUnitsMountedOnUnit: (block, generator) => {
+allunitsmountedonunit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `allUnitsMountedOnUnit(${entity})`
 },
-allUnitsInRegion: (block, generator) => {
+allunitsinregion: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   return `allUnitsInRegion(${region})`
 },
-dropAllItems: (block, generator) => {
+dropallitems: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `dropAllItems(${entity})`
 },
-useItemOnce: (block, generator) => {
+useitemonce: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `useItemOnce(${item})`
 },
-stopAcceptingPlayers: (block, generator) => {
+stopacceptingplayers: function (block, generator) {
   return `stopAcceptingPlayers()`
 },
-setEntityVelocityAtAngle: (block, generator) => {
+setentityvelocityatangle: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const speed = generator.valueToCode(block, 'number', Order.NONE) || "";
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setEntityVelocityAtAngle(${entity, speed, angle})`
 },
-setEntityAttributeMax: (block, generator) => {
+setentityattributemax: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setEntityAttributeMax(${attribute, entity, value})`
 },
-getValueOfPlayerVariable: (block, generator) => {
+getvalueofplayervariable: function (block, generator) {
   const variable = generator.valueToCode(block, 'playerVariable', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getValueOfPlayerVariable(${variable, player})`
 },
-allRegions: (block, generator) => {
+allregions: function (block, generator) {
   return `allRegions()`
 },
-maxValueOfItemType: (block, generator) => {
+maxvalueofitemtype: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   return `maxValueOfItemType(${itemtype})`
 },
-angleBetweenMouseAndWindowCenter: (block, generator) => {
+anglebetweenmouseandwindowcenter: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `angleBetweenMouseAndWindowCenter(${player})`
 },
-setPlayerAttributeMin: (block, generator) => {
+setplayerattributemin: function (block, generator) {
   const attributeType = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setPlayerAttributeMin(${attributetype, player, number})`
 },
-makePlayerTradeWithPlayer: (block, generator) => {
+makeplayertradewithplayer: function (block, generator) {
   const playerA = generator.valueToCode(block, 'player', Order.NONE) || "";
   const playerB = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `makePlayerTradeWithPlayer(${playera, playerb})`
 },
-getExponent: (block, generator) => {
+getexponent: function (block, generator) {
   const base = generator.valueToCode(block, 'number', Order.NONE) || "";
   const power = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `getExponent(${base, power})`
 },
-getLastAttackedUnit: (block, generator) => {
+getlastattackedunit: function (block, generator) {
   return `getLastAttackedUnit()`
 },
-getLastAttackingUnit: (block, generator) => {
+getlastattackingunit: function (block, generator) {
   return `getLastAttackingUnit()`
 },
-updateUiTextForTimeForPlayer: (block, generator) => {
+updateuitextfortimeforplayer: function (block, generator) {
   const target = generator.valueToCode(block, 'updateUiText.target', Order.NONE) || "";
   const value = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const time = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `updateUiTextForTimeForPlayer(${target, value, player, time})`
 },
-getNumberOfUnitsOfUnitType: (block, generator) => {
+getnumberofunitsofunittype: function (block, generator) {
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   return `getNumberOfUnitsOfUnitType(${unittype})`
 },
-aiMoveToPosition: (block, generator) => {
+aimovetoposition: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `aiMoveToPosition(${unit, position})`
 },
-aiAttackUnit: (block, generator) => {
+aiattackunit: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const targetUnit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `aiAttackUnit(${unit, targetunit})`
 },
-getNumberOfPlayersOfPlayerType: (block, generator) => {
+getnumberofplayersofplayertype: function (block, generator) {
   const playerType = generator.valueToCode(block, 'playerType', Order.NONE) || "";
   return `getNumberOfPlayersOfPlayerType(${playertype})`
 },
-changeSensorRadius: (block, generator) => {
+changesensorradius: function (block, generator) {
   const sensor = generator.valueToCode(block, 'sensor', Order.NONE) || "";
   const radius = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `changeSensorRadius(${sensor, radius})`
 },
-ownerUnitOfSensor: (block, generator) => {
+ownerunitofsensor: function (block, generator) {
   const sensor = generator.valueToCode(block, 'sensor', Order.NONE) || "";
   return `ownerUnitOfSensor(${sensor})`
 },
-getSensorOfUnit: (block, generator) => {
+getsensorofunit: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getSensorOfUnit(${unit})`
 },
-getTriggeringSensor: (block, generator) => {
+gettriggeringsensor: function (block, generator) {
   return `getTriggeringSensor()`
 },
-getLastChatMessageSentByPlayer: (block, generator) => {
+getlastchatmessagesentbyplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getLastChatMessageSentByPlayer(${player})`
 },
-loadPlayerDataAndApplyIt: (block, generator) => {
+loadplayerdataandapplyit: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `loadPlayerDataAndApplyIt(${player, unit})`
 },
-createFloatingText: (block, generator) => {
+createfloatingtext: function (block, generator) {
   const text = generator.valueToCode(block, 'string', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   const color = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `createFloatingText(${text, position, color})`
 },
-getLengthOfString: (block, generator) => {
+getlengthofstring: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getLengthOfString(${string})`
 },
-setLastAttackedUnit: (block, generator) => {
+setlastattackedunit: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `setLastAttackedUnit(${unit})`
 },
-setLastAttackingUnit: (block, generator) => {
+setlastattackingunit: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `setLastAttackingUnit(${unit})`
 },
-setItemFireRate: (block, generator) => {
+setitemfirerate: function (block, generator) {
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `setItemFireRate(${number, item})`
 },
-applyImpulseOnEntityXY: (block, generator) => {
+applyimpulseonentityxy: function (block, generator) {
   const impulsex = generator.valueToCode(block, 'number', Order.NONE) || "";
   const impulsey = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `applyImpulseOnEntityXY(${impulsex, impulsey, entity})`
 },
-toLowerCase: (block, generator) => {
+tolowercase: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `toLowerCase(${string})`
 },
-stringStartsWith: (block, generator) => {
+stringstartswith: function (block, generator) {
   const sourceString = generator.valueToCode(block, 'string', Order.NONE) || "";
   const patternString = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `stringStartsWith(${sourcestring, patternstring})`
 },
-stringEndsWith: (block, generator) => {
+stringendswith: function (block, generator) {
   const sourceString = generator.valueToCode(block, 'string', Order.NONE) || "";
   const patternString = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `stringEndsWith(${sourcestring, patternstring})`
 },
-replaceValuesInString: (block, generator) => {
+replacevaluesinstring: function (block, generator) {
   const matchString = generator.valueToCode(block, 'string', Order.NONE) || "";
   const sourceString = generator.valueToCode(block, 'string', Order.NONE) || "";
   const newString = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `replaceValuesInString(${matchstring, sourcestring, newstring})`
 },
-getLastAttackingItem: (block, generator) => {
+getlastattackingitem: function (block, generator) {
   return `getLastAttackingItem()`
 },
-playSoundForPlayer: (block, generator) => {
+playsoundforplayer: function (block, generator) {
   const sound = generator.valueToCode(block, 'sound', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playSoundForPlayer(${sound, player})`
 },
-stopSoundForPlayer: (block, generator) => {
+stopsoundforplayer: function (block, generator) {
   const sound = generator.valueToCode(block, 'sound', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `stopSoundForPlayer(${sound, player})`
 },
-showDismissibleInputModalToPlayer: (block, generator) => {
+showdismissibleinputmodaltoplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const inputLabel = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `showDismissibleInputModalToPlayer(${player, inputlabel})`
 },
-getTimeString: (block, generator) => {
+gettimestring: function (block, generator) {
   const seconds = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `getTimeString(${seconds})`
 },
-setItemName: (block, generator) => {
+setitemname: function (block, generator) {
   const name = generator.valueToCode(block, 'string', Order.NONE) || "";
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `setItemName(${name, item})`
 },
-changeItemInventoryImage: (block, generator) => {
+changeiteminventoryimage: function (block, generator) {
   const url = generator.valueToCode(block, 'string', Order.NONE) || "";
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `changeItemInventoryImage(${url, item})`
 },
-getItemDescription: (block, generator) => {
+getitemdescription: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `getItemDescription(${item})`
 },
-addAttributeBuffToUnit: (block, generator) => {
+addattributebufftounit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const time = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `addAttributeBuffToUnit(${entity, value, attribute, time})`
 },
-addPercentageAttributeBuffToUnit: (block, generator) => {
+addpercentageattributebufftounit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const time = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `addPercentageAttributeBuffToUnit(${entity, value, attribute, time})`
 },
-stunUnit: (block, generator) => {
+stununit: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `stunUnit(${unit})`
 },
-removeStunFromUnit: (block, generator) => {
+removestunfromunit: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `removeStunFromUnit(${unit})`
 },
-setLastAttackingItem: (block, generator) => {
+setlastattackingitem: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `setLastAttackingItem(${item})`
 },
-mutePlayerMicrophone: (block, generator) => {
+muteplayermicrophone: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `mutePlayerMicrophone(${player})`
 },
-unmutePlayerMicrophone: (block, generator) => {
+unmuteplayermicrophone: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `unmutePlayerMicrophone(${player})`
 },
-sendPostRequest: (block, generator) => {
+sendpostrequest: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   const url = generator.valueToCode(block, 'string', Order.NONE) || "";
   const varName = generator.valueToCode(block, 'variable', Order.NONE) || "";
   return `sendPostRequest(${string, url, varname})`
 },
-loadUnitDataFromString: (block, generator) => {
+loadunitdatafromstring: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `loadUnitDataFromString(${string, unit})`
 },
-loadPlayerDataFromString: (block, generator) => {
+loadplayerdatafromstring: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `loadPlayerDataFromString(${string, player})`
 },
-getUnitData: (block, generator) => {
+getunitdata: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getUnitData(${unit})`
 },
-getPlayerData: (block, generator) => {
+getplayerdata: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getPlayerData(${player})`
 },
-getUnitId: (block, generator) => {
+getunitid: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `getUnitId(${unit})`
 },
-getPlayerId: (block, generator) => {
+getplayerid: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getPlayerId(${player})`
 },
-getUnitFromId: (block, generator) => {
+getunitfromid: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getUnitFromId(${string})`
 },
-getPlayerFromId: (block, generator) => {
+getplayerfromid: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getPlayerFromId(${string})`
 },
-getStringArrayLength: (block, generator) => {
+getstringarraylength: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getStringArrayLength(${string})`
 },
-getStringArrayElement: (block, generator) => {
+getstringarrayelement: function (block, generator) {
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getStringArrayElement(${number, string})`
 },
-insertStringArrayElement: (block, generator) => {
+insertstringarrayelement: function (block, generator) {
   const value = generator.valueToCode(block, 'string', Order.NONE) || "";
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `insertStringArrayElement(${value, string})`
 },
-updateStringArrayElement: (block, generator) => {
+updatestringarrayelement: function (block, generator) {
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   const value = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `updateStringArrayElement(${number, string, value})`
 },
-removeStringArrayElement: (block, generator) => {
+removestringarrayelement: function (block, generator) {
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `removeStringArrayElement(${number, string})`
 },
-removeAllAttributeBuffs: (block, generator) => {
+removeallattributebuffs: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `removeAllAttributeBuffs(${unit})`
 },
-changeInventorySlotColor: (block, generator) => {
+changeinventoryslotcolor: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `changeInventorySlotColor(${item, string})`
 },
-setOwnerUnitOfProjectile: (block, generator) => {
+setownerunitofprojectile: function (block, generator) {
   const projectile = generator.valueToCode(block, 'projectile', Order.NONE) || "";
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `setOwnerUnitOfProjectile(${projectile, unit})`
 },
-thisEntity: (block, generator) => {
+thisentity: function (block, generator) {
   return `thisEntity()`
 },
-entityName: (block, generator) => {
+entityname: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `entityName(${entity})`
 },
-selectedInventorySlot: (block, generator) => {
+selectedinventoryslot: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `selectedInventorySlot(${unit})`
 },
-log10: (block, generator) => {
+log10: function (block, generator) {
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `log10(${value})`
 },
-addBotPlayer: (block, generator) => {
+addbotplayer: function (block, generator) {
   const name = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `addBotPlayer(${name})`
 },
-botPlayers: (block, generator) => {
+botplayers: function (block, generator) {
   return `botPlayers()`
 },
-enableAI: (block, generator) => {
+enableai: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `enableAI(${unit})`
 },
-disableAI: (block, generator) => {
+disableai: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `disableAI(${unit})`
 },
-isAIEnabled: (block, generator) => {
+isaienabled: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `isAIEnabled(${unit})`
 },
-isBotPlayer: (block, generator) => {
+isbotplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `isBotPlayer(${player})`
 },
-isComputerPlayer: (block, generator) => {
+iscomputerplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `isComputerPlayer(${player})`
 },
-entitiesBetweenTwoPositions: (block, generator) => {
+entitiesbetweentwopositions: function (block, generator) {
   const positionA = generator.valueToCode(block, 'position', Order.NONE) || "";
   const positionB = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `entitiesBetweenTwoPositions(${positiona, positionb})`
 },
-unitSensorRadius: (block, generator) => {
+unitsensorradius: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `unitSensorRadius(${unit})`
 },
-aiGoIdle: (block, generator) => {
+aigoidle: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `aiGoIdle(${unit})`
 },
-targetUnit: (block, generator) => {
+targetunit: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `targetUnit(${unit})`
 },
-sendCoinsToPlayer: (block, generator) => {
+sendcoinstoplayer: function (block, generator) {
   const coins = generator.valueToCode(block, 'number', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `sendCoinsToPlayer(${coins, player})`
 },
-addChatFilter: (block, generator) => {
+addchatfilter: function (block, generator) {
   const words = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `addChatFilter(${words})`
 },
-numberToString: (block, generator) => {
+numbertostring: function (block, generator) {
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `numberToString(${value})`
 },
-sendCoinsToPlayer2: (block, generator) => {
+sendcoinstoplayer2: function (block, generator) {
   const coins = generator.valueToCode(block, 'number', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `sendCoinsToPlayer2(${coins, player})`
 },
-playerIsCreator: (block, generator) => {
+playeriscreator: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playerIsCreator(${player})`
 },
-setMaxAttackRange: (block, generator) => {
+setmaxattackrange: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setMaxAttackRange(${unit, number})`
 },
-setLetGoDistance: (block, generator) => {
+setletgodistance: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setLetGoDistance(${unit, number})`
 },
-setMaxTravelDistance: (block, generator) => {
+setmaxtraveldistance: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setMaxTravelDistance(${unit, number})`
 },
-getPlayerSelectedUnit: (block, generator) => {
+getplayerselectedunit: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getPlayerSelectedUnit(${player})`
 },
-toDegrees: (block, generator) => {
+todegrees: function (block, generator) {
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `toDegrees(${number})`
 },
-toRadians: (block, generator) => {
+toradians: function (block, generator) {
   const number = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `toRadians(${number})`
 },
-getPositionInFrontOfPosition: (block, generator) => {
+getpositioninfrontofposition: function (block, generator) {
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   const distance = generator.valueToCode(block, 'number', Order.NONE) || "";
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `getPositionInFrontOfPosition(${position, distance, angle})`
 },
-editMapTile: (block, generator) => {
+editmaptile: function (block, generator) {
   const gid = generator.valueToCode(block, 'number', Order.NONE) || "";
   const layer = generator.valueToCode(block, 'number', Order.NONE) || "";
   const x = generator.valueToCode(block, 'number', Order.NONE) || "";
   const y = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `editMapTile(${gid, layer, x, y})`
 },
-loadMapFromString: (block, generator) => {
+loadmapfromstring: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `loadMapFromString(${string})`
 },
-getMapJson: (block, generator) => {
+getmapjson: function (block, generator) {
   return `getMapJson()`
 },
-teleportEntity: (block, generator) => {
+teleportentity: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `teleportEntity(${entity, position})`
 },
-forAllDebris: (block, generator) => {
+foralldebris: function (block, generator) {
   const debrisGroup = generator.valueToCode(block, 'debrisGroup', Order.NONE) || "";
   return `forAllDebris(${debrisgroup})`
 },
-roleExistsForPlayer: (block, generator) => {
+roleexistsforplayer: function (block, generator) {
   const name = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `roleExistsForPlayer(${name, player})`
 },
-emitParticlesFromEntity: (block, generator) => {
+emitparticlesfromentity: function (block, generator) {
   const particleType = generator.valueToCode(block, 'particleType', Order.NONE) || "";
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `emitParticlesFromEntity(${particletype, angle, entity})`
 },
-emitParticlesAtPosition: (block, generator) => {
+emitparticlesatposition: function (block, generator) {
   const particleType = generator.valueToCode(block, 'particleType', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `emitParticlesAtPosition(${particletype, position, angle})`
 },
-editMapTiles: (block, generator) => {
+editmaptiles: function (block, generator) {
   const gid = generator.valueToCode(block, 'number', Order.NONE) || "";
   const layer = generator.valueToCode(block, 'number', Order.NONE) || "";
   const x = generator.valueToCode(block, 'number', Order.NONE) || "";
@@ -1640,401 +1648,401 @@ editMapTiles: (block, generator) => {
   const height = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `editMapTiles(${gid, layer, x, y, width, height})`
 },
-getMapTileId: (block, generator) => {
+getmaptileid: function (block, generator) {
   const x = generator.valueToCode(block, 'number', Order.NONE) || "";
   const y = generator.valueToCode(block, 'number', Order.NONE) || "";
   const layer = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `getMapTileId(${x, y, layer})`
 },
-stringIsANumber: (block, generator) => {
+stringisanumber: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `stringIsANumber(${string})`
 },
-setSourceItemOfProjectile: (block, generator) => {
+setsourceitemofprojectile: function (block, generator) {
   const projectile = generator.valueToCode(block, 'projectile', Order.NONE) || "";
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `setSourceItemOfProjectile(${projectile, item})`
 },
-getGlobalVariable: (block, generator) => {
+getglobalvariable: function (block, generator) {
   const name = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getGlobalVariable(${name})`
 },
-lastReceivedPostResponse: (block, generator) => {
+lastreceivedpostresponse: function (block, generator) {
   return `lastReceivedPostResponse()`
 },
-lastUpdatedVariableName: (block, generator) => {
+lastupdatedvariablename: function (block, generator) {
   return `lastUpdatedVariableName()`
 },
-getVariable: (block, generator) => {
+getvariable: function (block, generator) {
   const name = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getVariable(${name})`
 },
-stringToObject: (block, generator) => {
+stringtoobject: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `stringToObject(${string})`
 },
-elementFromObject: (block, generator) => {
+elementfromobject: function (block, generator) {
   const key = generator.valueToCode(block, 'string', Order.NONE) || "";
   const object = generator.valueToCode(block, 'object', Order.NONE) || "";
   return `elementFromObject(${key, object})`
 },
-objectToString: (block, generator) => {
+objecttostring: function (block, generator) {
   const object = generator.valueToCode(block, 'object', Order.NONE) || "";
   return `objectToString(${object})`
 },
-removeElement: (block, generator) => {
+removeelement: function (block, generator) {
   const key = generator.valueToCode(block, 'string', Order.NONE) || "";
   const object = generator.valueToCode(block, 'object', Order.NONE) || "";
   return `removeElement(${key, object})`
 },
-makePlayerSendChatMessage: (block, generator) => {
+makeplayersendchatmessage: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const message = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `makePlayerSendChatMessage(${player, message})`
 },
-emptyObject: (block, generator) => {
+emptyobject: function (block, generator) {
   return `emptyObject()`
 },
-addStringElement: (block, generator) => {
+addstringelement: function (block, generator) {
   const key = generator.valueToCode(block, 'string', Order.NONE) || "";
   const value = generator.valueToCode(block, 'string', Order.NONE) || "";
   const object = generator.valueToCode(block, 'object', Order.NONE) || "";
   return `addStringElement(${key, value, object})`
 },
-elementCount: (block, generator) => {
+elementcount: function (block, generator) {
   const object = generator.valueToCode(block, 'object', Order.NONE) || "";
   return `elementCount(${object})`
 },
-addObjectElement: (block, generator) => {
+addobjectelement: function (block, generator) {
   const key = generator.valueToCode(block, 'string', Order.NONE) || "";
   const value = generator.valueToCode(block, 'object', Order.NONE) || "";
   const object = generator.valueToCode(block, 'object', Order.NONE) || "";
   return `addObjectElement(${key, value, object})`
 },
-requestPost: (block, generator) => {
+requestpost: function (block, generator) {
   const data = generator.valueToCode(block, 'object', Order.NONE) || "";
   const url = generator.valueToCode(block, 'string', Order.NONE) || "";
   const varName = generator.valueToCode(block, 'variable', Order.NONE) || "";
   return `requestPost(${data, url, varname})`
 },
-unitIsCarryingItemType: (block, generator) => {
+unitiscarryingitemtype: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   return `unitIsCarryingItemType(${unit, itemtype})`
 },
-startCastingAbility: (block, generator) => {
+startcastingability: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const ability = generator.valueToCode(block, 'ability', Order.NONE) || "";
   return `startCastingAbility(${entity, ability})`
 },
-stopCastingAbility: (block, generator) => {
+stopcastingability: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const ability = generator.valueToCode(block, 'ability', Order.NONE) || "";
   return `stopCastingAbility(${entity, ability})`
 },
-applyTorqueOnEntityToFacePosition: (block, generator) => {
+applytorqueonentitytofaceposition: function (block, generator) {
   const force = generator.valueToCode(block, 'number', Order.NONE) || "";
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   const position = generator.valueToCode(block, 'position', Order.NONE) || "";
   return `applyTorqueOnEntityToFacePosition(${force, entity, position})`
 },
-changeRegionColor: (block, generator) => {
+changeregioncolor: function (block, generator) {
   const region = generator.valueToCode(block, 'region', Order.NONE) || "";
   const inside = generator.valueToCode(block, 'string', Order.NONE) || "";
   const alpha = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `changeRegionColor(${region, inside, alpha})`
 },
-startMovingUnitUp: (block, generator) => {
+startmovingunitup: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `startMovingUnitUp(${entity})`
 },
-startMovingUnitDown: (block, generator) => {
+startmovingunitdown: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `startMovingUnitDown(${entity})`
 },
-startMovingUnitLeft: (block, generator) => {
+startmovingunitleft: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `startMovingUnitLeft(${entity})`
 },
-startMovingUnitRight: (block, generator) => {
+startmovingunitright: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `startMovingUnitRight(${entity})`
 },
-stopMovingUnitX: (block, generator) => {
+stopmovingunitx: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `stopMovingUnitX(${entity})`
 },
-stopMovingUnitY: (block, generator) => {
+stopmovingunity: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `stopMovingUnitY(${entity})`
 },
-openBackpackForPlayer: (block, generator) => {
+openbackpackforplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `openBackpackForPlayer(${player})`
 },
-closeBackpackForPlayer: (block, generator) => {
+closebackpackforplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `closeBackpackForPlayer(${player})`
 },
-setUnitNameLabelColor: (block, generator) => {
+setunitnamelabelcolor: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const color = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `setUnitNameLabelColor(${unit, color})`
 },
-getCameraPosition: (block, generator) => {
+getcameraposition: function (block, generator) {
   return `getCameraPosition()`
 },
-getCameraWidth: (block, generator) => {
+getcamerawidth: function (block, generator) {
   return `getCameraWidth()`
 },
-getCameraHeight: (block, generator) => {
+getcameraheight: function (block, generator) {
   return `getCameraHeight()`
 },
-allUnitsOfUnitType: (block, generator) => {
+allunitsofunittype: function (block, generator) {
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   return `allUnitsOfUnitType(${unittype})`
 },
-forAllUnits: (block, generator) => {
+forallunits: function (block, generator) {
   const unitGroup = generator.valueToCode(block, 'unitGroup', Order.NONE) || "";
   return `forAllUnits(${unitgroup})`
 },
-allItemsOfItemType: (block, generator) => {
+allitemsofitemtype: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   return `allItemsOfItemType(${itemtype})`
 },
-setUnitNameLabelColorForPlayer: (block, generator) => {
+setunitnamelabelcolorforplayer: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   const color = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `setUnitNameLabelColorForPlayer(${unit, color, player})`
 },
-getDefaultAttributeValueOfUnitType: (block, generator) => {
+getdefaultattributevalueofunittype: function (block, generator) {
   const attribute = generator.valueToCode(block, 'attributeType', Order.NONE) || "";
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   return `getDefaultAttributeValueOfUnitType(${attribute, unittype})`
 },
-playerCameraStopTracking: (block, generator) => {
+playercamerastoptracking: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `playerCameraStopTracking(${player})`
 },
-hideUiElementForPlayer: (block, generator) => {
+hideuielementforplayer: function (block, generator) {
   const elementId = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `hideUiElementForPlayer(${elementid, player})`
 },
-showUiElementForPlayer: (block, generator) => {
+showuielementforplayer: function (block, generator) {
   const elementId = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `showUiElementForPlayer(${elementid, player})`
 },
-setUIElementHtml: (block, generator) => {
+setuielementhtml: function (block, generator) {
   const htmlStr = generator.valueToCode(block, 'string', Order.NONE) || "";
   const elementId = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `setUIElementHtml(${htmlstr, elementid, player})`
 },
-lastClickedUiElementId: (block, generator) => {
+lastclickeduielementid: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `lastClickedUiElementId(${player})`
 },
-appendRealtimeCSSForPlayer: (block, generator) => {
+appendrealtimecssforplayer: function (block, generator) {
   const value = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `appendRealtimeCSSForPlayer(${value, player})`
 },
-updateRealtimeCSSForPlayer: (block, generator) => {
+updaterealtimecssforplayer: function (block, generator) {
   const value = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `updateRealtimeCSSForPlayer(${value, player})`
 },
-realtimeCSSOfPlayer: (block, generator) => {
+realtimecssofplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `realtimeCSSOfPlayer(${player})`
 },
-mathCeiling: (block, generator) => {
+mathceiling: function (block, generator) {
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `mathCeiling(${value})`
 },
-stopMovingUnit: (block, generator) => {
+stopmovingunit: function (block, generator) {
   const entity = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `stopMovingUnit(${entity})`
 },
-toUpperCase: (block, generator) => {
+touppercase: function (block, generator) {
   const string = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `toUpperCase(${string})`
 },
-getHighScoreOfPlayer: (block, generator) => {
+gethighscoreofplayer: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getHighScoreOfPlayer(${player})`
 },
-isUnitMoving: (block, generator) => {
+isunitmoving: function (block, generator) {
   const unit = generator.valueToCode(block, 'unit', Order.NONE) || "";
   return `isUnitMoving(${unit})`
 },
-forIn: (block, generator) => {
+forin: function (block, generator) {
   const variableNameMain = generator.valueToCode(block, 'variable', Order.NONE) || "";
   const variableNameSource = generator.valueToCode(block, 'variable', Order.NONE) || "";
   return `forIn(${variablenamemain, variablenamesource})`
 },
-addClassToUIElement: (block, generator) => {
+addclasstouielement: function (block, generator) {
   const className = generator.valueToCode(block, 'string', Order.NONE) || "";
   const elementId = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `addClassToUIElement(${classname, elementid, player})`
 },
-removeClassFromUIElement: (block, generator) => {
+removeclassfromuielement: function (block, generator) {
   const className = generator.valueToCode(block, 'string', Order.NONE) || "";
   const elementId = generator.valueToCode(block, 'string', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `removeClassFromUIElement(${classname, elementid, player})`
 },
-isPlayerClient: (block, generator) => {
+isplayerclient: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `isPlayerClient(${player})`
 },
-setCameraDeadzone: (block, generator) => {
+setcameradeadzone: function (block, generator) {
   const width = generator.valueToCode(block, 'number', Order.NONE) || "";
   const height = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `setCameraDeadzone(${width, height})`
 },
-purchaseItemFromShop: (block, generator) => {
+purchaseitemfromshop: function (block, generator) {
   const itemType = generator.valueToCode(block, 'itemType', Order.NONE) || "";
   const shop = generator.valueToCode(block, 'shop', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `purchaseItemFromShop(${itemtype, shop, player})`
 },
-getUnitType: (block, generator) => {
+getunittype: function (block, generator) {
   const unitType = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getUnitType(${unittype})`
 },
-getItemType: (block, generator) => {
+getitemtype: function (block, generator) {
   const itemType = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getItemType(${itemtype})`
 },
-getProjectileType: (block, generator) => {
+getprojectiletype: function (block, generator) {
   const projectileType = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getProjectileType(${projectiletype})`
 },
-getSecondaryTouchPosition: (block, generator) => {
+getsecondarytouchposition: function (block, generator) {
   return `getSecondaryTouchPosition()`
 },
-allProjectilesOfProjectileType: (block, generator) => {
+allprojectilesofprojectiletype: function (block, generator) {
   const projectileType = generator.valueToCode(block, 'projectileType', Order.NONE) || "";
   return `allProjectilesOfProjectileType(${projectiletype})`
 },
-unitTypeWidth: (block, generator) => {
+unittypewidth: function (block, generator) {
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   return `unitTypeWidth(${unittype})`
 },
-unitTypeHeight: (block, generator) => {
+unittypeheight: function (block, generator) {
   const unitType = generator.valueToCode(block, 'unitType', Order.NONE) || "";
   return `unitTypeHeight(${unittype})`
 },
-notValue: (block, generator) => {
+notvalue: function (block, generator) {
   const boolean = generator.valueToCode(block, 'boolean', Order.NONE) || "";
   return `notValue(${boolean})`
 },
-isPlayerOnMobile: (block, generator) => {
+isplayeronmobile: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `isPlayerOnMobile(${player})`
 },
-getPlayerUsername: (block, generator) => {
+getplayerusername: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `getPlayerUsername(${player})`
 },
-repeatWithDelay: (block, generator) => {
+repeatwithdelay: function (block, generator) {
   const count = generator.valueToCode(block, 'number', Order.NONE) || "";
   const delay = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `repeatWithDelay(${count, delay})`
 },
-entityFacingAngle: (block, generator) => {
+entityfacingangle: function (block, generator) {
   const entity = generator.valueToCode(block, 'entity', Order.NONE) || "";
   return `entityFacingAngle(${entity})`
 },
-playersOfPlayerType: (block, generator) => {
+playersofplayertype: function (block, generator) {
   const playerType = generator.valueToCode(block, 'playerType', Order.NONE) || "";
   return `playersOfPlayerType(${playertype})`
 },
-sendSecurePostRequest: (block, generator) => {
+sendsecurepostrequest: function (block, generator) {
   const apiCredentials = generator.valueToCode(block, 'secrets', Order.NONE) || "";
   const data = generator.valueToCode(block, 'object', Order.NONE) || "";
   const varName = generator.valueToCode(block, 'variable', Order.NONE) || "";
   return `sendSecurePostRequest(${apicredentials, data, varname})`
 },
-openSkinShop: (block, generator) => {
+openskinshop: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `openSkinShop(${player})`
 },
-openSkinSubmissionPage: (block, generator) => {
+openskinsubmissionpage: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   return `openSkinSubmissionPage(${player})`
 },
-playerCameraSetPitch: (block, generator) => {
+playercamerasetpitch: function (block, generator) {
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const angle = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `playerCameraSetPitch(${player, angle})`
 },
-getRegionByName: (block, generator) => {
+getregionbyname: function (block, generator) {
   const name = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `getRegionByName(${name})`
 },
-changeLayerOpacity: (block, generator) => {
+changelayeropacity: function (block, generator) {
   const layer = generator.valueToCode(block, 'number', Order.NONE) || "";
   const alpha = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `changeLayerOpacity(${layer, alpha})`
 },
-forAllElementsInObject: (block, generator) => {
+forallelementsinobject: function (block, generator) {
   const object = generator.valueToCode(block, 'object', Order.NONE) || "";
   return `forAllElementsInObject(${object})`
 },
-selectedElement: (block, generator) => {
+selectedelement: function (block, generator) {
   return `selectedElement()`
 },
-objectContainsElement: (block, generator) => {
+objectcontainselement: function (block, generator) {
   const object = generator.valueToCode(block, 'object', Order.NONE) || "";
   const key = generator.valueToCode(block, 'string', Order.NONE) || "";
   return `objectContainsElement(${object, key})`
 },
-selectedElementsKey: (block, generator) => {
+selectedelementskey: function (block, generator) {
   return `selectedElementsKey()`
 },
-playMusicForPlayerAtTime: (block, generator) => {
+playmusicforplayerattime: function (block, generator) {
   const music = generator.valueToCode(block, 'music', Order.NONE) || "";
   const player = generator.valueToCode(block, 'player', Order.NONE) || "";
   const time = generator.valueToCode(block, 'time', Order.NONE) || "";
   return `playMusicForPlayerAtTime(${music, player, time})`
 },
-getServerAge: (block, generator) => {
+getserverage: function (block, generator) {
   return `getServerAge()`
 },
-getServerStartTime: (block, generator) => {
+getserverstarttime: function (block, generator) {
   return `getServerStartTime()`
 },
-mathRound: (block, generator) => {
+mathround: function (block, generator) {
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `mathRound(${value})`
 },
-addNumberElement: (block, generator) => {
+addnumberelement: function (block, generator) {
   const key = generator.valueToCode(block, 'string', Order.NONE) || "";
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   const object = generator.valueToCode(block, 'object', Order.NONE) || "";
   return `addNumberElement(${key, value, object})`
 },
-mathSign: (block, generator) => {
+mathsign: function (block, generator) {
   const value = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `mathSign(${value})`
 },
-itemFiresProjectiles: (block, generator) => {
+itemfiresprojectiles: function (block, generator) {
   const item = generator.valueToCode(block, 'item', Order.NONE) || "";
   return `itemFiresProjectiles(${item})`
 },
-lerp: (block, generator) => {
+lerp: function (block, generator) {
   const valueA = generator.valueToCode(block, 'number', Order.NONE) || "";
   const valueB = generator.valueToCode(block, 'number', Order.NONE) || "";
   const alpha = generator.valueToCode(block, 'number', Order.NONE) || "";
   return `lerp(${valuea, valueb, alpha})`
 },
-getLerpPosition: (block, generator) => {
+getlerpposition: function (block, generator) {
   const positionA = generator.valueToCode(block, 'position', Order.NONE) || "";
   const positionB = generator.valueToCode(block, 'position', Order.NONE) || "";
   const alpha = generator.valueToCode(block, 'number', Order.NONE) || "";

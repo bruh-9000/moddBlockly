@@ -37,6 +37,9 @@ const getVarsTypes = (v) => {
   return { str, names, types }
 }
 const categorys = {}
+function firstUpperCase(str) {
+  return str.toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase());
+}
 axios.get('https://www.modd.io/api/editor-api/?game=two-houses')
   .then((res) => {
     const obj = res.data.message
@@ -53,7 +56,7 @@ axios.get('https://www.modd.io/api/editor-api/?game=two-houses')
       const types = getVarsTypes(value)
       categorys[category].push({ key: value.key, names: types.names })
       actionsStr +=
-        `${key}: (block, generator) => {
+        `${key.toLowerCase()}: function (block, generator) {
   ${types.str}
 },\n`;
       const len = Math.max(types.names.length * 2 - 1, 0)
@@ -71,7 +74,7 @@ axios.get('https://www.modd.io/api/editor-api/?game=two-houses')
             `{
               "type": "input_value",
               "name": "${types.names[idx / 2]}",
-              "check": "${types.types[idx / 2]}",
+              "check": ${Array.isArray(types.types[idx / 2])? `[${types.types[idx / 2].map((type)=> firstUpperCase(type))}]`: `"${firstUpperCase(types.types[idx / 2])}"`},
             }`
           }`
         )}
@@ -79,6 +82,8 @@ axios.get('https://www.modd.io/api/editor-api/?game=two-houses')
         "previousStatement": null,
         "nextStatement": null,
         "colour": 330,
+        ${value.data.category !== undefined? `"output": "${firstUpperCase(value.data.category)}",`:''}
+        
         "tooltip": "${value.title}",
         "helpUrl": ""
       });
@@ -86,7 +91,15 @@ axios.get('https://www.modd.io/api/editor-api/?game=two-houses')
     })
 
     fs.writeFile("./src/generators/forblock.js",
-      `export const forBlock = {
+      `/**
+      * @license
+      * Copyright 2023 Google LLC
+      * SPDX-License-Identifier: Apache-2.0
+      */
+     
+     import { FieldTextInput } from 'blockly';
+     import {Order} from 'blockly/javascript';
+      export const forBlock = {
       ${actionsStr}
       }`, function (err) {
       if (err) {
@@ -151,16 +164,7 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(actions
        ],
      };
 `,
-// 'inputs': {
-//   ${v.names.map(parameter => `'${parameter}': {
-//     'shadow': {
-//       'type': 'text',
-//       'fields': {
-//         'TEXT': "",
-//       },
-//     }}`)}
-  
-// },
+
       function (err) {
         if (err) {
           return console.log(err);
@@ -170,3 +174,14 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(actions
   }).catch((e) => {
     console.log(e)
   })
+  
+  // 'inputs': {
+  //   ${v.names.map(parameter => `'${parameter}': {
+  //     'shadow': {
+  //       'type': 'text',
+  //       'fields': {
+  //         'TEXT': "",
+  //       },
+  //     }}`)}
+    
+  // },
