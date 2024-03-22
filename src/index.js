@@ -47,7 +47,6 @@ ws.addChangeListener((e) => {
   save(ws);
 });
 
-
 // Whenever the workspace changes meaningfully, run the code again.
 ws.addChangeListener((e) => {
   // Don't run the code when the workspace finishes loading; we're
@@ -58,4 +57,12 @@ ws.addChangeListener((e) => {
     return;
   }
   runCode();
+});
+
+const btn = document.querySelector("#saveButton");
+
+btn.addEventListener("click", () => {
+  const state = Blockly.serialization.workspaces.save(ws);
+
+  console.log(state);
 });
