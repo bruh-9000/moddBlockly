@@ -63,6 +63,15 @@ const btn = document.querySelector("#saveButton");
 
 btn.addEventListener("click", () => {
   const state = Blockly.serialization.workspaces.save(ws);
+  const stateString = JSON.stringify(state);
 
-  console.log(state);
+  var filename = "moddBlockly.txt";
+  var element = document.createElement('a');
+
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(stateString));
+  element.setAttribute('download', filename);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
 });
