@@ -59,9 +59,9 @@ ws.addChangeListener((e) => {
   runCode();
 });
 
-const btn = document.querySelector("#saveButton");
+const saveButton = document.querySelector("#saveButton");
 
-btn.addEventListener("click", () => {
+saveButton.addEventListener("click", () => {
   const state = Blockly.serialization.workspaces.save(ws);
   const stateString = JSON.stringify(state);
 
@@ -74,4 +74,25 @@ btn.addEventListener("click", () => {
   document.body.appendChild(element);
   element.click();
   document.body.removeChild(element);
+});
+
+const loadButton = document.querySelector("#loadButton");
+
+loadButton.addEventListener("click", () => {
+  const input = document.createElement('input');
+  let fileContent;
+  input.type = 'file';
+  input.accept = '.txt'; // Specify the file types you want to accept
+  input.onchange = function(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        fileContent = event.target.result;
+        
+        const serializer = new Blockly.serialization.variables.VariableSerializer();
+        serializer.load(fileContent, ws);
+      };
+      reader.readAsText(file);
+  };
+  input.click();
 });
