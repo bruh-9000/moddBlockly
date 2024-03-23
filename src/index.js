@@ -74,6 +74,8 @@ saveButton.addEventListener("click", () => {
   document.body.appendChild(element);
   element.click();
   document.body.removeChild(element);
+
+  console.log(state);
 });
 
 const loadButton = document.querySelector("#loadButton");
@@ -87,10 +89,9 @@ loadButton.addEventListener("click", () => {
       const file = event.target.files[0];
       const reader = new FileReader();
       reader.onload = function(event) {
-        fileContent = event.target.result;
+        fileContent = JSON.parse(decodeURIComponent(event.target.result));
         
-        const serializer = new Blockly.serialization.variables.VariableSerializer();
-        serializer.load(fileContent, ws);
+        Blockly.serialization.workspaces.load(fileContent, ws);
       };
       reader.readAsText(file);
   };
