@@ -47,7 +47,6 @@ ws.addChangeListener((e) => {
   save(ws);
 });
 
-
 // Whenever the workspace changes meaningfully, run the code again.
 ws.addChangeListener((e) => {
   // Don't run the code when the workspace finishes loading; we're
@@ -58,4 +57,43 @@ ws.addChangeListener((e) => {
     return;
   }
   runCode();
+});
+
+const saveButton = document.querySelector("#saveButton");
+
+saveButton.addEventListener("click", () => {
+  const state = Blockly.serialization.workspaces.save(ws);
+  const stateString = JSON.stringify(state);
+
+  var filename = "moddBlockly.txt";
+  var element = document.createElement('a');
+
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(stateString));
+  element.setAttribute('download', filename);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+
+  console.log(state);
+});
+
+const loadButton = document.querySelector("#loadButton");
+
+loadButton.addEventListener("click", () => {
+  const input = document.createElement('input');
+  let fileContent;
+  input.type = 'file';
+  input.accept = '.txt'; // Specify the file types you want to accept
+  input.onchange = function(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        fileContent = JSON.parse(decodeURIComponent(event.target.result));
+        
+        Blockly.serialization.workspaces.load(fileContent, ws);
+      };
+      reader.readAsText(file);
+  };
+  input.click();
 });
