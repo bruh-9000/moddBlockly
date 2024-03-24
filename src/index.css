@@ -69,6 +69,18 @@ pre, code {
     font-size: 24px;
 }
 
+.githubButton {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 50px;
+    text-decoration: none;
+}
+
+.githubButton a:hover {
+    color: white; /* Keep the color white on hover */
+}
+
 .dropdown {
     position: relative;
     margin-left: 20px; /* Adjust spacing between dropdowns */
