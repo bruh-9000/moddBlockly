@@ -424,7 +424,7 @@ forBlock['comment'] = function (block, generator) {
   const text = block.getFieldValue('text') || "";
 
   // Generate the function call for this block.
-  const code = `// ${text}\ncomment()\n`;
+  const code = `// ${text}\ncomment()\n\n`;
   return code;
 };
 

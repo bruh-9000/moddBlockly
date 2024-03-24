@@ -11,13 +11,16 @@ pre, code {
     display: flex;
     width: 100%;
     max-width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 50px); /* Adjust height to accommodate the top bar */
+    top: 50px; /* Add padding equal to the height of the top bar */
 }
 
 #blocklyDiv {
     flex-basis: 100%;
     height: 100%;
     min-width: 600px;
+    position: relative;
+    top: 50px; /* Move the workspace content down below the top bar */
 }
 
 #outputPane {
@@ -33,14 +36,9 @@ pre, code {
     height: 0%;
 }
 
-#title {
-    position: absolute;
-    width: 400px;
-}
-
 #generatedCode {
     position: absolute;
-    top: 80px;
+    top: 50px;
     height: 45%;
     width: 400px;
     background-color: rgb(247, 240, 228);
@@ -49,17 +47,78 @@ pre, code {
 #copyText {
     position: absolute;
     width: 400px;
-    top: calc(45% + 110px)
+    top: calc(45% + 75px)
 }
 
-#saveButton {
-    position: absolute;
-    width: 400px;
-    top: calc(45% + 140px)
+#topBar {
+    background-color: #333;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) of the flex container */
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-#loadButton {
+.title {
+    color: white;
+    font-size: 24px;
+}
+
+.dropdown {
+    position: relative;
+    margin-left: 20px; /* Adjust spacing between dropdowns */
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding-right: 20px; /* Add space for the arrow */
+    position: relative; /* Position the arrow relative to the button */
+}
+
+.dropbtn::after {
+    content: "\25BE"; /* Downward arrow character */
+    font-size: 20px; /* Adjust size of the arrow */
+    position: absolute; /* Position the arrow absolutely */
+    right: 5px; /* Adjust distance of the arrow from the right side */
+    top: 50%; /* Align the arrow vertically */
+    transform: translateY(-50%); /* Center the arrow vertically */
+}
+
+.dropdown-content {
+    display: none;
     position: absolute;
-    width: 400px;
-    top: calc(45% + 170px)
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-btn:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
