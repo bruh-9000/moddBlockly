@@ -1,9 +1,9 @@
-<!doctype html><html><head><meta charset="utf-8"/><title>moddBlockly</title><script defer="defer" src="bundle.js"></script></head><body><div id="pageContainer"><div id="outputPane"><pre id="generatedCode"><code></code></pre><div id="output"></div><button onclick="copyToClipboard()" id="copyText">Copy Text</button> <button id="saveButton">Save</button> <button id="loadButton">Load</button><script>function copyToClipboard() {
-            const text = document.getElementById('generatedCode').innerHTML
-                .replace(/<code>/g, "")
-                .replace(/<\/code>/g, "")
-                .replace(/<br>/g, "\n")
-                .trim();
+<!doctype html><html><head><meta charset="utf-8"/><title>moddBlockly</title><script defer="defer" src="bundle.js"></script></head><body><div id="topBar"><span class="title">moddBlockly</span><div class="dropdown"><button class="dropbtn">File</button><div class="dropdown-content"><button id="loadButton" class="dropdown-btn">Open file</button> <button id="saveButton" class="dropdown-btn">Save</button></div></div><div class="dropdown"><button class="dropbtn">Edit</button><div class="dropdown-content"><button id="undoButton" class="dropdown-btn">Undo</button> <button id="redoButton" class="dropdown-btn">Redo</button> <button id="cleanWorkspace" class="dropdown-btn">Clean up workspace</button> <button id="clearWorkspace" class="dropdown-btn">Clear workspace</button></div></div><div class="dropdown"><button class="dropbtn">Examples</button><div class="dropdown-content"><button id="playerJoinsGame" class="dropdown-btn">Player joins game</button> <button id="playerLeavesGame" class="dropdown-btn">Player leaves game</button> <button id="slashCommand" class="dropdown-btn">/ command</button></div></div></div><div id="pageContainer"><div id="outputPane"><pre id="generatedCode"><code></code></pre><div id="output"></div><button onclick="copyToClipboard()" id="copyText">Copy Text</button><script>function copyToClipboard() {
+          const text = document.getElementById('generatedCode').innerHTML
+            .replace(/<code>/g, "")
+            .replace(/<\/code>/g, "")
+            .replace(/<br>/g, "\n")
+            .trim();
 
-            navigator.clipboard.writeText(text)
-          }</script><img src="https://i.ibb.co/ByT4LvV/cooltext453890906460730.png" alt="moddBlockly" id="title"></div><div id="blocklyDiv"></div></div></body></html>
+          navigator.clipboard.writeText(text)
+        }</script></div><div id="blocklyDiv"></div></div></body></html>
