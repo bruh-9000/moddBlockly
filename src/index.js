@@ -45,6 +45,31 @@ const ws = Blockly.inject(
     renderer: 'zelos',
     disable: false,
     comments: false,
+    theme: {
+      "categoryStyles" : {
+         "units_category": {
+          "colour": "#9fa55b"
+         },
+         "triggers_category": {
+          "colour": "#5ba55b"
+         },
+         "text_category": {
+          "colour": "#5ba58c"
+         },
+         "logic_category": {
+          "colour": "#5b67a5"
+         },
+         "players_category": {
+          "colour": "#745ba5"
+         },
+         "entities_category": {
+          "colour": "#995ba5"
+         },
+         "others_category": {
+          "colour": "#a55b80"
+         },
+      },
+    }
   }
 );
 

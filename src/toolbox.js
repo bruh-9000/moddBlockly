@@ -18,7 +18,7 @@ export const toolbox = {
     {
       'kind': 'category',
       'name': 'Triggers',
-      'categorystyle': 'procedure_category',
+      'categorystyle': 'triggers_category',
       'contents': [
         {
           'kind': 'block',
@@ -121,12 +121,12 @@ export const toolbox = {
     {
       'kind': 'category',
       'name': 'Logic',
-      'categorystyle': 'procedure_category',
+      'categorystyle': 'logic_category',
       'contents': [
         {
           'kind': 'category',
           'name': 'System',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'logic_category',
           'contents': [
             {
               'kind': 'block',
@@ -145,7 +145,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Math',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'logic_category',
           'contents': [
             {
               'kind': 'block',
@@ -185,7 +185,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Text',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'text_category',
           'contents': [
             {
               'kind': 'block',
@@ -208,7 +208,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Boolean',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'logic_category',
           'contents': [
             {
               'kind': 'block',
@@ -219,7 +219,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Positions',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'logic_category',
           'contents': [
             {
               'kind': 'block',
@@ -252,7 +252,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Loops',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'logic_category',
           'contents': [
             {
               'kind': 'block',
@@ -277,12 +277,12 @@ export const toolbox = {
     {
       'kind': 'category',
       'name': 'Entity',
-      'categorystyle': 'procedure_category',
+      'categorystyle': 'entities_category',
       'contents': [
         {
           'kind': 'category',
           'name': 'All',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'entities_category',
           'contents': [
             {
               'kind': 'block',
@@ -297,7 +297,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Unit',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'units_category',
           'contents': [
             {
               'kind': 'block',
@@ -332,7 +332,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Item',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'entities_category',
           'contents': [
             {
               'kind': 'block',
@@ -347,7 +347,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Projectile',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'entities_category',
           'contents': [
             {
               'kind': 'block',
@@ -362,7 +362,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Region',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'entities_category',
           'contents': [
             {
               'kind': 'block',
@@ -381,7 +381,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Player',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'players_category',
           'contents': [
             {
               'kind': 'block',
@@ -410,12 +410,12 @@ export const toolbox = {
     {
       'kind': 'category',
       'name': 'Other',
-      'categorystyle': 'procedure_category',
+      'categorystyle': 'others_category',
       'contents': [
         {
           'kind': 'category',
           'name': 'UI',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'others_category',
           'contents': [
     
           ]
@@ -423,7 +423,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Chat',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'others_category',
           'contents': [
             {
               'kind': 'block',
@@ -458,7 +458,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'AI',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'others_category',
           'contents': [
     
           ]
@@ -466,7 +466,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Sound & Music',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'others_category',
           'contents': [
     
           ]
@@ -474,7 +474,7 @@ export const toolbox = {
         {
           'kind': 'category',
           'name': 'Variables',
-          'categorystyle': 'procedure_category',
+          'categorystyle': 'others_category',
           'contents': [
             {
               'kind': 'block',
