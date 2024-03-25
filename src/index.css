@@ -41,7 +41,7 @@ pre, code {
     top: 50px;
     height: 45%;
     width: 400px;
-    background-color: rgb(247, 240, 228);
+    background-color: #edf0f2;
 }
 
 #copyText, #MLSE {
@@ -86,10 +86,6 @@ pre, code {
     position: absolute;
     right: 50px;
     text-decoration: none;
-}
-
-.githubButton a:hover {
-    color: white; /* Keep the color white on hover */
 }
 
 .dropdown {
