@@ -26,7 +26,7 @@ const blocklyDiv = document.getElementById('blocklyDiv');
 const ws = Blockly.inject(
   blocklyDiv,
   {
-    toolbox: document.getElementById('toolbox'),
+    toolbox: toolbox,
     grid: {
       spacing: 35,
       length: 3,
