@@ -20,7 +20,33 @@ Object.assign(javascriptGenerator.forBlock, forBlock);
 const codeDiv = document.getElementById('generatedCode').firstChild;
 const outputDiv = document.getElementById('output');
 const blocklyDiv = document.getElementById('blocklyDiv');
-const ws = Blockly.inject(blocklyDiv, {toolbox});
+
+// const ws = Blockly.inject(blocklyDiv, {toolbox});
+
+const ws = Blockly.inject(
+  blocklyDiv,
+  {
+    toolbox: document.getElementById('toolbox'),
+    grid: {
+      spacing: 35,
+      length: 3,
+      colour: '#ccc',
+      snap: false
+    },
+    trashcan: true,
+    move: {
+      scrollbars: {
+        horizontal: true,
+        vertical: true
+      },
+      drag: true,
+      wheel: false,
+    },
+    renderer: 'zelos',
+    disable: false,
+    comments: false,
+  }
+);
 
 // This function resets the code and output divs, shows the
 // generated code from the workspace, and evals the code.
