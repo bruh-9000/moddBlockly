@@ -204,6 +204,20 @@ clearWorkspace.addEventListener("click", () => {
   ws.clear();
 });
 
-settings.addEventListener("click", () => {
- 
+const settingsButton = document.querySelector('.gear-btn');
+const popup = document.querySelector('.popup');
+const closeButton = document.querySelector('#closePopup');
+
+settingsButton.addEventListener("click", () => {
+    popup.classList.add("show");
+});
+
+closeButton.addEventListener("click", () => {
+    popup.classList.remove("show");
+});
+
+window.addEventListener("click", (event) => {
+    if (event.target === popup) {
+        popup.classList.remove("show");
+    }
 });
