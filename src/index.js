@@ -142,6 +142,24 @@ loadButton.addEventListener("click", () => {
   input.click();
 });
 
+moddScriptButton.addEventListener("click", () => {
+  const output = document.getElementById('generatedCode').innerHTML
+            .replace(/<code>/g, "")
+            .replace(/<\/code>/g, "")
+            .replace(/<br>/g, "\n")
+            .trim();
+
+  var filename = "moddScript.txt";
+  var element = document.createElement('a');
+
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(output));
+  element.setAttribute('download', filename);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   const dropdownButtons = document.querySelectorAll(".dropbtn");
 
