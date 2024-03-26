@@ -275,7 +275,7 @@ export const toolbox = {
     },
     {
       'kind': 'category',
-      'name': 'All',
+      'name': 'Entities',
       'categorystyle': 'entities_category',
       'contents': [
         {
