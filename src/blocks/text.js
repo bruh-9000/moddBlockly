@@ -13,7 +13,7 @@ import * as Blockly from 'blockly/core';
 
 const secondTick = {
   "type": "secondtick",
-  "message0": "secondTick",
+  "message0": "every second",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -23,7 +23,7 @@ const secondTick = {
 
 const sendChatMessage = {
   "type": "sendchatmessage",
-  "message0": "sendChatMessage %1",
+  "message0": "send chat message %1",
   "args0": [
     {
       "type": "input_value",
@@ -109,7 +109,7 @@ const pos = {
 
 const moveEntity = {
   "type": "moveentity",
-  "message0": "moveEntity %1 %2 to pos %3",
+  "message0": "move entity %1 %2 to pos %3",
   "args0": [
     {
       "type": "input_value",
@@ -134,7 +134,7 @@ const moveEntity = {
 
 const triggeringPlayer = {
   "type": "triggeringplayer",
-  "message0": "triggeringPlayer",
+  "message0": "triggering player",
   "output": "Player",
   "colour": 260,
   "tooltip": "",
@@ -152,7 +152,7 @@ const owner = {
 
 const triggeringUnit = {
   "type": "triggeringunit",
-  "message0": "triggeringUnit %1",
+  "message0": "triggering unit %1",
   "args0": [
     {
       "type": "input_value",
@@ -168,7 +168,7 @@ const triggeringUnit = {
 
 const selectedUnit = {
   "type": "selectedunit",
-  "message0": "selectedUnit %1",
+  "message0": "selected unit %1",
   "args0": [
     {
       "type": "input_value",
@@ -184,7 +184,7 @@ const selectedUnit = {
 
 const lastCreatedUnit = {
   "type": "lastcreatedunit",
-  "message0": "lastCreatedUnit %1",
+  "message0": "last created unit %1",
   "args0": [
     {
       "type": "input_value",
@@ -200,7 +200,7 @@ const lastCreatedUnit = {
 
 const frameTick = {
   "type": "frametick",
-  "message0": "frameTick",
+  "message0": "every frame",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -210,7 +210,7 @@ const frameTick = {
 
 const serverShuttingDown = {
   "type": "servershuttingdown",
-  "message0": "serverShuttingDown",
+  "message0": "server shutting down",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -220,7 +220,7 @@ const serverShuttingDown = {
 
 const gameStart = {
   "type": "gamestart",
-  "message0": "gameStart",
+  "message0": "game start",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -230,7 +230,7 @@ const gameStart = {
 
 const onPostResponse = {
   "type": "onpostresponse",
-  "message0": "onPostResponse",
+  "message0": "on post response",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -240,7 +240,7 @@ const onPostResponse = {
 
 const playerSendsChatMessage = {
   "type": "playerSendsChatMessage",
-  "message0": "playerSendsChatMessage",
+  "message0": "player sends chat message",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -250,7 +250,7 @@ const playerSendsChatMessage = {
 
 const unitTouchesWall = {
   "type": "unitTouchesWall",
-  "message0": "unitTouchesWall",
+  "message0": "unit touches wall",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -260,7 +260,7 @@ const unitTouchesWall = {
 
 const unitUsesItem = {
   "type": "unitUsesItem",
-  "message0": "unitUsesItem",
+  "message0": "unit uses item",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -270,7 +270,7 @@ const unitUsesItem = {
 
 const unitAttributeBecomesZero = {
   "type": "unitAttributeBecomesZero",
-  "message0": "unitAttributeBecomesZero",
+  "message0": "unit attribute becomes zero",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -280,7 +280,7 @@ const unitAttributeBecomesZero = {
 
 const unitStartsUsingAnItem = {
   "type": "unitStartsUsingAnItem",
-  "message0": "unitStartsUsingAnItem",
+  "message0": "unit starts using an item",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -290,7 +290,7 @@ const unitStartsUsingAnItem = {
 
 const unitAttributeBecomesFull = {
   "type": "unitAttributeBecomesFull",
-  "message0": "unitAttributeBecomesFull",
+  "message0": "unit attribute becomes full",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -300,7 +300,7 @@ const unitAttributeBecomesFull = {
 
 const unitEntersRegion = {
   "type": "unitEntersRegion",
-  "message0": "unitEntersRegion",
+  "message0": "unit enters region",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -310,7 +310,7 @@ const unitEntersRegion = {
 
 const unitDroppedAnItem = {
   "type": "unitDroppedAnItem",
-  "message0": "unitDroppedAnItemk",
+  "message0": "unit drops an item",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -320,7 +320,7 @@ const unitDroppedAnItem = {
 
 const unitSelectsItem = {
   "type": "unitSelectsItem",
-  "message0": "unitSelectsItem",
+  "message0": "unit selects an item",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -330,7 +330,7 @@ const unitSelectsItem = {
 
 const unitLeavesRegion = {
   "type": "unitLeavesRegion",
-  "message0": "unitLeavesRegion",
+  "message0": "unit leaves region",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -340,7 +340,7 @@ const unitLeavesRegion = {
 
 const unitAttacksUnit = {
   "type": "unitAttacksUnit",
-  "message0": "unitAttacksUnit",
+  "message0": "unit attacks unit",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -350,7 +350,7 @@ const unitAttacksUnit = {
 
 const unitStopsUsingAnItem = {
   "type": "unitStopsUsingAnItem",
-  "message0": "unitStopsUsingAnItem",
+  "message0": "unit stops using an item",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -360,7 +360,7 @@ const unitStopsUsingAnItem = {
 
 const unitTouchesProjectile = {
   "type": "unitTouchesProjectile",
-  "message0": "unitTouchesProjectile",
+  "message0": "unit touches projectile",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -370,7 +370,7 @@ const unitTouchesProjectile = {
 
 const unitPickedAnItem = {
   "type": "unitPickedAnItem",
-  "message0": "unitPickedAnItem",
+  "message0": "unit picks up an item",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -380,7 +380,7 @@ const unitPickedAnItem = {
 
 const unitTouchesItem = {
   "type": "unitTouchesItem",
-  "message0": "unitTouchesItem",
+  "message0": "unit touches item",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -390,7 +390,7 @@ const unitTouchesItem = {
 
 const playerJoinsGame = {
   "type": "playerjoinsgame",
-  "message0": "playerJoinsGame",
+  "message0": "player joins game",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -400,7 +400,7 @@ const playerJoinsGame = {
 
 const playerLeavesGame = {
   "type": "playerleavesgame",
-  "message0": "playerLeavesGame",
+  "message0": "player leaves game",
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
@@ -585,7 +585,7 @@ const continue1 = {
 
 const decreaseVariableByNumber = {
   "type": "decreasevariablebynumber",
-  "message0": "decreaseVariableByNumber %1 %2 %3",
+  "message0": "decrease variable by number %1 %2 %3",
   "args0": [
     {
       "type": "input_value",
@@ -610,7 +610,7 @@ const decreaseVariableByNumber = {
 
 const increaseVariableByNumber = {
   "type": "increasevariablebynumber",
-  "message0": "increaseVariableByNumber %1 %2 %3",
+  "message0": "increase variable by number %1 %2 %3",
   "args0": [
     {
       "type": "input_value",
@@ -635,7 +635,7 @@ const increaseVariableByNumber = {
 
 const setVariable = {
   "type": "setvariable",
-  "message0": "setVariable %1 %2 to value %3",
+  "message0": "set variable %1 %2 to value %3",
   "args0": [
     {
       "type": "input_value",
@@ -658,7 +658,7 @@ const setVariable = {
 
 const triggeringProjectile = {
   "type": "triggeringprojectile",
-  "message0": "triggeringProjectile %1",
+  "message0": "triggering projectile %1",
   "args0": [
     {
       "type": "input_value",
@@ -674,7 +674,7 @@ const triggeringProjectile = {
 
 const triggeringItem = {
   "type": "triggeringitem",
-  "message0": "triggeringItem %1",
+  "message0": "triggering item %1",
   "args0": [
     {
       "type": "input_value",
@@ -690,7 +690,7 @@ const triggeringItem = {
 
 const triggeringRegion = {
   "type": "triggeringregion",
-  "message0": "triggeringRegion",
+  "message0": "triggering region",
   "output": "Region",
   "colour": 290,
   "tooltip": "",
@@ -844,7 +844,7 @@ const getEntireMapRegion = {
 
 const itemTypeOfItem = {
   "type": "itemtypeofitem",
-  "message0": ".type",
+  "message0": "type",
   "output": "Item Type",
   "colour": 290,
   "tooltip": "",
@@ -853,7 +853,7 @@ const itemTypeOfItem = {
 
 const projectileTypeOfProjectile = {
   "type": "projectiletypeofprojectile",
-  "message0": ".type",
+  "message0": "type",
   "output": "Projectile Type",
   "colour": 290,
   "tooltip": "",
