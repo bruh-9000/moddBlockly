@@ -136,6 +136,10 @@ export const toolbox = {
         },
         {
           'kind': 'block',
+          'type': 'comparison',
+        },    
+        {
+          'kind': 'block',
           'type': 'colour_picker',
         },
       ]
@@ -152,6 +156,10 @@ export const toolbox = {
             'NUM': 123,
           },
         },
+        {
+          'kind': 'block',
+          'type': 'number_comparison',
+        },    
         {
           'kind': 'block',
           'type': 'math_arithmetic',
@@ -187,7 +195,7 @@ export const toolbox = {
       'contents': [
         {
           'kind': 'block',
-          'type': 'text',
+          'type': 'string',
         },
         {
           'kind': 'block',
@@ -210,7 +218,7 @@ export const toolbox = {
       'contents': [
         {
           'kind': 'block',
-          'type': 'logic_boolean',
+          'type': 'bool',
         },    
       ]
     },
@@ -421,9 +429,9 @@ export const toolbox = {
           'inputs': {
             'message': {
               'shadow': {
-                'type': 'text',
+                'type': 'string',
                 'fields': {
-                  'TEXT': "Hello world!",
+                  'text': "Hello world!",
                 },
               },
             },
@@ -435,9 +443,9 @@ export const toolbox = {
           'inputs': {
             'message': {
               'shadow': {
-                'type': 'text',
+                'type': 'string',
                 'fields': {
-                  'TEXT': "Hello world!",
+                  'text': "Hello world!",
                 },
               },
             },
@@ -472,9 +480,9 @@ export const toolbox = {
           'inputs': {
             'var': {
               'shadow': {
-                'type': 'text',
+                'type': 'string',
                 'fields': {
-                  'TEXT': "",
+                  'text': "",
                 },
               },
             },
@@ -494,9 +502,9 @@ export const toolbox = {
           'inputs': {
             'var': {
               'shadow': {
-                'type': 'text',
+                'type': 'string',
                 'fields': {
-                  'TEXT': "",
+                  'text': "",
                 },
               },
             },
@@ -516,9 +524,9 @@ export const toolbox = {
           'inputs': {
             'var': {
               'shadow': {
-                'type': 'text',
+                'type': 'string',
                 'fields': {
-                  'TEXT': "",
+                  'text': "",
                 },
               },
             },

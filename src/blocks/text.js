@@ -942,6 +942,141 @@ const join = {
   "helpUrl": ""
 };
 
+const string = {
+  "type": "string",
+  "message0": "\" %1 \"",
+  "args0": [
+    {
+      "type": "field_input",
+      "name": "text",
+      "text": ""
+    }
+  ],
+  "inputsInline": true,
+  "colour": 160,
+  "tooltip": "",
+  "output": "String",
+  "helpUrl": ""
+};
+
+const bool = {
+  "type": "bool",
+  "message0": "%1",
+  "args0": [
+    {
+      "type": "field_dropdown",
+      "name": "value",
+      "options": [
+        [
+          "true",
+          "true1"
+        ],
+        [
+          "false",
+          "false1"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const number_comparison = {
+  "type": "number_comparison",
+  "message0": "%1 %2 %3 %4",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "val1",
+      "check": "Number"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "value",
+      "options": [
+        [
+          "==",
+          "=="
+        ],
+        [
+          "!=",
+          "!="
+        ],
+        [
+          "<",
+          "<"
+        ],
+        [
+          "<=",
+          "<="
+        ],
+        [
+          ">",
+          ">"
+        ],
+        [
+          ">=",
+          ">="
+        ]
+      ]
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "val2",
+      "check": "Number"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
+const comparison = {
+  "type": "comparison",
+  "message0": "%1 %2 %3 %4",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "val1"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "value",
+      "options": [
+        [
+          "==",
+          "=="
+        ],
+        [
+          "!=",
+          "!="
+        ]
+      ]
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_value",
+      "name": "val2"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
+};
+
 // Colors per category
 // 65 for unit
 // 120 for trigger
@@ -960,4 +1095,4 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray(
   unitStartsUsingAnItem, unitAttributeBecomesZero, unitUsesItem, unitTouchesWall, playerSendsChatMessage, destroyEntity, lastCreatedUnit, playerCameraTrackUnit, createUnitAtPosition,
   playerJoinsGame, playerLeavesGame, getPlayerName, str2num, num2str, sendChatMessageToPlayer, break1, continue1, decreaseVariableByNumber, increaseVariableByNumber, setVariable, triggeringItem,
   triggeringRegion, triggeringProjectile, repeat, while1, kickPlayer, comment, dropAllItems, centerOfRegion, getEntireMapRegion, getEntityPosition, itemTypeOfItem, projectileTypeOfProjectile,
-  setPlayerName, setUnitNameLabel, getPlayerSelectedUnit, join]);
+  setPlayerName, setUnitNameLabel, getPlayerSelectedUnit, join, string, bool, number_comparison, comparison]);

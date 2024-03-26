@@ -504,3 +504,45 @@ forBlock['join'] = function (block, generator) {
   const code = `${text1} + ${text2}`;
   return [code, generator.ORDER_NONE];
 };
+
+forBlock['string'] = function (block, generator) {
+  const text1 = block.getFieldValue('text') || "";
+
+  // Generate the function call for this block.
+  const code = `'${text1}'`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['bool'] = function (block, generator) {
+  const value = block.getFieldValue('value');
+
+  // Generate the function call for this block.
+  let code;
+
+  if (value == 'true1') {
+    code = `true`;
+  } else {
+    code = `false`;
+  }
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['comparison'] = function (block, generator) {
+  const value = block.getFieldValue('value');
+  const val1 = generator.valueToCode(block, 'val1', Order.NONE) || "";
+  const val2 = generator.valueToCode(block, 'val2', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `${val1} ${value} ${val2}`;
+  return [code, generator.ORDER_NONE];
+};
+
+forBlock['number_comparison'] = function (block, generator) {
+  const value = block.getFieldValue('value');
+  const val1 = generator.valueToCode(block, 'val1', Order.NONE) || "";
+  const val2 = generator.valueToCode(block, 'val2', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `${val1} ${value} ${val2}`;
+  return [code, generator.ORDER_NONE];
+};
