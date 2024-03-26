@@ -110,8 +110,6 @@ ws.addChangeListener((e) => {
   runCode();
 });
 
-const saveButton = document.querySelector("#saveButton");
-
 saveButton.addEventListener("click", () => {
   const state = Blockly.serialization.workspaces.save(ws);
   const stateString = JSON.stringify(state);
@@ -172,15 +170,11 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-const playerJoinsGame = document.querySelector("#playerJoinsGame");
-
 playerJoinsGame.addEventListener("click", () => {
   let fileContent = JSON.parse(`{"blocks":{"languageVersion":0,"blocks":[{"type":"triggers","id":"sLORV*}FPc=_GBvkxM5H","x":22,"y":10,"next":{"block":{"type":"playerjoinsgame","id":"IO:82aWq^oxNcP|z,$dO"}}},{"type":"script","id":"42xFuxvg#uGKrcUxH0IM","x":23,"y":94,"next":{"block":{"type":"sendchatmessage","id":"zy~MRC2MtAF,q20UgS9\`","inputs":{"message":{"shadow":{"type":"text","id":"m)Bvl917,+vgB+M)(@N+","fields":{"TEXT":"Hello world!"}},"block":{"type":"join","id":"XFOIha[*)/F=o=m:MpXT","inputs":{"text1":{"block":{"type":"getplayername","id":"Yq-{2sAkXkxbM+9Xh/Xh","inputs":{"player":{"block":{"type":"triggeringplayer","id":"4f.V4f*UT/WGh}UB9Un)"}}}}},"text2":{"block":{"type":"text","id":"c^GCc@ei]g\`RxaFHI}y%","fields":{"TEXT":" has joined the game!"}}}}}}},"next":{"block":{"type":"createunitatposition","id":"]U-*%vl,@Cdy@9z,ZG?_","inputs":{"unittype":{"block":{"type":"text","id":"u}gc4\`rCCHNA29Tq]9=b","fields":{"TEXT":"Homie"}}},"player":{"block":{"type":"triggeringplayer","id":"tU#UJBE+x@T_5W3aB]4G"}},"pos":{"block":{"type":"pos","id":",1-R9PH[Tq8d0Eb=X8Bj","inputs":{"x":{"shadow":{"type":"math_number","id":"W4piXAZk_!_k/6!joD)+","fields":{"NUM":64}}},"y":{"shadow":{"type":"math_number","id":"O=t2^6)Zs-G+#Ji{6~hE","fields":{"NUM":64}}}}}},"angle":{"block":{"type":"math_number","id":"Z)qg%J@^O5M2VJ$ICcP9","fields":{"NUM":123}}}},"next":{"block":{"type":"playercameratrackunit","id":"Y0;pnV7cfstg#^n.2jqC","inputs":{"player":{"block":{"type":"triggeringplayer","id":"aW+(KcI9E3y8j:555vJl"}},"unit":{"block":{"type":"lastcreatedunit","id":"ls~XiX4^Sm+DLr:szB}$"}}}}}}}}}}]}}`);
  
   Blockly.serialization.workspaces.load(fileContent, ws);
 });
-
-const playerLeavesGame = document.querySelector("#playerLeavesGame");
 
 playerLeavesGame.addEventListener("click", () => {
   let fileContent = JSON.parse('{\"blocks\":{\"languageVersion\":0,\"blocks\":[{\"type\":\"triggers\",\"id\":\"sLORV*}FPc=_GBvkxM5H\",\"x\":22,\"y\":10,\"next\":{\"block\":{\"type\":\"playerleavesgame\",\"id\":\"O=8-[GL:n:[8j8eE1IqO\"}}},{\"type\":\"script\",\"id\":\"42xFuxvg#uGKrcUxH0IM\",\"x\":23,\"y\":94,\"next\":{\"block\":{\"type\":\"sendchatmessage\",\"id\":\"zy~MRC2MtAF,q20UgS9`\",\"inputs\":{\"message\":{\"shadow\":{\"type\":\"text\",\"id\":\"m)Bvl917,+vgB+M)(@N+\",\"fields\":{\"TEXT\":\"Hello world!\"}},\"block\":{\"type\":\"join\",\"id\":\"XFOIha[*)/F=o=m:MpXT\",\"inputs\":{\"text1\":{\"block\":{\"type\":\"getplayername\",\"id\":\"Yq-{2sAkXkxbM+9Xh/Xh\",\"inputs\":{\"player\":{\"block\":{\"type\":\"triggeringplayer\",\"id\":\"4f.V4f*UT/WGh}UB9Un)\"}}}}},\"text2\":{\"block\":{\"type\":\"text\",\"id\":\"c^GCc@ei]g`RxaFHI}y%\",\"fields\":{\"TEXT\":\" has left the game!\"}}}}}}},\"next\":{\"block\":{\"type\":\"destroyentity\",\"id\":\"#nXn8nDT|7e.Tr8TnK|c\",\"inputs\":{\"entity\":{\"block\":{\"type\":\"getplayerselectedunit\",\"id\":\"luoDlH!VDZ9|)^`t|{f4\",\"inputs\":{\"player\":{\"block\":{\"type\":\"triggeringplayer\",\"id\":\"zasKE$B,Ie/_PWL{}}1#\"}}}}}}}}}}}]}}');
@@ -188,34 +182,28 @@ playerLeavesGame.addEventListener("click", () => {
   Blockly.serialization.workspaces.load(fileContent, ws);
 });
 
-const slashCommand = document.querySelector("#slashCommand");
-
 slashCommand.addEventListener("click", () => {
   let fileContent = JSON.parse(` { "blocks": { "languageVersion": 0, "blocks": [ { "type": "triggers", "id": "sLORV*}FPc=_GBvkxM5H", "x": 22, "y": 10, "next": { "block": { "type": "playerSendsChatMessage", "id": "uZNZ#T4^aW34mU}-iGSH" } } }, { "type": "script", "id": "42xFuxvg#uGKrcUxH0IM", "x": 23, "y": 94, "next": { "block": { "type": "comment", "id": "bi}Ha91bv;coj-7v^)I#", "fields": { "text": "No comparison yet" }, "next": { "block": { "type": "ifelse", "id": "h89PVVMcOV7;3~mbt\`$B", "inputs": { "check": { "block": { "type": "logic_boolean", "id": "l%);^Lb(.A.ZR%H}7Q/+", "fields": { "BOOL": "TRUE" } } }, "do1": { "block": { "type": "moveentity", "id": "w{]ey%tWg|9_~;7ff56r", "inputs": { "entity": { "block": { "type": "getplayerselectedunit", "id": "luoDlH!VDZ9|)^\`t|{f4", "inputs": { "player": { "block": { "type": "triggeringplayer", "id": "zasKE$B,Ie/_PWL{}}1#" } } } } }, "pos": { "block": { "type": "pos", "id": "%-~X(mc#QF+z+[liadI6", "inputs": { "x": { "shadow": { "type": "math_number", "id": "tVZ[J?wO\`]#k{/LPL;w^", "fields": { "NUM": 64 } } }, "y": { "shadow": { "type": "math_number", "id": "8;0$asP~l*2E*!X^GDqq", "fields": { "NUM": 64 } } } } } } } } } } } } } } }, { "type": "text", "id": "PGk.8ScPwLacJG8R#MK@", "x": 246, "y": 144, "fields": { "TEXT": "/spawn" } } ] } }`);
 
   Blockly.serialization.workspaces.load(fileContent, ws);
 });
 
-const undoButton = document.querySelector("#undoButton");
-
 undoButton.addEventListener("click", () => {
   ws.undo(false);
 });
-
-const redoButton = document.querySelector("#redoButton");
 
 redoButton.addEventListener("click", () => {
   ws.undo(true);
 });
 
-const cleanWorkspace = document.querySelector("#cleanWorkspace");
-
 cleanWorkspace.addEventListener("click", () => {
   ws.cleanUp();
 });
 
-const clearWorkspace = document.querySelector("#clearWorkspace");
-
 clearWorkspace.addEventListener("click", () => {
   ws.clear();
+});
+
+settings.addEventListener("click", () => {
+ 
 });
