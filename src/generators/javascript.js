@@ -546,3 +546,11 @@ forBlock['number_comparison'] = function (block, generator) {
   const code = `${val1} ${value} ${val2}`;
   return [code, generator.ORDER_NONE];
 };
+
+forBlock['lastchatmessagesent'] = function (block, generator) {
+  const player = generator.valueToCode(block, 'player', Order.NONE) || "";
+
+  // Generate the function call for this block.
+  const code = `lastchatmessagesent(${player})`;
+  return [code, generator.ORDER_NONE];
+};

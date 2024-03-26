@@ -203,12 +203,16 @@ export const toolbox = {
         },
         {
           'kind': 'block',
-          'type': 'num2str',
-        },  
+          'type': 'lastchatmessagesent',
+        },
         {
           'kind': 'block',
           'type': 'getplayername',
         },
+        {
+          'kind': 'block',
+          'type': 'num2str',
+        },  
       ]
     },
     {
