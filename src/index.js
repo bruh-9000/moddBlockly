@@ -21,9 +21,7 @@ const codeDiv = document.getElementById('generatedCode').firstChild;
 const outputDiv = document.getElementById('output');
 const blocklyDiv = document.getElementById('blocklyDiv');
 
-// const ws = Blockly.inject(blocklyDiv, {toolbox});
-
-const ws = Blockly.inject(
+let ws = Blockly.inject(
   blocklyDiv,
   {
     toolbox: toolbox,
@@ -44,6 +42,7 @@ const ws = Blockly.inject(
     },
     renderer: 'zelos',
     disable: false,
+    collapse: false,
     comments: false,
     theme: {
       "categoryStyles" : {
