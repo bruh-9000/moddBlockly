@@ -119,422 +119,410 @@ export const toolbox = {
       ]
     },
     {
+      'kind': 'sep',
+    },
+    {
       'kind': 'category',
-      'name': 'Logic',
+      'name': 'System',
       'categorystyle': 'logic_category',
       'contents': [
         {
-          'kind': 'category',
-          'name': 'System',
-          'categorystyle': 'logic_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'comment',
-            },
-            {
-              'kind': 'block',
-              'type': 'ifelse',
-            },
-            {
-              'kind': 'block',
-              'type': 'colour_picker',
-            },
-          ]
+          'kind': 'block',
+          'type': 'comment',
         },
         {
-          'kind': 'category',
-          'name': 'Math',
-          'categorystyle': 'logic_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'math_number',
-              'fields': {
-                'NUM': 123,
-              },
-            },
-            {
-              'kind': 'block',
-              'type': 'math_arithmetic',
-              'inputs': {
-                'A': {
-                  'shadow': {
-                    'type': 'math_number',
-                    'fields': {
-                      'NUM': 1,
-                    },
-                  },
-                },
-                'B': {
-                  'shadow': {
-                    'type': 'math_number',
-                    'fields': {
-                      'NUM': 1,
-                    },
-                  },
-                },
-              },
-            },  
-            {
-              'kind': 'block',
-              'type': 'str2num',
-            },  
-          ]
+          'kind': 'block',
+          'type': 'ifelse',
         },
         {
-          'kind': 'category',
-          'name': 'Text',
-          'categorystyle': 'text_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'text',
-            },
-            {
-              'kind': 'block',
-              'type': 'join',
-            },
-            {
-              'kind': 'block',
-              'type': 'num2str',
-            },  
-            {
-              'kind': 'block',
-              'type': 'getplayername',
-            },
-          ]
-        },
-        {
-          'kind': 'category',
-          'name': 'Boolean',
-          'categorystyle': 'logic_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'logic_boolean',
-            },    
-          ]
-        },
-        {
-          'kind': 'category',
-          'name': 'Positions',
-          'categorystyle': 'logic_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'pos',
-              'inputs': {
-                'x': {
-                  'shadow': {
-                    'type': 'math_number',
-                    'fields': {
-                      'NUM': 64,
-                    },
-                  },
-                },
-                'y': {
-                  'shadow': {
-                    'type': 'math_number',
-                    'fields': {
-                      'NUM': 64,
-                    },
-                  },
-                },
-              },
-            },
-            {
-              'kind': 'block',
-              'type': 'getentityposition',
-            },
-          ]
-        },
-        {
-          'kind': 'category',
-          'name': 'Loops',
-          'categorystyle': 'logic_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'repeat',
-            },
-            {
-              'kind': 'block',
-              'type': 'while',
-            },
-            {
-              'kind': 'block',
-              'type': 'break',
-            }, 
-            {
-              'kind': 'block',
-              'type': 'continue',
-            },   
-          ]
+          'kind': 'block',
+          'type': 'colour_picker',
         },
       ]
     },
     {
       'kind': 'category',
-      'name': 'Entity',
+      'name': 'Math',
+      'categorystyle': 'logic_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'math_number',
+          'fields': {
+            'NUM': 123,
+          },
+        },
+        {
+          'kind': 'block',
+          'type': 'math_arithmetic',
+          'inputs': {
+            'A': {
+              'shadow': {
+                'type': 'math_number',
+                'fields': {
+                  'NUM': 1,
+                },
+              },
+            },
+            'B': {
+              'shadow': {
+                'type': 'math_number',
+                'fields': {
+                  'NUM': 1,
+                },
+              },
+            },
+          },
+        },  
+        {
+          'kind': 'block',
+          'type': 'str2num',
+        },  
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Text',
+      'categorystyle': 'text_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'text',
+        },
+        {
+          'kind': 'block',
+          'type': 'join',
+        },
+        {
+          'kind': 'block',
+          'type': 'num2str',
+        },  
+        {
+          'kind': 'block',
+          'type': 'getplayername',
+        },
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Boolean',
+      'categorystyle': 'logic_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'logic_boolean',
+        },    
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Positions',
+      'categorystyle': 'logic_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'pos',
+          'inputs': {
+            'x': {
+              'shadow': {
+                'type': 'math_number',
+                'fields': {
+                  'NUM': 64,
+                },
+              },
+            },
+            'y': {
+              'shadow': {
+                'type': 'math_number',
+                'fields': {
+                  'NUM': 64,
+                },
+              },
+            },
+          },
+        },
+        {
+          'kind': 'block',
+          'type': 'getentityposition',
+        },
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Loops',
+      'categorystyle': 'logic_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'repeat',
+        },
+        {
+          'kind': 'block',
+          'type': 'while',
+        },
+        {
+          'kind': 'block',
+          'type': 'break',
+        }, 
+        {
+          'kind': 'block',
+          'type': 'continue',
+        },   
+      ]
+    },
+    {
+      'kind': 'sep',
+    },
+    {
+      'kind': 'category',
+      'name': 'All',
       'categorystyle': 'entities_category',
       'contents': [
         {
-          'kind': 'category',
-          'name': 'All',
-          'categorystyle': 'entities_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'moveentity',
-            },
-            {
-              'kind': 'block',
-              'type': 'destroyentity',
-            },
-          ]
+          'kind': 'block',
+          'type': 'moveentity',
         },
         {
-          'kind': 'category',
-          'name': 'Unit',
-          'categorystyle': 'units_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'createunitatposition',
-            },
-            {
-              'kind': 'block',
-              'type': 'setunitnamelabel',
-            },
-            {
-              'kind': 'block',
-              'type': 'dropallitems',
-            },
-            {
-              'kind': 'block',
-              'type': 'triggeringunit',
-            },
-            {
-              'kind': 'block',
-              'type': 'selectedunit',
-            },
-            {
-              'kind': 'block',
-              'type': 'lastcreatedunit',
-            },
-            {
-              'kind': 'block',
-              'type': 'getplayerselectedunit',
-            },
-          ]
-        },
-        {
-          'kind': 'category',
-          'name': 'Item',
-          'categorystyle': 'entities_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'itemtypeofitem',
-            }, 
-            {
-              'kind': 'block',
-              'type': 'triggeringitem',
-            },
-          ]
-        },
-        {
-          'kind': 'category',
-          'name': 'Projectile',
-          'categorystyle': 'entities_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'projectiletypeofprojectile',
-            }, 
-            {
-              'kind': 'block',
-              'type': 'triggeringprojectile',
-            },
-          ]
-        },
-        {
-          'kind': 'category',
-          'name': 'Region',
-          'categorystyle': 'entities_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'getentiremapregion',
-            },
-            {
-              'kind': 'block',
-              'type': 'centerofregion',
-            },
-            {
-              'kind': 'block',
-              'type': 'triggeringregion',
-            },
-          ]
-        },
-        {
-          'kind': 'category',
-          'name': 'Player',
-          'categorystyle': 'players_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'playercameratrackunit',
-            },
-            {
-              'kind': 'block',
-              'type': 'kickplayer',
-            },
-            {
-              'kind': 'block',
-              'type': 'setplayername',
-            },
-            {
-              'kind': 'block',
-              'type': 'owner',
-            },
-            {
-              'kind': 'block',
-              'type': 'triggeringplayer',
-            },
-          ]
+          'kind': 'block',
+          'type': 'destroyentity',
         },
       ]
     },
     {
       'kind': 'category',
-      'name': 'Other',
+      'name': 'Unit',
+      'categorystyle': 'units_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'createunitatposition',
+        },
+        {
+          'kind': 'block',
+          'type': 'setunitnamelabel',
+        },
+        {
+          'kind': 'block',
+          'type': 'dropallitems',
+        },
+        {
+          'kind': 'block',
+          'type': 'triggeringunit',
+        },
+        {
+          'kind': 'block',
+          'type': 'selectedunit',
+        },
+        {
+          'kind': 'block',
+          'type': 'lastcreatedunit',
+        },
+        {
+          'kind': 'block',
+          'type': 'getplayerselectedunit',
+        },
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Item',
+      'categorystyle': 'entities_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'itemtypeofitem',
+        }, 
+        {
+          'kind': 'block',
+          'type': 'triggeringitem',
+        },
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Projectile',
+      'categorystyle': 'entities_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'projectiletypeofprojectile',
+        }, 
+        {
+          'kind': 'block',
+          'type': 'triggeringprojectile',
+        },
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Region',
+      'categorystyle': 'entities_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'getentiremapregion',
+        },
+        {
+          'kind': 'block',
+          'type': 'centerofregion',
+        },
+        {
+          'kind': 'block',
+          'type': 'triggeringregion',
+        },
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Player',
+      'categorystyle': 'players_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'playercameratrackunit',
+        },
+        {
+          'kind': 'block',
+          'type': 'kickplayer',
+        },
+        {
+          'kind': 'block',
+          'type': 'setplayername',
+        },
+        {
+          'kind': 'block',
+          'type': 'owner',
+        },
+        {
+          'kind': 'block',
+          'type': 'triggeringplayer',
+        },
+      ]
+    },
+    {
+      'kind': 'sep',
+    },
+    {
+      'kind': 'category',
+      'name': 'UI',
+      'categorystyle': 'others_category',
+      'contents': [
+
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Chat',
       'categorystyle': 'others_category',
       'contents': [
         {
-          'kind': 'category',
-          'name': 'UI',
-          'categorystyle': 'others_category',
-          'contents': [
-    
-          ]
+          'kind': 'block',
+          'type': 'sendchatmessage',
+          'inputs': {
+            'message': {
+              'shadow': {
+                'type': 'text',
+                'fields': {
+                  'TEXT': "Hello world!",
+                },
+              },
+            },
+          },
         },
         {
-          'kind': 'category',
-          'name': 'Chat',
-          'categorystyle': 'others_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'sendchatmessage',
-              'inputs': {
-                'message': {
-                  'shadow': {
-                    'type': 'text',
-                    'fields': {
-                      'TEXT': "Hello world!",
-                    },
-                  },
+          'kind': 'block',
+          'type': 'sendchatmessagetoplayer',
+          'inputs': {
+            'message': {
+              'shadow': {
+                'type': 'text',
+                'fields': {
+                  'TEXT': "Hello world!",
                 },
               },
             },
-            {
-              'kind': 'block',
-              'type': 'sendchatmessagetoplayer',
-              'inputs': {
-                'message': {
-                  'shadow': {
-                    'type': 'text',
-                    'fields': {
-                      'TEXT': "Hello world!",
-                    },
-                  },
+          },
+        },
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'AI',
+      'categorystyle': 'others_category',
+      'contents': [
+
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Sound & Music',
+      'categorystyle': 'others_category',
+      'contents': [
+
+      ]
+    },
+    {
+      'kind': 'category',
+      'name': 'Variables',
+      'categorystyle': 'others_category',
+      'contents': [
+        {
+          'kind': 'block',
+          'type': 'increasevariablebynumber',
+          'inputs': {
+            'var': {
+              'shadow': {
+                'type': 'text',
+                'fields': {
+                  'TEXT': "",
                 },
               },
             },
-          ]
+            'num': {
+              'shadow': {
+                'type': 'math_number',
+                'fields': {
+                  'NUM': 0,
+                },
+              },
+            },
+          },
         },
         {
-          'kind': 'category',
-          'name': 'AI',
-          'categorystyle': 'others_category',
-          'contents': [
-    
-          ]
+          'kind': 'block',
+          'type': 'decreasevariablebynumber',
+          'inputs': {
+            'var': {
+              'shadow': {
+                'type': 'text',
+                'fields': {
+                  'TEXT': "",
+                },
+              },
+            },
+            'num': {
+              'shadow': {
+                'type': 'math_number',
+                'fields': {
+                  'NUM': 0,
+                },
+              },
+            },
+          },
         },
         {
-          'kind': 'category',
-          'name': 'Sound & Music',
-          'categorystyle': 'others_category',
-          'contents': [
-    
-          ]
-        },
-        {
-          'kind': 'category',
-          'name': 'Variables',
-          'categorystyle': 'others_category',
-          'contents': [
-            {
-              'kind': 'block',
-              'type': 'increasevariablebynumber',
-              'inputs': {
-                'var': {
-                  'shadow': {
-                    'type': 'text',
-                    'fields': {
-                      'TEXT': "",
-                    },
-                  },
-                },
-                'num': {
-                  'shadow': {
-                    'type': 'math_number',
-                    'fields': {
-                      'NUM': 0,
-                    },
-                  },
+          'kind': 'block',
+          'type': 'setvariable',
+          'inputs': {
+            'var': {
+              'shadow': {
+                'type': 'text',
+                'fields': {
+                  'TEXT': "",
                 },
               },
             },
-            {
-              'kind': 'block',
-              'type': 'decreasevariablebynumber',
-              'inputs': {
-                'var': {
-                  'shadow': {
-                    'type': 'text',
-                    'fields': {
-                      'TEXT': "",
-                    },
-                  },
-                },
-                'num': {
-                  'shadow': {
-                    'type': 'math_number',
-                    'fields': {
-                      'NUM': 0,
-                    },
-                  },
-                },
-              },
-            },
-            {
-              'kind': 'block',
-              'type': 'setvariable',
-              'inputs': {
-                'var': {
-                  'shadow': {
-                    'type': 'text',
-                    'fields': {
-                      'TEXT': "",
-                    },
-                  },
-                },
-              },
-            },
-          ]
+          },
         },
       ]
     },
