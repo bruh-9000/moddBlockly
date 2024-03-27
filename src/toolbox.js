@@ -16,6 +16,14 @@ export const toolbox = {
   'kind': 'categoryToolbox',
   'contents': [
     {
+      'kind': 'search',
+      'name': 'Search',
+      'contents': [],
+    },
+    {
+      'kind': 'sep',
+    },
+    {
       'kind': 'category',
       'name': 'Triggers',
       'categorystyle': 'triggers_category',
